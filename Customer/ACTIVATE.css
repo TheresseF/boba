@@ -1,12 +1,10 @@
 .activate-child {
   position: absolute;
-  padding-left: 0%;
   top: 0;
   left: 0;
   background-color: var(--color-dimgray-200);
   width: 746px;
   height: 40px;
-
 }
 .b58,
 .b59 {
