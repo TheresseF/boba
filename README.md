@@ -1,6 +1,10 @@
-# boba
-CMSC 127 - Mini Project: A Bubble Tea Orders Database App 
 
-Access Database here: https://docs.google.com/spreadsheets/d/1t2WlYZUs4Sp1ClSr0xbXjV2Z_go-6lkpCF6-Yry29uA/edit#gid=787344038
+  # Bobastic
 
-Access Figma here: https://www.figma.com/file/6nRcBH74mfCKkYaUJgtlVy/BOBASTIC-SIDE-EYE?type=design&node
+  Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
+
+  To preview and run the project on your device:
+  1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
+  2) In the terminal, run `npm install`
+  3) Run `npm start` to view project in browser
+  
