@@ -1,0 +1,125 @@
+.reveal-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-dimgray-200);
+  width: 746px;
+  height: 40px;
+}
+.b,
+.b1 {
+  position: absolute;
+  top: 93px;
+  left: 235px;
+  display: none;
+  width: 35px;
+  height: 9px;
+}
+.b1 {
+  top: 201px;
+}
+.beverages-2-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 40px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.b2 {
+  font-family: var(--font-catamaran);
+}
+.bobastic {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  text-decoration: underline;
+  display: inline-block;
+  width: 97px;
+  height: 26px;
+  cursor: pointer;
+}
+.beverages-2-4-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 113px;
+  height: 41px;
+  font-size: var(--font-size-sm);
+  color: var(--color-tan-100);
+  font-family: var(--font-league-spartan);
+}
+.reveal-item {
+  position: absolute;
+  top: 7px;
+  left: 284px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-cornsilk);
+  width: 116px;
+  height: 42px;
+  display: none;
+}
+.reveal-inner {
+  position: absolute;
+  top: 45.95px;
+  left: 14.45px;
+  width: 21.6px;
+  height: 22.09px;
+  cursor: pointer;
+}
+.rectangle-div,
+.reveal-child1 {
+  position: absolute;
+  top: 70px;
+  left: 172px;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-bisque-100);
+  width: 401px;
+  height: 259px;
+}
+.reveal-child1 {
+  top: 108px;
+  left: 218px;
+  background-color: var(--color-tan-300);
+  width: 309px;
+  height: 127px;
+}
+.b3,
+.points {
+  position: absolute;
+  top: 108px;
+  left: 320px;
+  font-size: 30px;
+  color: var(--color-saddlebrown-100);
+}
+.b3 {
+  top: 161px;
+  left: 337px;
+  font-size: 35px;
+  color: var(--color-black);
+}
+.dunn-dexter-lahaylahay {
+  margin: 0;
+}
+.dunn-dexter-lahaylahay-container {
+  position: absolute;
+  top: 249px;
+  left: 283px;
+  font-size: var(--font-size-mini);
+  display: inline-block;
+  color: var(--color-black);
+  width: 179px;
+  height: 49px;
+}
+.reveal {
+  position: relative;
+  background-color: var(--color-cornsilk);
+  width: 100%;
+  height: 398px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-dimgray-200);
+  font-family: var(--font-catamaran);
+}

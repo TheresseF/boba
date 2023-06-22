@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+}
+
+:root {
+  /* fonts */
+  --font-catamaran: Catamaran;
+  --font-league-spartan: "League Spartan";
+  --font-titillium-web: "Titillium Web";
+  --font-raleway: Raleway;
+
+  /* font sizes */
+  --font-size-mini: 15px;
+  --font-size-sm: 14px;
+  --font-size-xs: 12px;
+  --font-size-3xs: 10px;
+  --font-size-base: 16px;
+  --font-size-smi: 13px;
+  --font-size-2xs: 11px;
+  --font-size-77xl: 96px;
+  --font-size-29xl: 48px;
+  --font-size-mid: 17px;
+
+  /* Colors */
+  --color-cornsilk: #fcf4d7;
+  --color-black: #000;
+  --color-saddlebrown-100: rgba(96, 58, 34, 0.8);
+  --color-tan-100: #e2c7a1;
+  --color-tan-200: #e5c09b;
+  --color-tan-300: #d2b995;
+  --color-tan-400: #d7ae89;
+  --color-tan-500: #ad8f74;
+  --color-tan-600: #ad845b;
+  --color-bisque-100: #f3dab7;
+  --color-dimgray-100: #816451;
+  --color-dimgray-200: #7f664f;
+  --color-wheat-100: #ffe3bc;
+  --color-wheat-200: #eed2ac;
+  --color-burlywood-100: #d0a973;
+  --color-burlywood-200: #d6a277;
+  --color-burlywood-300: #c69b5f;
+  --color-burlywood-400: #c08d5d;
+  --color-peachpuff-100: #ffd2ae;
+  --color-peachpuff-200: #f5cea8;
+  --color-gainsboro: rgba(217, 217, 217, 0.5);
+  --color-white: #fff;
+  --color-lightcoral-100: #ff8b8b;
+  --color-lightcoral-200: #d87a7a;
+  --color-darkseagreen: #71a768;
+  --color-seagreen-100: #5e8d56;
+  --color-seagreen-200: #428041;
+  --color-sienna-100: #966f4b;
+  --color-sienna-200: #9d6532;
+  --color-sienna-300: #875d36;
+  --color-navajowhite-100: #ffdcab;
+  --color-navajowhite-200: #ffd294;
+  --color-royalblue: #004aad;
+  --color-darkkhaki-100: #afc172;
+  --color-gray-100: #808465;
+
+  /* border radiuses */
+  --br-11xl: 30px;
+  --br-3xs: 10px;
+  --br-8xs: 5px;
+  --br-31xl: 50px;
+}
