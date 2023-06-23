@@ -1,7 +1,11 @@
 var express = require('express');
 var app = express();
 
-//app.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
+app.use('/', function(req, res, next){
+   
+    next();
+})
 
 app.get('/home', function(req,res){
     res.sendFile(__dirname + '../../Customer/HOMEPAGE.html');
