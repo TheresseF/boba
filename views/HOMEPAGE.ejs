@@ -37,7 +37,7 @@
         Copyright©2023.All rights reserved.
       </div>
       <div class="frame-parent">
-        <button class="card-query-wrapper" autofocus>
+        <button class="card-query-wrapper" autofocus id="cardQueryText">
           <b class="card-query" id="cardQueryText">Card Query</b>
         </button> 
         <button class="add-order-wrapper" autofocus>
@@ -49,8 +49,8 @@
     <script>
       var cardQueryText = document.getElementById("cardQueryText");
       if (cardQueryText) {
-        cardQueryText.addEventListener("click", function (e) {
-          window.location.href = "./CARDQUERY.ejs";
+        cardQueryText.addEventListener("button-click", function (e) {
+            window.location.href = "CARDQUERY.ejs";
         });
       }
       
