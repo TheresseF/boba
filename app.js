@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.use('/CSS', express.static('CSS'));
 
 app.get('/home', function(req,res){
-    res.render('../EJS/');
+    res.render('../EJS/HOMEPAGE');
 });
 
 app.listen(3000);
