@@ -3,7 +3,7 @@
   top: 30px;
   left: calc(50% - 471px);
   border-radius: var(--br-xl);
-  background-color: rgba(194, 170, 147, 0.2);
+  /* background-color: rgba(194, 170, 147, 0.2); */
   width: 942px;
   height: 492px;
 }
@@ -24,8 +24,9 @@
 }
 .copyright2023all-rights-rese {
   position: absolute;
-  top: 530.5px;
+  top: 600px;
   left: 6.94px;
+
 }
 .card-query {
   position: relative;
@@ -73,7 +74,7 @@
   position: relative;
   background-color: var(--color-dimgray-200);
   width: 100%;
-  height: 552.72px;
+  height: 100vh;
   overflow: hidden;
   text-align: center;
   font-size: 13.89px;
