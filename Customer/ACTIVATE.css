@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   background-color: var(--color-dimgray-200);
-  width: 746px;
+  width: 100%;
   height: 40px;
 }
 .b58,
@@ -199,7 +199,7 @@
   position: relative;
   background-color: var(--color-peachpuff-100);
   width: 100%;
-  height: 398px;
+  height: 100vh;
   overflow: hidden;
   text-align: center;
   font-size: var(--font-size-xs);
