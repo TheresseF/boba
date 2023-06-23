@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="../CSS/global.css" />
-    <link rel="stylesheet" href="../CSS/CARDQUERY.css" />
+
+    <title>Card Query</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link href = "/assets/CARDQUERY.css" rel="stylesheet" type="text/css"/>
+    <link href = "/assets/global.css" rel="stylesheet" type="text/css"/>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -27,11 +30,12 @@
       <div class="card-query-child"></div>
       <b class="b4">145.0</b>
       <b class="b5">145.0</b>
+
       <div class="beverages-2-4-group">
         <img
           class="beverages-2-41"
           alt=""
-          src="../public/beverages-2-4@2x.png"
+          src="/beverages-2-4@2x.png"
           id="beverages24"
         />
 
@@ -40,6 +44,7 @@
           <b class="b6"> </b>
         </div>
       </div>
+
       <div class="card-query-item"></div>
       <div class="card-query-inner"></div>
       <b class="password">Password</b>
@@ -58,6 +63,7 @@
       <div class="card-query-child12"></div>
       <div class="card-query-child13"></div>
       <div class="card-query-child14"></div>
+
       <b class="id">ID</b>
       <b class="name">Name</b>
       <b class="number">Number</b>
@@ -80,35 +86,15 @@
         <b class="b8">*********321</b>
         <b class="b9">***</b>
       </div>
+
       <img
         class="arrow-icon"
         alt=""
-        src="../public/arrow-21.svg"
+        src="/arrow-21.svg"
         id="arrowIcon"
       />
     </div>
 
-    <script>
-      var beverages24 = document.getElementById("beverages24");
-      if (beverages24) {
-        beverages24.addEventListener("click", function (e) {
-          window.location.href = "./HOMEPAGE.ejs";
-        });
-      }
-      
-      var bOBASTICText = document.getElementById("bOBASTICText");
-      if (bOBASTICText) {
-        bOBASTICText.addEventListener("click", function (e) {
-          window.location.href = "./HOMEPAGE.ejs";
-        });
-      }
-      
-      var arrowIcon = document.getElementById("arrowIcon");
-      if (arrowIcon) {
-        arrowIcon.addEventListener("click", function (e) {
-          window.location.href = "./HOMEPAGE.ejs";
-        });
-      }
-      </script>
+      <script type="text/javascript" src="/assets/home.js"></script>
   </body>
 </html>

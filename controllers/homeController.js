@@ -11,6 +11,19 @@ module.exports = function(app){
         res.render('finalorder');
     });
 
+    app.get('/arrow-button-click', function(req, res){
+        res.render('homepage');
+    });
+
+    app.get('/logo-button-click', function(req, res){
+        res.render('homepage');
+    });
+
+    app.get('/logotext-button-click', function(req, res){
+        res.render('homepage');
+    });
+
+
     app.post('/homepage', function(req, res){
 
     });
