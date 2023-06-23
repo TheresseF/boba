@@ -8,7 +8,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <link href = "/assets/HOMEPAGE.css" rel="stylesheet" type="text/css"/>
     <link href = "/assets/global.css" rel="stylesheet" type="text/css"/>
-    
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -26,6 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@700&display=swap"
     />
   </head>
+
   <body>
     <div class="homepage">
       <div class="homepage-child"></div>
@@ -36,17 +36,18 @@
       <div class="copyright2023all-rights-rese">
         Copyright©2023.All rights reserved.
       </div>
+
       <div class="frame-parent">
-        <button class="card-query-wrapper" autofocus id="cardQueryText">
-          <b class="card-query" id="cardQueryText">Card Query</b>
+        <button class="card-query-wrapper" autofocus id="cardQueryButton">
+          <b class="card-query">Card Query</b>
         </button> 
-        <button class="add-order-wrapper" autofocus>
-          <b class="card-query" id="addOrderText">Add Order</b>
+        <button class="add-order-wrapper" autofocus id="addOrderButton">
+          <b class="card-query">Add Order</b>
         </button>
       </div>
     </div>
 
-    <script>
+    <!-- <script>
       var cardQueryText = document.getElementById("cardQueryText");
       if (cardQueryText) {
         cardQueryText.addEventListener("button-click", function (e) {
@@ -60,6 +61,7 @@
           window.location.href = "./FINALORDER1.ejs";
         });
       }
-      </script>
+      </script> -->
+      <script type="text/javascript" src="/assets/home.js"></script>
   </body>
 </html>

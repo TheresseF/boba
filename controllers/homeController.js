@@ -3,8 +3,12 @@ module.exports = function(app){
         res.render('homepage');
     });
 
-    app.get('/button-click', function(req, res){
+    app.get('/cardquery-button-click', function(req, res){
         res.render('cardquery');
+    });
+
+    app.get('/order-button-click', function(req, res){
+        res.render('finalorder');
     });
 
     app.post('/homepage', function(req, res){
