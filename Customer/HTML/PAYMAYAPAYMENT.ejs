@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <link rel="stylesheet" href="../CSS/global.css" />
-    <link rel="stylesheet" href="../CSS/CashPayment.css" />
+    <link rel="stylesheet" href="../CSS/PAYMAYAPAYMENT.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -23,35 +23,35 @@
     />
   </head>
   <body>
-    <div class="cash-payment">
-      <div class="order-rectangle-11"></div>
-      <div class="order-rectangle-111"></div>
-      <b class="please-enter-your">Please enter your Paymaya Number </b>
-      <div class="cash-payment-child"></div>
-      <b class="proceed">Proceed</b>
-      <div class="cash-payment-item"></div>
-      <button class="cancel" autofocus id="popupcancel">Cancel</button>
-      <div class="order-rectangle-11"></div>
-      <div class="order-rectangle-111"></div>
-      <b class="please-input-cash">Please input cash amount</b>
-      <div class="cash-payment-child"></div>
-      <button class="proceed1" autofocus>Proceed</button>
-      <div class="cash-payment-item"></div>
-      <b class="cancel1" id="popupcancelText">Cancel</b>
+    <div class="paymaya-payment">
+      <div class="order-rectangle-112"></div>
+      <div class="order-rectangle-113"></div>
+      <b class="please-enter-your1">Please enter your Paymaya Number </b>
+      <div class="paymaya-payment-child"></div>
+      <b class="proceed2">Proceed</b>
+      <div class="paymaya-payment-item"></div>
+      <button class="cancel2" autofocus id="popupcancel">Cancel</button>
+      <div class="order-rectangle-112"></div>
+      <div class="order-rectangle-113"></div>
+      <b class="please-enter-your1">Please enter your Paymaya Number </b>
+      <div class="paymaya-payment-child"></div>
+      <button class="proceed3" autofocus>Proceed</button>
+      <div class="paymaya-payment-item"></div>
+      <b class="cancel3" id="popupcancelText">Cancel</b>
     </div>
 
     <script>
       var popupcancel = document.getElementById("popupcancel");
       if (popupcancel) {
         popupcancel.addEventListener("click", function (e) {
-          window.location.href = "./FINALPAYMENT1.html";
+          window.location.href = "./FINALPAYMENT1.ejs";
         });
       }
       
       var popupcancelText = document.getElementById("popupcancelText");
       if (popupcancelText) {
         popupcancelText.addEventListener("click", function (e) {
-          window.location.href = "./FINALPAYMENT1.html";
+          window.location.href = "./FINALPAYMENT1.ejs";
         });
       }
       </script>
