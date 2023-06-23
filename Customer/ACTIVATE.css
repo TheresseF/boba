@@ -67,7 +67,7 @@
 .activate-inner {
   top: 76px;
   left: 32px;
-  background-color: var(--color-wheat-200);
+  /* background-color: var(--color-wheat-200); */
   width: 678px;
   height: 344px;
 }
@@ -97,6 +97,7 @@
   height: 34px;
 }
 .bobacard1 {
+  
   margin: 0;
 }
 .b61,
@@ -111,7 +112,7 @@
   display: inline-block;
   width: 467px;
   height: 100px;
-  -webkit-text-stroke: 1px rgba(157, 101, 50, 0.5);
+  /* -webkit-text-stroke: 1px rgba(157, 101, 50, 0.5); */
 }
 .b61 {
   top: 65px;
