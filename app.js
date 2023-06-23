@@ -1,8 +1,7 @@
 var express = require('express');
-var bodyParser = require('body-parser');
-var app = express();
 
-var urlencoderParser = bodyParser.urlencoded({extended:false});
+var homeController = require('./controllers/homeController');
+var app = express();
 
 //set up template engine
 app.set('view engine', 'ejs');
