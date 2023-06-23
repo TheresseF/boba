@@ -5,7 +5,7 @@ app.set('view engine', 'ejs');
 app.use('/CSS', express.static('CSS'));
 
 app.get('/home', function(req,res){
-    res.sendFile(__dirname + '../../Customer/HOMEPAGE.html');
+    res.sendFile(__dirname + '../EJS/HOMEPAGE.ejs');
 });
 
 app.listen(3000);
