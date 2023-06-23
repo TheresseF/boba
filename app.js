@@ -14,4 +14,4 @@ homeController(app);
 
 //listen to port
 app.listen(3000);
-console.log('app is now listening to port 3000')
+console.log('app is now listening to port 3000');
