@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   background-color: var(--color-dimgray-200);
-  width: 746px;
+  width: 100%;
   height: 40px;
 }
 .b4,
@@ -78,7 +78,7 @@
   font-family: var(--font-titillium-web);
   color: var(--color-wheat-200);
 }
-.card-query-child1 {
+.search-engine {
   position: absolute;
   top: 49px;
   left: 64px;
