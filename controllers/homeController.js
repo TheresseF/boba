@@ -23,6 +23,10 @@ module.exports = function(app){
         res.render('homepage');
     });
 
+    app.get('/popuporder-button-click', function(req, res){
+        res.render('finalorder1');
+    });
+
 
     app.post('/homepage', function(req, res){
 

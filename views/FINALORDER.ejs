@@ -82,7 +82,7 @@
           <div class="frame-child8"></div>
           <div class="frame-child9"></div>
           <div class="frame-child10"></div>
-          <div class="frame-child11" id="rectangle15"></div>
+          <div class="frame-child11" id="PayButton"></div>
           <b class="clear">Clear</b>
           <b class="add">Add</b>
           <b class="pay" id="payText">Pay</b>
@@ -254,6 +254,7 @@
         <button class="cash1" autofocus>Cash</button>
         <button class="gcash1" autofocus>Gcash</button>
         <button class="paymaya1">Paymaya</button>
+        
         <img
           class="final-payment-child13"
           alt=""
@@ -417,6 +418,7 @@
             <b class="b89"> </b>
           </div>
         </div>
+
         <b class="order3" id="popuporderText">Order</b>
         <div class="final-payment-child19"></div>
         <b class="payment3">Payment</b>
@@ -467,9 +469,9 @@
         });
       }
       
-      var rectangle15 = document.getElementById("rectangle15");
-      if (rectangle15) {
-        rectangle15.addEventListener("click", function () {
+      var PayButton = document.getElementById("PayButton");
+      if (PayButton) {
+        PayButton.addEventListener("click", function () {
           var popup = document.getElementById("fINALPAYMENTContainer");
           if (!popup) return;
           var popupStyle = popup.style;
@@ -499,7 +501,6 @@
           window.location.href = "./FINALPAYMENT1.ejs";
         });
       }
-      
       </script>
 
       <script type="text/javascript" src="/assets/home.js"></script>

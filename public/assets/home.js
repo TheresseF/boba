@@ -18,4 +18,8 @@ $(document).ready(function() {
   $('#bOBASTICText').click(function() {
     window.location.href = '/logotext-button-click';
   });
+
+  $('#popuporderText').click(function() {
+    window.location.href = '/popuporder-button-click';
+  });
 });
