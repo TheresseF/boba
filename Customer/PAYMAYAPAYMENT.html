@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./PAYMAYAPAYMENT.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=League Spartan:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="paymaya-payment">
+      <div class="order-rectangle-112"></div>
+      <div class="order-rectangle-113"></div>
+      <b class="please-enter-your1">Please enter your Paymaya Number </b>
+      <div class="paymaya-payment-child"></div>
+      <b class="proceed2">Proceed</b>
+      <div class="paymaya-payment-item"></div>
+      <button class="cancel2" autofocus id="popupcancel">Cancel</button>
+      <div class="order-rectangle-112"></div>
+      <div class="order-rectangle-113"></div>
+      <b class="please-enter-your1">Please enter your Paymaya Number </b>
+      <div class="paymaya-payment-child"></div>
+      <button class="proceed3" autofocus>Proceed</button>
+      <div class="paymaya-payment-item"></div>
+      <b class="cancel3" id="popupcancelText">Cancel</b>
+    </div>
+
+    <script>
+      var popupcancel = document.getElementById("popupcancel");
+      if (popupcancel) {
+        popupcancel.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.html";
+        });
+      }
+      
+      var popupcancelText = document.getElementById("popupcancelText");
+      if (popupcancelText) {
+        popupcancelText.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.html";
+        });
+      }
+      </script>
+  </body>
+</html>
