@@ -74,7 +74,7 @@
   height: 89px;
   object-fit: cover;
 }
-.order-rectangle-24,
+/* .order-rectangle-24, */
 .order-rectangle-25,
 .order-rectangle-26,
 .order-rectangle-27 {
@@ -171,7 +171,7 @@
 }
 .order-rectangle-24-parent {
   position: absolute;
-  top: 412px;
+  top: 47%;
   left: 22px;
   width: 261px;
   height: 324px;
@@ -294,13 +294,13 @@
 }
 .order-rectangle-71 {
   position: absolute;
-  top: 338.5px;
-  left: 31.5px;
+  top: 90vh;
+  left: 11%;
   background-color: var(--color-bisque-100);
   border: 1px solid var(--color-tan-300);
   box-sizing: border-box;
-  width: 261px;
-  height: 108px;
+  width: 89.1%;
+  height: 20%;
 }
 .beverages-2-51 {
   position: absolute;
@@ -833,7 +833,7 @@
   height: 446px;
 }
 .frame-child16,
-.frame-child17 {
+/* .frame-child17 */{
   position: absolute;
   top: 46px;
   left: 286px;
@@ -841,12 +841,12 @@
   width: 3px;
   height: 154px;
 }
-.frame-child17 {
+/* .frame-child17 {
   top: 178px;
   border-radius: var(--br-31xl);
   background-color: var(--color-tan-500);
   height: 22px;
-}
+} */
 .frame-parent2 {
   position: absolute;
   top: 50px;
@@ -939,7 +939,7 @@
 }
 .final-order-child10 {
   background-color: var(--color-dimgray-200);
-  width: 746px;
+  width: 100%;
 }
 .beverages-2-43 {
   width: 32px;
@@ -1225,7 +1225,7 @@
   position: relative;
   background-color: var(--color-cornsilk);
   width: 100%;
-  height: 398px;
+  height: 123vh;
   overflow: hidden;
   text-align: center;
   font-size: var(--font-size-smi);
