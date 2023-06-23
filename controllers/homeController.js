@@ -3,6 +3,10 @@ module.exports = function(app){
         res.render('homepage');
     });
 
+    app.get('/button-click', function(req, res){
+        res.render('cardquery');
+    });
+
     app.post('/homepage', function(req, res){
 
     });
