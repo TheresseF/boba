@@ -1,12 +1,81 @@
-.final-order-child {
+/* menu area */
+.menuBg {
     position: absolute;
-    top: 56px;
+    top: 20%;
     left: 304px;
     border-radius: var(--br-3xs) var(--br-3xs) 0 0;
     background-color: var(--color-tan-100);
     width: 426px;
     height: 328px;
   }
+
+/* ------------------------------- */
+
+/* order area sa left side */
+.orderBg {
+  top: 10%;
+  left: 5%;
+  border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+  background-color: var(--color-tan-100);
+  width: 30vw;
+  height: 87vh;
+}
+/* ------------------------------- */
+
+/* Link back to homepage area */
+.bobasticlink {
+  position: absolute;
+  top: 3vh;
+  left: 4vw;
+  text-decoration: underline;
+  display: inline-block;
+  font-family: var(--font-catamaran);
+  font-size: 150%;
+  cursor: pointer;
+}
+.beverageslogo {
+  top: 0;
+  position: absolute;
+  width: 4vw;
+  /* object-fit: cover; */
+  cursor: pointer;
+}
+.Bgupper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-dimgray-200);
+  width: 100%;
+  height: 10vh;
+}
+.check-out1 {
+  top: 4vh;
+  left: 150vh;
+  position: absolute;
+  font-size: 110%;
+  display: inline-block;
+  width: 10vw;
+  height: 10vh;
+  color: var(--color-cornsilk);
+}
+/* .check-out1,
+  .order1,
+  .payment1 {
+    position: absolute;
+    font-size: var(--font-size-mini);
+    display: inline-block;
+    width: 72px;
+    height: 17px;
+  }
+  .check-out1,
+  .payment1 {
+    top: 14px;
+    left: 305px;
+    color: var(--color-cornsilk);
+  } */
+/* ------------------------------- */
+
+
   .final-order-child1,
   .final-order-child2,
   .final-order-inner,
@@ -882,7 +951,7 @@
     color: var(--color-white);
   }
   .final-order-child9,
-  .order-area1 {
+  .orderBg {
     position: absolute;
     top: 30px;
     left: 11px;
@@ -891,14 +960,7 @@
     width: 100vh;
     height: 56px;
   }
-  .order-area1 {
-    top: 0;
-    left: 10%;
-    border-radius: var(--br-3xs) var(--br-3xs) 0 0;
-    background-color: var(--color-tan-100);
-    width: 25vw;
-    height: 87vh;
-  }
+
   .drinks {
     top: 56px;
     left: 337px;
@@ -955,35 +1017,13 @@
     left: 309px;
     color: var(--color-white);
   }
-  .beverages-2-43,
-  .final-order-child10 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 40px;
-  }
-  .final-order-child10 {
-    background-color: var(--color-dimgray-200);
-    width: 100%;
-  }
-  .beverages-2-43 {
-    width: 32px;
-    object-fit: cover;
-    cursor: pointer;
-  }
+  
+  
+
   .b57 {
     font-family: var(--font-catamaran);
   }
-  .bobastic3 {
-    position: absolute;
-    top: 15px;
-    left: 16px;
-    text-decoration: underline;
-    display: inline-block;
-    width: 97px;
-    height: 26px;
-    cursor: pointer;
-  }
+  
   .beverages-2-4-parent1 {
     position: absolute;
     top: 0;
@@ -994,7 +1034,7 @@
     color: var(--color-tan-100);
     font-family: var(--font-league-spartan);
   }
-  .final-order-child11 {
+  /* .final-order-child11 {
     position: absolute;
     top: 8px;
     left: 167px;
@@ -1002,16 +1042,8 @@
     background-color: var(--color-cornsilk);
     width: 116px;
     height: 42px;
-  }
-  .check-out1,
-  .order1,
-  .payment1 {
-    position: absolute;
-    font-size: var(--font-size-mini);
-    display: inline-block;
-    width: 72px;
-    height: 17px;
-  }
+  } */
+  
   .order1 {
     cursor: pointer;
     border: 0;
@@ -1024,15 +1056,8 @@
     color: var(--color-dimgray-200);
     text-align: center;
   }
-  .check-out1,
-  .payment1 {
-    top: 14px;
-    left: 305px;
-    color: var(--color-cornsilk);
-  }
-  .check-out1 {
-    left: 422px;
-  }
+  
+  
   .brown {
     margin: 0;
   }
