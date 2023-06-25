@@ -1,0 +1,105 @@
+/* order area sa left side */
+.orderBg {
+  position: relative;
+  top: 14vh;
+  left: 2%;
+  border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+  border: 0.2vw solid var(--color-tan-300);
+  background-color: var(--color-tan-100);
+  width: 30vw;
+  height: 85vh;
+}
+
+/* order area box below */
+.orderbox {
+    position: absolute;
+    top: 66%;
+    left: 0;
+    background-color: var(--color-bisque-100);
+    box-sizing: border-box;
+    border: 0.2vw dashed var(--color-tan-300);
+    width: 30vw;
+    height: 35%;
+}
+/* pay box */
+.paybox {
+    /* display: flex; */
+    position: relative;
+    top: 77vh;
+    left: 68%;
+    /* align-items: center; */
+    background-color: var(--color-darkseagreen);
+    border: 2px solid var(--color-seagreen-100);
+}
+/* clear box */
+.clearbox {
+    /* display: flex; */
+    top: 71.3vh;
+    position: relative;
+    left: 36%;
+    align-items: center;
+}
+/* add box */
+.addbox{
+    /* display: flex; */
+    position: relative;
+    top: 65.5vh;
+    left: 4%;
+    /* align-items: center;   */
+    
+}
+.addbox,
+.clearbox{
+    background-color: var(--color-sienna-100);
+    border: 2px solid var(--color-sienna-300);
+}
+.clearbox,
+.addbox,    
+.paybox{
+    width: 8vw;
+    height: 5vh;
+}
+
+.clear, .add, .pay {
+    color: white; /* Set the text color to black */
+    font-weight: bold; /* Apply bold font weight */
+}
+
+.clear {
+    position: relative;
+    top: 1vh;
+    margin: 0;
+    left: 2.5vw;
+}
+.add {
+    bottom: 1.7vh;
+    left: 2.7vw;
+}
+.add,
+.b39,
+.pay,
+.total1 {
+  position: relative;
+  display: inline-block;
+}
+.pay {
+    top: 1vh;
+    margin: 0;
+    left: 37%;
+    cursor: pointer;
+}
+.b39,
+.total1 {
+  top: 382.86px;
+  left: 233.45px;
+  color: var(--color-dimgray-200);
+  width: 35.73px;
+  height: 16.09px;
+}
+/* total */
+.total1 {
+  top: 69.6vh;
+  left: 60%;
+  width: 43.66px;
+  height: 14.48px;
+}

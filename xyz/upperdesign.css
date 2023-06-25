@@ -1,0 +1,70 @@
+/* Link back to homepage area */
+.bobasticlink {
+  position: absolute;
+  top: 4vh;
+  left: 3.5vw;
+  text-decoration: underline;
+  display: inline-block;
+  font-family: var(--font-catamaran);
+  font-size: 120%;
+  cursor: pointer;
+  color:navajowhite;
+}
+.beverageslogo {
+  top: 0;
+  position: absolute;
+  width: 3.5vw;
+  font-family: var(--font-catamaran);
+  /* object-fit: cover; */
+  cursor: pointer;
+}
+.Bgupper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-dimgray-200);
+  width: 100%;
+  height: 9vh;
+  z-index: 1;
+}
+.check-out1 {
+  top: 5vh;
+  left: 150vh;
+  position: absolute;
+  font-size: 111%;
+  display: inline-block;
+  width: 10vw;
+  height: 10vh;
+  color: var(--color-cornsilk);
+}
+
+.payment1 {
+  top: 5vh;
+  left: 110vh;
+  font-size: 111%;
+  position: absolute;
+  display: inline-block;
+  width: 10vw;
+  height: 10vh;
+  color: var(--color-cornsilk);
+}
+.order1 {
+  top: 1.5vh;
+  left: 6vh;
+  font-size: 111%;
+  position: absolute;
+  display: inline-block;
+  width: 10vw;
+  height: 10vh;
+  color: var(--color-dimgray-200);
+  /* color: var(--color-cornsilk); */
+}
+.tab {
+  position: absolute;
+  top: 4vh;
+  left: 65vh;
+  border-radius: var(--br-3xs);
+  background-color: white;
+  width: 10vw;
+  height: 9vh;
+}
