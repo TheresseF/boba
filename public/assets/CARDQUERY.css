@@ -4,7 +4,7 @@
   position: absolute;
   top: 19vh;
   left: 2vw;
-  border: 0.2vw dashed var(--color-tan-100);
+  border: 0.3vw dashed var(--color-burlywood-400);
   border-radius: var(--br-3xs) var(--br-3xs) 0 0;
   width: 95vw;
   height: 80vh;
@@ -29,14 +29,20 @@ td {
   border: 1px solid var(--color-tan-200);
   color: rgb(53, 27, 15);
   font-family: var(--font-catamaran);
+  font-size: large;
 }
 .trans{
-  width: 4%;
-  background-color: burlywood;
-  text-align: center;
-  color: rgb(112, 60, 36);
+  width: 2%;
+  background-color: transparent;
+  font-weight: bold;
+}
+.Boxbutton{
+  background-color: cornsilk;
+  border: 0.2vw solid var(--color-saddlebrown-100);
   font-family: var(--font-catamaran);
 }
+
+
 /* search engine */
 .search{
   position: absolute;
