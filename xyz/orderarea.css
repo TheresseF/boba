@@ -12,42 +12,53 @@
 
 /* order area box below */
 .orderbox {
-    position: absolute;
-    top: 66%;
-    left: 0;
+    position: fixed;
+    top: 65%;
+    left: 2vw;
     background-color: var(--color-bisque-100);
     box-sizing: border-box;
     border: 0.2vw dashed var(--color-tan-300);
-    width: 30vw;
+    width: 30.3vw;
     height: 35%;
 }
 /* pay box */
 .paybox {
-    /* display: flex; */
-    position: relative;
-    top: 77vh;
-    left: 68%;
+    left: 21vw;
     /* align-items: center; */
     background-color: var(--color-darkseagreen);
     border: 2px solid var(--color-seagreen-100);
 }
 /* clear box */
 .clearbox {
-    /* display: flex; */
-    top: 71.3vh;
-    position: relative;
-    left: 36%;
-    align-items: center;
+    left: 11vw;
+    /* align-items: center; */
 }
 /* add box */
 .addbox{
-    /* display: flex; */
-    position: relative;
-    top: 65.5vh;
-    left: 4%;
+    left: 3%;
     /* align-items: center;   */
     
 }
+.addbox,
+.paybox,
+.clearbox{
+    position: absolute;
+    top: 27vh;
+}
+
+/* total box */
+.totalbox{
+    top: 16vh;
+    left: 60%;
+    position: absolute;
+    border-radius: var(--br-8xs);
+    background-color: cornsilk;
+    border: 1px solid var(--color-tan-300);
+    box-sizing: border-box;
+    width: 10vw;
+    height: 5vh;
+}
+
 .addbox,
 .clearbox{
     background-color: var(--color-sienna-100);
@@ -63,43 +74,74 @@
 .clear, .add, .pay {
     color: white; /* Set the text color to black */
     font-weight: bold; /* Apply bold font weight */
+    font-size: 1.2em;
 }
 
 .clear {
-    position: relative;
     top: 1vh;
     margin: 0;
-    left: 2.5vw;
+    left: 2.1vw;
 }
 .add {
-    bottom: 1.7vh;
+    top: 1vh;
+    margin: 0;
     left: 2.7vw;
 }
+
+.pay {
+    top: 1vh;
+    margin: 0;
+    left: 34%;
+    cursor: pointer;
+}
+/* total */
+.total1 {
+    top: 13.2vh;
+    left: 46%;
+    color: var(--color-dimgray-200);
+    font-size: 1.5em;
+}
+.b39{
+  top: 17.3vh;
+  left: 20.5vw;
+  color: var(--color-dimgray-200);
+  font-size: 1.2em;
+}
+
+.clear,
 .add,
 .b39,
 .pay,
 .total1 {
-  position: relative;
+  position: absolute;
   display: inline-block;
 }
-.pay {
-    top: 1vh;
-    margin: 0;
-    left: 37%;
-    cursor: pointer;
+
+.quantityboxsample {
+    position: absolute;
+    top: 2vh;
+    left: 20vw;
+    height: 3vh;
+    width: 6vw;
+    background-color: var(--color-cornsilk);
+    border: 1px solid tan;
+    border-radius: 30%;
 }
-.b39,
-.total1 {
-  top: 382.86px;
-  left: 233.45px;
-  color: var(--color-dimgray-200);
-  width: 35.73px;
-  height: 16.09px;
+.plus{
+    position: absolute;
+    top: 0.5vh;
+    left: 5vw;
+    width: 1vw;
 }
-/* total */
-.total1 {
-  top: 69.6vh;
-  left: 60%;
-  width: 43.66px;
-  height: 14.48px;
+.minus{
+    position: absolute;
+    top: 0.4vh;
+    /* left: 4.5vw; */
+    width: 1vw;
+}
+.delete{
+    position: absolute;
+    top:0.5;
+    left: 7vw;
+    width: 1.5vw;
 }

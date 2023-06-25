@@ -2,18 +2,174 @@
 /* menu area */
 .menuBg {
     position: absolute;
-    top: 15%;
+    top: 14%;
     left: 35%;
     border-radius: var(--br-3xs);
     background-color: var(--color-tan-100);
     border: 0.3vw dashed var(--color-tan-300);
     width: 62%;
-    height: 75%;
-  }
+    height: 80%;
+}
+.menuborder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-dimgray-200);
+    border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+    width: 100%;
+    height: 10%;
+}
+/* drinks box*/
+.box1{
+  position: absolute;
+  left: 1vw;
+  height: 14vh;
+}
+.box2{
+  left: 13vw;
+  height: 14vh;
+}
+.box3{
+  top: 25vh;
+  left: 1vw;
+}
+.box4{
+  top: 25vh;
+  left: 13vw;
+}
+.box5{
+  top: 41vh;
+  left: 1vw;
+}
+.box6{
+  top: 41vh;
+  left: 13vw;
+}
+.box7{
+  top: 57vh;
+  left: 1vw;
+}
+.box8{
+  top: 57vh;
+  left: 13vw;
+}
 
+.box3, .box4,
+.box5, .box6,
+.box7, .box8{
+  height: 14vh;
+}
+/* size box */
+.box10{
+  top: 19vh;
+}
+.box11{
+  top: 29vh;
+}
+.box12{
+  top: 50vh;
+}
+/* foods box */
+.box13{
+  left: 37vw;
+  height: 14vh;
+}
+.box14{
+  height: 14vh;
+  left: 49vw;
+}
+.box15{
+  top: 25vh;
+  left: 37vw;
+  height: 14vh;
+}
+.box16{
+  top: 25vh;
+  left: 49vw;
+  height: 14vh;
+}
+.box17{
+  top: 41vh;
+  left: 37vw;
+  height: 14vh;
+}
+.box18{
+  top: 41vh;
+  left: 49vw;
+  height: 14vh;
+}
+.box19{
+  top: 57vh;
+  left: 37vw;
+  height: 14vh;
+}
+.box20{
+  top: 57vh;
+  left: 49vw;
+  height: 14vh;
+}
+.box9,.box10, .box11, .box12{
+  height:9vh;
+  left: 25vw;
+}
+
+.box1, .box2,.box9, .box13,.box14{
+  position: absolute;
+  top: 9vh;
+  width: 11vw;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-wheat-100);
+}
+.box3, .box4,.box10, .box15,.box16{
+  position: absolute;
+  width: 11vw;
+  background-color: var(--color-navajowhite-100);
+  border-radius: var(--br-3xs);
+}
+.box5, .box6,.box11, .box17,.box18{
+  position: absolute;
+  width: 11vw;
+  background-color: var(--color-navajowhite-200);
+  border-radius: var(--br-3xs);
+}
+.box7, .box8,.box12, .box19,.box20{
+  position: absolute;
+  width: 11vw;
+  background-color: var(--color-burlywood-100);
+  border-radius: var(--br-3xs);
+}
+/* drink text*/
+
+.chocolate{
+  position: absolute;
+  top: 4vh;
+  text-align: center;
+  left: 1%;
+  width: 127.82px;
+  height: 20px;
+  font-family: var(--font-catamaran);
+  color: var(--color-dimgray-200);
+  font-size:x-large;
+}
+.chocolate1,
+.hokkaido2,
+.hokkaido3,
+.matcha1 {
+  position: absolute;
+  top: 0;
+  left: 1vw;
+  display: inline-block;
+  width: 127.82px;
+  height: 20px;
+}
+.chocolate1,
+.hokkaido2,
+.hokkaido3 {
+  top: 25px;
+  left: 7.81px;
+}
 /* ------------------------------- */
 
-/* order area sa left side */
 
 /* .final-order-child9,
 .orderBg {
@@ -32,7 +188,7 @@
 .final-order-item {
   position: absolute;
   top: 89px;
-  left: 318px;
+  left: 0;
   border-radius: var(--br-3xs);
   background-color: var(--color-wheat-100);
   width: 72px;
@@ -329,18 +485,6 @@
   height: 32.18px;
 } */
 
-/* total box */
-.frame-child8{
-  position: absolute;
-  top: 380.83px;
-  left: 73%;
-  border-radius: var(--br-8xs);
-  background-color: var(--color-cornsilk);
-  border: 1px solid var(--color-tan-300);
-  box-sizing: border-box;
-  width: 65.5px;
-  height: 23.33px;
-}
 
 /* .add,
 .clear {
@@ -359,23 +503,7 @@
   width: 260.01px;
   height: 27.5px;
 }
-.chocolate1,
-.hokkaido2,
-.hokkaido3,
-.matcha1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  width: 127.82px;
-  height: 20px;
-}
-.chocolate1,
-.hokkaido2,
-.hokkaido3 {
-  top: 25px;
-  left: 7.81px;
-}
+
 .hokkaido2,
 .hokkaido3 {
   top: 53px;
