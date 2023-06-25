@@ -8,7 +8,7 @@
   font-family: var(--font-catamaran);
   font-size: 120%;
   cursor: pointer;
-  color:navajowhite;
+  color: var(--color-tan-100);
 }
 .beverageslogo {
   top: 0;

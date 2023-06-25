@@ -119,11 +119,13 @@
   width: 11vw;
   border-radius: var(--br-3xs);
   background-color: var(--color-wheat-100);
+  border: 0.1vw dashed var(--color-sienna-100);
 }
 .box3, .box4,.box10, .box15,.box16{
   position: absolute;
   width: 11vw;
   background-color: var(--color-navajowhite-100);
+  border: 0.1vw dashed var(--color-sienna-100);
   border-radius: var(--br-3xs);
 }
 .box5, .box6,.box11, .box17,.box18{
@@ -131,24 +133,37 @@
   width: 11vw;
   background-color: var(--color-navajowhite-200);
   border-radius: var(--br-3xs);
+  border: 0.1vw dashed var(--color-sienna-100);
 }
 .box7, .box8,.box12, .box19,.box20{
   position: absolute;
   width: 11vw;
   background-color: var(--color-burlywood-100);
   border-radius: var(--br-3xs);
+  border: 0.1vw dashed var(--color-sienna-100);
 }
 /* drink text*/
 
-.chocolate{
+.chocolate, .matcha, .blueberry{
   position: absolute;
   top: 4vh;
   text-align: center;
-  left: 1%;
+  left: 4%;
   width: 127.82px;
   height: 20px;
   font-family: var(--font-catamaran);
   color: var(--color-dimgray-200);
+  font-size:x-large;
+}
+.red-velvet{
+  position: absolute;
+  top: 4vh;
+  text-align: center;
+  left: 4.5%;
+  width: 127.82px;
+  height: 20px;
+  font-family: var(--font-catamaran);
+  color: cornsilk;
   font-size:x-large;
 }
 .chocolate1,
@@ -972,10 +987,9 @@
   left: 588px;
   color: var(--color-peachpuff-100);
 }
-.blueberry,
+
 .chocolate2,
-.matcha2,
-.red-velvet {
+.matcha2 {
   position: absolute;
   top: 110px;
   left: 310px;
@@ -983,21 +997,11 @@
   width: 90px;
   height: 19px;
 }
-.blueberry,
-.matcha2,
-.red-velvet {
+
+.matcha2{
   top: 178px;
 }
-.blueberry,
-.red-velvet {
-  top: 251px;
-  left: 308px;
-}
-.red-velvet {
-  top: 321px;
-  left: 309px;
-  color: var(--color-white);
-}
+
 
 
 
