@@ -4,11 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <link rel="stylesheet" href="../public/assets/global.css" />
-    <link rel="stylesheet" href="../public/assets/FINALCHECKOUT.css" />
     <link rel="stylesheet" href="../public/assets/upperdesign.css" />
     <link rel="stylesheet" href="../public/assets/orderarea.css" />
-
-
+    <link rel="stylesheet" href="../public/assets/FINALPAYMENT.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -27,9 +25,6 @@
     />
   </head>
   <body>
-
-    <!-- upper design to homepage -->
-      
     <div class="Bgupper">
       <img
         class="beverageslogo"
@@ -40,53 +35,252 @@
       <div class="bobasticlink" id="bOBASTICText">
         <b>BOBASTIC</b>
       </div>
-      <div class="tab2">
-      <b class="check-out">Check-out</b>
-      </div>
       <b class="order">Order</b>
-      <b class="payment1">Payment</b>
-    </div>
-
-    <!-- CheckOut area -->
-    <div class="CheckOut">
-      <div class="picture">
-        <img class="logo" alt="" src="../public/beverages-2-31@2x.png" />
+      <div class="tab1">
+        <b class="payment">Payment</b>
       </div>
-      <b class="List">Order List</b> 
-      <div class="CheckList"> 
+      <b class="check-out1">Check-out</b>
+    </div>
+    <!-- order area sa left side -->
+    <div class ="orderBg">
+      <div class = "orderList" id="TableContainer">
         <table>
           <tr>
-            <th class="format"> Product</th>
-            <th class="format1"> Size</th>
-            <th class="format1"> Quantity</th>
-            <th class="format1"> Per Unit</th>
-            <th class="format1"> Price</th>
+            <th class="b">Product</th>
+            <th class ="a">Extra</th>
+            <th class="a">Size</th>
+            <th class="a">Quantity</th>
+            <th class="a">Delete</th>
           </tr>
+          <!-- sample -->
           <tr>
-            <td class="format2"> Chocolate</td>
-            <td class="format3"> S</td>
-            <td class="format3"> 1</td>
-            <td class="format3"> 12</td>
-            <td class="format3"> 14336</td>
+            <td><b>Choclate</b></td>
+            <td><b>B</b></td>
+            <td><b>S</b></td>
+            <td><b>1</b></td>
+            <td>
+              <img
+                class ="delete"
+                src="../public/x.png"
+                alt=""
+                id="deletebutton"
+              />
+            </td>
           </tr>
         </table>
       </div>
-      <div class="AllTotal">Total:</div>
-      <div class="totalBox">
-        <p class="total" id="inputPrice">14336</p>
+      
+       <!-- order box area -->
+      <div class="orderbox"> 
+        <!-- Pay box -->
+        <button class="paybox" id="ConButton">
+          <p class="continue" id="ConText">Continue</p>
+        </button>
+
+        <div class="totalbox"></div>
+        <b class="b39">1,073.0 </b>
+        <p class="total1">Total</p>
+
+        <!-- Back box -->
+        <button class="clearbox" id ="Backbutton">
+          <p class="back">Back</p>
+        </button>
+
+      </div> 
+      <div class="menuBg">
+        <div class="menuborder">
+          <div class="cashbox">
+            <b class="cash">Cash</b>
+          </div>
+          <div class="Gcashbox">
+            <b class="cash">Gcash</b>
+          </div>
+          <div class="Paymayabox">
+            <b class="Paymaya">Paymaya</b>
+          </div>
+          <div class="Bobacardbox">
+            <b class="asking">Do you have a BobaCard?</b>
+            <p class="for">If you have a BobaCard, you can earn points from your purchase.</p>
+            <b class="your">BobaCard</b>
+            <div class="Boba"><p class="Bob">Type in your BobaCard / Contact Number</p></div>
+            <div class="Card"><p class="pass">Password</p></div>
+            <img class="logo3" alt="" src="../public/beverages-2-31@2x.png" />
+            <img class="ang-caption2" alt="" src="../public/ang-caption@2x.png" />
+          </div>
+
+        </div>
       </div>
-      <div>
-        <p class="bobac">BobaCard:</p>
-        <div class="bobac2" id="NumberInput">09** *** **49</div>
-        <p class="bobac1">Points Receive :</p>
-        <div class="bobac3" id="PInput">1.03</div>
-      </div>
-      <div class="exitbox" id="Exitbutton">
-        <b class="exit">Exit</b>
-      </div>
+      
     </div>
 
     <script>
+      var popupcancel = document.getElementById("popupcancel");
+      if (popupcancel) {
+        popupcancel.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      
+      var popupcancelText = document.getElementById("popupcancelText");
+      if (popupcancelText) {
+        popupcancelText.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      
+      var popupcancel = document.getElementById("popupcancel");
+      if (popupcancel) {
+        popupcancel.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      
+      var popupcancel = document.getElementById("popupcancel");
+      if (popupcancel) {
+        popupcancel.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      
+      var popupcancelText = document.getElementById("popupcancelText");
+      if (popupcancelText) {
+        popupcancelText.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      
+      var cashText = document.getElementById("cashText");
+      if (cashText) {
+        cashText.addEventListener("click", function () {
+          var popup = document.getElementById("cashPaymentContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var gcashText = document.getElementById("gcashText");
+      if (gcashText) {
+        gcashText.addEventListener("click", function () {
+          var popup = document.getElementById("gCASHPAYMENTContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var paymayaText = document.getElementById("paymayaText");
+      if (paymayaText) {
+        paymayaText.addEventListener("click", function () {
+          var popup = document.getElementById("pAYMAYAPAYMENTContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var rectangle8 = document.getElementById("rectangle8");
+      if (rectangle8) {
+        rectangle8.addEventListener("click", function (e) {
+          window.location.href = "./FINALCHECKOUT.ejs";
+        });
+      }
+      
+      var backText = document.getElementById("backText");
+      if (backText) {
+        backText.addEventListener("click", function (e) {
+          window.location.href = "./FINALORDER1.ejs";
+        });
+      }
+      
+      var continueText = document.getElementById("continueText");
+      if (continueText) {
+        continueText.addEventListener("click", function (e) {
+          window.location.href = "./FINALCHECKOUT.ejs";
+        });
+      }
+      
+      var boobaText = document.getElementById("boobaText");
+      if (boobaText) {
+        boobaText.addEventListener("click", function () {
+          var popup = document.getElementById("gCASHPAYMENTContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var beverages24 = document.getElementById("beverages24");
+      if (beverages24) {
+        beverages24.addEventListener("click", function (e) {
+          window.location.href = "./HOMEPAGE.ejs";
+        });
+      }
+      
       var bOBASTICText = document.getElementById("bOBASTICText");
       if (bOBASTICText) {
         bOBASTICText.addEventListener("click", function (e) {
@@ -98,13 +292,6 @@
       if (orderText) {
         orderText.addEventListener("click", function (e) {
           window.location.href = "./FINALORDER1.ejs";
-        });
-      }
-      
-      var rectangle4 = document.getElementById("rectangle4");
-      if (rectangle4) {
-        rectangle4.addEventListener("click", function (e) {
-          window.location.href = "./HOMEPAGE.ejs";
         });
       }
       </script>
