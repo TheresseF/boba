@@ -10,13 +10,17 @@
   height: 80vh;
   background-color: var(--color-wheat-200);
 }
-
+.CN{
+  width: 4%;
+}
+.short{
+  width: 8%;
+}
 table {
   width: 100%;
   border-collapse: collapse;
 }
 .short, .CN {
-  width: 4%;
   background-color: burlywood;
   text-align: center;
   border: 0.1vw solid var(--color-tan-200);
