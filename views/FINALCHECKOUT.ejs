@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="../CSS/global.css" />
-    <link rel="stylesheet" href="../CSS/FINALCHECKOUT.css" />
+    <link rel="stylesheet" href="../public/assets/global.css" />
+    <link rel="stylesheet" href="../public/assets/FINALCHECKOUT.css" />
+    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
+    <link rel="stylesheet" href="../public/assets/orderarea.css" />
+
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -23,75 +27,63 @@
     />
   </head>
   <body>
-    <div class="final-check-out">
-      <div class="final-check-out-child"></div>
-      <b class="b66">145.0</b>
-      <b class="b67">145.0</b>
-      <div class="beverages-2-4-parent4">
-        <img
-          class="beverages-2-46"
-          alt=""
-          src="./public/beverages-2-4@2x.png"
-        />
 
-        <div class="bobastic6" id="bOBASTICText">
-          <b>BOBASTIC</b>
-          <b class="b68"> </b>
-        </div>
+    <!-- upper design to homepage -->
+      
+    <div class="Bgupper">
+      <img
+        class="beverageslogo"
+        alt=""
+        src="../public/beverages-2-4@2x.png"
+        id="beverages24"
+      />
+      <div class="bobasticlink" id="bOBASTICText">
+        <b>BOBASTIC</b>
       </div>
-      <div class="final-check-out-item"></div>
-      <b class="order2" id="orderText">Order</b>
-      <div class="final-check-out-inner"></div>
-      <b class="payment2">Payment</b>
-      <b class="check-out3">Check-out</b>
-      <div class="final-check-out-child1"></div>
-      <div class="final-check-out-child2" id="rectangle4"></div>
-      <button class="exit" autofocus>Exit</button>
-      <div class="final-check-out-child3"></div>
-      <b class="total2">Total:</b>
-      <div class="final-check-out-child4"></div>
-      <div class="div">
-        <p class="matcha-chocolate-hokkaido">145.0</p>
-        <p class="matcha-chocolate-hokkaido">195.0</p>
-        <p class="matcha-chocolate-hokkaido">400.0</p>
-        <p class="matcha-chocolate-hokkaido">333.0</p>
+      <div class="tab2">
+      <b class="check-out">Check-out</b>
       </div>
-      <div class="div1">125.0</div>
-      <b class="food1">Food</b>
-      <b class="quantity">Quantity</b>
-      <div class="matcha-chocolate-hokkaido-hokk">
-        <p class="matcha-chocolate-hokkaido">Matcha Chocolate Hokkaido</p>
-        <p class="matcha-chocolate-hokkaido">Hokkaido</p>
-      </div>
-      <div class="bobacard-09">BobaCard: 09** *** **49</div>
-      <div class="points-receive">Points Receive : 1.03</div>
-      <div class="cinn-bun1">Cinn Bun</div>
-      <div class="s-m-l-s">
-        <p class="matcha-chocolate-hokkaido">S</p>
-        <p class="matcha-chocolate-hokkaido">M</p>
-        <p class="matcha-chocolate-hokkaido">L</p>
-        <p class="matcha-chocolate-hokkaido">S</p>
-      </div>
-      <div class="div2">
-        <p class="matcha-chocolate-hokkaido">1</p>
-        <p class="matcha-chocolate-hokkaido">1</p>
-        <p class="matcha-chocolate-hokkaido">2</p>
-        <p class="matcha-chocolate-hokkaido">3</p>
-      </div>
-      <div class="div3">1</div>
-      <img class="beverages-2-2" alt="" src="./public/beverages-2-2@2x.png" />
+      <b class="order">Order</b>
+      <b class="payment1">Payment</b>
+    </div>
 
-      <div class="final-check-out-child5"></div>
-      <div class="final-check-out-child6"></div>
-      <b class="order-list">Order List</b>
-      <b class="drinks1">Drinks</b>
-      <b class="size2">Size</b>
-      <b class="quantity1">Quantity</b>
-      <b class="price">Price</b>
-      <div class="final-check-out-child7"></div>
-      <div class="final-check-out-child8"></div>
-      <div class="final-check-out-child9"></div>
-      <div class="final-check-out-child10"></div>
+    <!-- CheckOut area -->
+    <div class="CheckOut">
+      <div class="picture">
+        <img class="logo" alt="" src="../public/beverages-2-31@2x.png" />
+      </div>
+      <b class="List">Order List</b> 
+      <div class="CheckList"> 
+        <table>
+          <tr>
+            <th class="format"> Product</th>
+            <th class="format1"> Size</th>
+            <th class="format1"> Quantity</th>
+            <th class="format1"> Per Unit</th>
+            <th class="format1"> Price</th>
+          </tr>
+          <tr>
+            <td class="format2"> Chocolate</td>
+            <td class="format3"> S</td>
+            <td class="format3"> 1</td>
+            <td class="format3"> 12</td>
+            <td class="format3"> 14336</td>
+          </tr>
+        </table>
+      </div>
+      <div class="AllTotal">Total:</div>
+      <div class="totalBox">
+        <p class="total" id="inputPrice">14336</p>
+      </div>
+      <div>
+        <p class="bobac">BobaCard:</p>
+        <div class="bobac2" id="NumberInput">09** *** **49</div>
+        <p class="bobac1">Points Receive :</p>
+        <div class="bobac3" id="PInput">1.03</div>
+      </div>
+      <div class="exitbox" id="Exitbutton">
+        <b class="exit">Exit</b>
+      </div>
     </div>
 
     <script>

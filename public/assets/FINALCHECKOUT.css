@@ -1,347 +1,131 @@
-.final-check-out-child {
+.CheckOut{
+  position: fixed;
+  top: 12vh;
+  left: 2vw;
+  border: 0.2vw dashed var(--color-dimgray-200);
+  background-color: #E2C7A1;
+  border-radius:var(--br-11xl);
+  height: 85vh;
+  width: 95.5vw;
+}
+.picture{
   position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--color-dimgray-200);
-  width: 746px;
-  height: 40px;
+  width: 29.9vw;
+  height: 85vh;
+  border-right: 0.2vw dashed#7F664F;
+  background-color: #E2C7A1;
+  border-radius: var(--br-11xl) 0 0 var(--br-11xl);
 }
-.b66,
-.b67 {
+.CheckList{
   position: absolute;
-  top: 93px;
-  left: 235px;
-  font-size: var(--font-size-xs);
-  display: none;
-  text-align: center;
-  width: 35px;
-  height: 9px;
+  top: 8.5vh;
+  left: 30vw;
+  width: 65.5vw;
+  height: 55.5vh;
+  /* background-color: black; */
+  background-color: #E2C7A1;
+  /* border-radius: 0 var(--br-11xl) 0 0; */
+  border-bottom: 0.2vw dashed#7F664F;
 }
-.b67 {
-  top: 201px;
-}
-.beverages-2-46 {
+.logo{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 32px;
-  height: 40px;
-  object-fit: cover;
+  top: 11vh;
+  width: 25vw;
 }
-.b68 {
-  font-family: var(--font-catamaran);
-}
-.bobastic6 {
+.List{
   position: absolute;
-  top: 15px;
-  left: 16px;
-  text-decoration: underline;
-  display: inline-block;
-  width: 97px;
-  height: 26px;
-  cursor: pointer;
+  top: 2vh;
+  left: 31.5vw;
+  color: #7e542d;
+  font-size: 2em;
 }
-.beverages-2-4-parent4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 113px;
-  height: 41px;
-  text-align: center;
-  color: var(--color-tan-100);
-  font-family: var(--font-league-spartan);
-}
-.final-check-out-item {
-  position: absolute;
-  top: 7px;
-  left: 402px;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-cornsilk);
-  width: 116px;
-  height: 42px;
-}
-.order2 {
-  position: absolute;
-  top: 15px;
-  left: 188px;
-  font-size: var(--font-size-mini);
-  display: inline-block;
-  color: var(--color-cornsilk);
-  text-align: center;
-  width: 72px;
-  height: 17px;
-  cursor: pointer;
-}
-.final-check-out-inner {
-  position: absolute;
-  top: 7px;
-  left: 284px;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-cornsilk);
-  width: 116px;
-  height: 42px;
-  display: none;
-}
-.check-out3,
-.payment2 {
-  position: absolute;
-  top: 14px;
-  font-size: var(--font-size-mini);
-  display: inline-block;
-  text-align: center;
-  width: 72px;
-  height: 17px;
-}
-.payment2 {
-  left: 305px;
-  color: var(--color-cornsilk);
-}
-.check-out3 {
-  left: 422px;
-}
-.final-check-out-child1 {
-  position: absolute;
-  top: 45px;
-  left: 10px;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-tan-100);
-  border: 3px dashed #d6b39d;
-  box-sizing: border-box;
-  width: 716px;
-  height: 330px;
-}
-.exit,
-.final-check-out-child2 {
-  cursor: pointer;
-  position: absolute;
-}
-.final-check-out-child2 {
-  top: 339px;
-  left: 637px;
-  border-radius: var(--br-8xs);
-  background-color: var(--color-darkseagreen);
-  border: 2px solid var(--color-seagreen-100);
-  box-sizing: border-box;
-  width: 79px;
-  height: 27px;
-}
-.exit {
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  top: 344px;
-  left: 648px;
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  font-family: var(--font-catamaran);
-  color: var(--color-white);
-  text-align: center;
-  display: inline-block;
-  width: 57px;
-  height: 16px;
-}
-.final-check-out-child3,
-.total2 {
-  position: absolute;
-  top: 294px;
-  height: 18px;
-}
-.final-check-out-child3 {
-  left: 295px;
-  border-radius: var(--br-8xs);
-  background-color: var(--color-cornsilk);
-  border: 1px solid var(--color-tan-300);
-  box-sizing: border-box;
-  width: 92px;
-}
-.total2 {
-  left: 250px;
-  font-size: var(--font-size-xs);
-  display: inline-block;
-  text-align: center;
-  width: 44px;
-}
-.final-check-out-child4 {
-  position: absolute;
-  top: 257.5px;
-  left: 421.48px;
-  border-top: 1px dashed var(--color-tan-600);
-  box-sizing: border-box;
-  width: 251.03px;
-  height: 1px;
-}
-.div,
-.div1 {
-  position: absolute;
-  top: 125px;
-  left: 682px;
-  font-size: var(--font-size-smi);
-  font-weight: 100;
-  color: var(--color-black);
-}
-.div1 {
-  top: 244px;
-  left: 681px;
-}
-.food1,
-.quantity {
-  position: absolute;
-  top: 215px;
-  left: 294px;
-  display: inline-block;
-  color: var(--color-tan-500);
-  width: 50px;
-  height: 14px;
-}
-.quantity {
-  left: 367px;
-  width: 69px;
-  height: 41px;
-}
-.matcha-chocolate-hokkaido {
-  margin: 0;
-}
-.matcha-chocolate-hokkaido-hokk {
-  position: absolute;
-  top: 126px;
-  left: 286px;
-  font-size: var(--font-size-smi);
-  font-weight: 100;
-  color: var(--color-black);
-}
-.bobacard-09,
-.points-receive {
-  position: absolute;
-  top: 316px;
-  left: 257px;
-  font-size: var(--font-size-xs);
-}
-.points-receive {
-  top: 334px;
-}
-.cinn-bun1,
-.div2,
-.div3,
-.s-m-l-s {
-  position: absolute;
-  top: 242px;
-  left: 286px;
-  font-size: var(--font-size-smi);
-  font-weight: 100;
-  color: var(--color-black);
-}
-.div2,
-.div3,
-.s-m-l-s {
-  top: 126px;
-  left: 387px;
-}
-.div2,
-.div3 {
-  top: 125px;
-  left: 470px;
-}
-.div3 {
-  top: 242px;
-  left: 390px;
-}
-.beverages-2-2 {
-  position: absolute;
-  top: 57px;
-  left: 5px;
-  width: 215px;
-  height: 284px;
-  object-fit: cover;
-}
-.final-check-out-child5 {
-  position: absolute;
-  top: 56px;
-  left: 244px;
-  border-right: 4px dashed var(--color-burlywood-200);
-  box-sizing: border-box;
-  width: 4px;
-  height: 317px;
-}
-.final-check-out-child6 {
-  position: absolute;
-  top: 285.97px;
-  left: 255px;
-  border-top: 4px dashed var(--color-burlywood-200);
-  box-sizing: border-box;
-  width: 463px;
-  height: 4px;
-}
-.order-list {
-  position: absolute;
-  top: 77px;
-  left: 273px;
-  font-size: 18px;
-  display: inline-block;
-  width: 100px;
-  height: 43px;
-}
-.drinks1,
-.price,
-.quantity1,
-.size2 {
-  position: absolute;
-  top: 103px;
-  left: 288px;
-  display: inline-block;
-  color: var(--color-tan-500);
-  width: 53px;
-  height: 17px;
-}
-.price,
-.quantity1,
-.size2 {
-  left: 377px;
-  width: 69px;
-  height: 41px;
-}
-.price,
-.quantity1 {
-  left: 449px;
-  width: 91px;
-  height: 34px;
-}
-.price {
-  top: 104px;
-  left: 650px;
-  text-align: center;
-}
-.final-check-out-child10,
-.final-check-out-child7,
-.final-check-out-child8,
-.final-check-out-child9 {
-  position: absolute;
-  top: 146px;
-  left: 515.5px;
-  border-top: 1px dashed var(--color-tan-600);
-  box-sizing: border-box;
-  width: 157px;
-  height: 1px;
-}
-.final-check-out-child10,
-.final-check-out-child8,
-.final-check-out-child9 {
-  top: 163.5px;
-}
-.final-check-out-child10,
-.final-check-out-child9 {
-  top: 181.5px;
-}
-.final-check-out-child10 {
-  top: 198.5px;
-}
-.final-check-out {
-  position: relative;
-  background-color: var(--color-cornsilk);
+
+/* table */
+table {
   width: 100%;
-  height: 398px;
-  overflow: hidden;
-  text-align: left;
-  font-size: var(--font-size-sm);
-  color: var(--color-dimgray-200);
+  border-collapse: collapse;
+}
+
+.format{
+  width: 6vw;
+  text-align: center;
+  color: var(--color-saddlebrown-100);
+  background-color: transparent;
+}
+.format1{
+  width: 3vw;
+  text-align: center;
+  color: var(--color-saddlebrown-100);
+  background-color: transparent;
+}
+.format2{
+  width: 6vw;
+  padding: 8px;
+  text-align: center;
+  color: transparent;
+  color: var(--color-sienna-300);
+  background-color: transparent;
+}
+.format3{
+  width: 3vw;
+  padding: 8px;
+  text-align: center;
+  color: transparent;
+  color: var(--color-sienna-300);
+  background-color: transparent;
+}
+.AllTotal{
+  top: 67vh;
+  left: 31vw;
+  position: absolute;
+  color: #7F664F;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.totalBox{
+  position: absolute;
+  top: 67vh;
+  left: 36vw;
+  background-color: cornsilk;
+  border: 0.1vw solid#7F664F;
+  height: 5vh;
+  width: 15vw;
+  border-radius: var(--br-8xs);
+}
+.total{
+  position: absolute;
+  margin: 0;
+  top: 0.5vh;
+  left: 1vw;
   font-family: var(--font-catamaran);
+}
+.bobac{
+  position: absolute;
+  top: 71vh;
+  left: 31vw;
+}
+.bobac1{
+  position: absolute;
+  top: 76vh;
+  left: 31vw;
+}
+.bobac2{
+  position: absolute;
+  top: 73.6vh;
+  left: 37vw;
+  background-color: transparent;
+  /* border: 0.1vw solid#7F664F; */
+  height: 4.5vh;
+  width: 20vw;
+  border-radius: var(--br-8xs);
+}
+.bobac3{
+  position: absolute;
+  top: 78.5vh;
+  left: 39.5vw;
+  background-color: transparent;
+  /* border: 0.1vw solid#7F664F; */
+  height: 4.5vh;
+  width: 20vw;
+  border-radius: var(--br-8xs);
 }

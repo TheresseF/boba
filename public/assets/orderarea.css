@@ -102,7 +102,7 @@
 .back {
     top: 1vh;
     margin: 0;
-    left: 2.1vw;
+    left: 2.5vw;
 }
 .continue {
     top: 1vh;
@@ -114,19 +114,25 @@
     font-size: 1.2em;
 }
 .exit {
+    position: absolute;
     top: 1vh;
-    margin: 0;
-    left: 20%;
+    left: 3vw;
     cursor: pointer;
     color: white; 
     font-weight: bold; 
     font-size: 1.2em;
 }
 .exitbox {
-    left: 20vw;
     /* align-items: center; */
     background-color: var(--color-darkseagreen);
     border: 2px solid var(--color-seagreen-100);
+    position: absolute;
+    top:78vh;
+    left: 86vw;
+    cursor: pointer;
+    width: 8.5vw;
+    height: 5vh;
+    border-radius: var(--br-11xl);
 }
 /* total */
 .total1 {
@@ -142,8 +148,8 @@
   font-size: 1.2em;
 }
 
-.clear, .add, .b39, .exit,
-.pay, .total1, .continue, .back{
+.clear, .add, .b39, .exitbox,
+.pay, .total1{
   position: absolute;
   display: inline-block;
 }
