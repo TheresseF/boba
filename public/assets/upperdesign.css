@@ -13,20 +13,19 @@
 }
 .beverageslogo {
   top: 0;
-  position: absolute;
+  position: fixed;
   width: 3.5vw;
   font-family: var(--font-catamaran);
   /* object-fit: cover; */
   cursor: pointer;
 }
 .Bgupper {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: var(--color-dimgray-200);
   width: 100%;
   height: 9vh;
-  z-index: 1;
 }
 .check-out1 {
   top: 5vh;

@@ -113,19 +113,19 @@ top: 50vh;
 }
 .sizes{
 top: 20%;
-left: 30%;
+left: 27%;
 position: absolute;
 font-family: var(--font-catamaran);
 color: var(--color-dimgray-200);
-font-size: larger;
+font-size: x-large;
 }
 .medium{
 top: 20%;
-left: 25.5%;
+left: 20%;
 position: absolute;
 font-family: var(--font-catamaran);
 color: var(--color-dimgray-200);
-font-size: larger;
+font-size: x-large;
 }
 .esizes{  
 top: 20%;
@@ -133,7 +133,7 @@ left: 32.5%;
 position: absolute;
 font-family: var(--font-catamaran);
 color: cornsilk;
-font-size: larger;
+font-size: x-large;
 }
 /* foods box */
 .box13{
