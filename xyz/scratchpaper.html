@@ -46,32 +46,48 @@
     <!-- order area sa left side -->
     <div class ="orderBg">
       <div class = "orderList" id="TableContainer">
-          <img
-            class ="delete"
-            src="../public/x.png"
-            alt=""
-            id="deletebutton"
-          />
+        <table>
+          <tr>
+            <th class="b">Product</th>
+            <th class ="a">Extra</th>
+            <th class="a">Size</th>
+            <th class="a">Quantity</th>
+            <th class="a">Delete</th>
+          </tr>
+          <!-- sample -->
+          <tr>
+            <td><b>Choclate</b></td>
+            <td><b>B</b></td>
+            <td><b>S</b></td>
+            <td><b>1</b></td>
+            <td>
+              <img
+                class ="delete"
+                src="../public/x.png"
+                alt=""
+                id="deletebutton"
+              />
+            </td>
+          </tr>
+        </table>
       </div>
       
        <!-- order box area -->
       <div class="orderbox"> 
-        <button class="paybox" id="PayButton">
-          <p class="pay" id="payText">Pay</p>
+        <!-- Pay box -->
+        <button class="paybox" id="ConButton">
+          <p class="continue" id="ConText">Continue</p>
         </button>
 
         <div class="totalbox"></div>
         <b class="b39">1,073.0 </b>
         <p class="total1">Total</p>
-        <!-- Clear box -->
-        <button class="clearbox" id ="Clearbutton">
-          <p class="clear">Clear</p>
+
+        <!-- Back box -->
+        <button class="clearbox" id ="Backbutton">
+          <p class="back">Back</p>
         </button>
 
-        <!-- add box -->
-        <button class="addbox" id="Addbutton">
-          <p class="add">Add</p>
-        </button>
       </div> 
       <div class="menuBg">
         <div class="menuborder">
@@ -80,6 +96,18 @@
           </div>
           <div class="Gcashbox">
             <b class="cash">Gcash</b>
+          </div>
+          <div class="Paymayabox">
+            <b class="Paymaya">Paymaya</b>
+          </div>
+          <div class="Bobacardbox">
+            <b class="asking">Do you have a BobaCard?</b>
+            <p class="for">If you have a BobaCard, you can earn points from your purchase.</p>
+            <b class="your">BobaCard</b>
+            <div class="Boba"><p class="Bob">Type in your BobaCard / Contact Number</p></div>
+            <div class="Card"><p class="pass">Password</p></div>
+            <img class="logo3" alt="" src="../public/beverages-2-31@2x.png" />
+            <img class="ang-caption2" alt="" src="../public/ang-caption@2x.png" />
           </div>
 
         </div>

@@ -51,6 +51,9 @@
     position: absolute;
     top: 27vh;
     cursor: pointer;
+    width: 8.5vw;
+    height: 5vh;
+    border-radius: var(--br-11xl);
 }
 
 /* total box */
@@ -71,15 +74,8 @@
     background-color: var(--color-sienna-100);
     border: 2px solid var(--color-sienna-300);
 }
-.clearbox,
-.addbox,    
-.paybox{
-    width: 8.5vw;
-    height: 5vh;
-    border-radius: var(--br-11xl);
-}
 
-.clear, .add, .pay {
+.clear, .add, .pay, .back {
     color: white; /* Set the text color to black */
     font-weight: bold; /* Apply bold font weight */
     font-size: 1.2em;
@@ -102,6 +98,36 @@
     left: 34%;
     cursor: pointer;
 }
+
+.back {
+    top: 1vh;
+    margin: 0;
+    left: 2.1vw;
+}
+.continue {
+    top: 1vh;
+    margin: 0;
+    left: 20%;
+    cursor: pointer;
+    color: white; 
+    font-weight: bold; 
+    font-size: 1.2em;
+}
+.exit {
+    top: 1vh;
+    margin: 0;
+    left: 20%;
+    cursor: pointer;
+    color: white; 
+    font-weight: bold; 
+    font-size: 1.2em;
+}
+.exitbox {
+    left: 20vw;
+    /* align-items: center; */
+    background-color: var(--color-darkseagreen);
+    border: 2px solid var(--color-seagreen-100);
+}
 /* total */
 .total1 {
     top: 13.2vh;
@@ -116,18 +142,38 @@
   font-size: 1.2em;
 }
 
-.clear,
-.add,
-.b39,
-.pay,
-.total1 {
+.clear, .add, .b39, .exit,
+.pay, .total1, .continue, .back{
   position: absolute;
   display: inline-block;
 }
 .delete{
     position: absolute;
-    top:2.5%;
-    left: 90%;
+    top: 4.5vh;
+    left: 89%;
     width: 1.5vw;
     cursor: pointer;
-  }
+}
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+    color: var(--color-tan-100);
+    background-color: transparent;
+}
+td {
+    padding: 8px;
+    text-align: center;
+    color: var(--color-sienna-300);
+}
+.b{
+    width: 2%;
+    color: #eed2ac;
+}
+.a{
+    width: 1%;
+    color: #eed2ac; 
+} 
