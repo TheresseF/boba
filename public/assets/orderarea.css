@@ -116,32 +116,9 @@
   position: absolute;
   display: inline-block;
 }
-
-.quantityboxsample {
-    position: absolute;
-    top: 2vh;
-    left: 20vw;
-    height: 3vh;
-    width: 6vw;
-    background-color: var(--color-cornsilk);
-    border: 1px solid tan;
-    border-radius: 30%;
-}
-.plus{
-    position: absolute;
-    top: 0.5vh;
-    left: 5vw;
-    width: 1vw;
-}
-.minus{
-    position: absolute;
-    top: 0.4vh;
-    /* left: 4.5vw; */
-    width: 1vw;
-}
 .delete{
     position: absolute;
-    top:0.5;
-    left: 7vw;
+    top:2.5%;
+    left: 90%;
     width: 1.5vw;
-}
+  }
