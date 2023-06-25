@@ -29,28 +29,48 @@
 }
 .check-out1 {
   top: 5vh;
-  left: 150vh;
-  position: absolute;
+  left: 75vw;
+  position: fixed;
   font-size: 111%;
   display: inline-block;
   width: 10vw;
   height: 10vh;
   color: var(--color-cornsilk);
+}
+.check-out {
+  top: 1vh;
+  left: 2vw;
+  font-size: 111%;
+  position: absolute;
+  display: inline-block;
+  width: 10vw;
+  height: 10vh;
+  color: var(--color-dimgray-200);
 }
 
 .payment1 {
   top: 5vh;
-  left: 110vh;
+  left: 55vw;
   font-size: 111%;
-  position: absolute;
+  position: fixed;
   display: inline-block;
   width: 10vw;
   height: 10vh;
   color: var(--color-cornsilk);
 }
+.payment {
+  top: 1vh;
+  left: 2.5vw;
+  font-size: 111%;
+  position: absolute;
+  display: inline-block;
+  width: 10vw;
+  height: 10vh;
+  color: var(--color-dimgray-200);
+}
 .order1 {
   top: 1.5vh;
-  left: 6vh;
+  left: 3vw;
   font-size: 111%;
   position: absolute;
   display: inline-block;
@@ -59,12 +79,59 @@
   color: var(--color-dimgray-200);
   /* color: var(--color-cornsilk); */
 }
+.order {
+  top: 5vh;
+  left: 35vw;
+  font-size: 111%;
+  position: fixed;
+  display: inline-block;
+  width: 10vw;
+  height: 10vh;
+  color: var(--color-cornsilk);
+}
 .tab {
   position: absolute;
   top: 4vh;
-  left: 65vh;
+  left: 32vw;
   border-radius: var(--br-3xs);
   background-color: white;
   width: 10vw;
   height: 9vh;
+}
+.tab1 {
+  position: absolute;
+  top: 4vh;
+  left: 52.5vw;
+  border-radius: var(--br-3xs);
+  background-color: white;
+  width: 10vw;
+  height: 9vh;
+}
+.tab2 {
+  position: absolute;
+  top: 4vh;
+  left: 73vw;
+  border-radius: var(--br-3xs);
+  background-color: white;
+  width: 10vw;
+  height: 9vh;
+}
+.menuBg {
+  position: fixed;
+  top: 14%;
+  left: 35%;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-tan-100);
+  border: 0.3vw dashed var(--color-tan-300);
+  width: 62%;
+  height: 80%;
+}
+.menuborder{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-dimgray-200);
+  border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+  width: 100%;
+  height: 10%;
 }

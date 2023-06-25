@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <link href = "../public/assets/CARDQUERY.css" rel="stylesheet" type="text/css"/>
-    <link href = "../public/assets/global.css" rel="stylesheet" type="text/css"/>
-    <link href = "../public/assets/upperdesign.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../public/assets/global.css" />
+    <link rel="stylesheet" href="./payment.css" />
+    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
+    <link rel="stylesheet" href="../public/assets/orderarea.css" />
 
     <link
       rel="stylesheet"
@@ -27,59 +26,253 @@
     />
   </head>
   <body>
-            <!-- upper design to homepage -->
-      
-            <div class="Bgupper">
-              <img
-                class="beverageslogo"
-                alt=""
-                src="../public/beverages-2-4@2x.png"
-                id="beverages24"
-              />
-            <div class="bobasticlink" id="bOBASTICText">
-              <b>BOBASTIC</b>
-            </div>
-          </div>
     
-          <!-- content -->
-          <div class="Tstyle">
-            <table>
-              <tr>
-                <th class="CN">Customer Number</th> 
-                <th class="short">First Name</th>
-                <th class="short">Middle Name</th>
-                <th class="short">Last Name</th>
-                <th class="CN">Phonenumber</th>
-                <th class="CN">Points</th>
-                <th class="trans"></th>
-                <th class="trans"></th>
-              </tr>
-              <tr>
-                <td class="CN">0987</td> 
-                <td class="short">April</td>
-                <td class="short">Boy</td>
-                <td class="short">Rosal</td>
-                <td class="CN">098765433456</td>
-                <td class="short">0.0</td>
-                <td class="Boxbutton" id="ViewButton">View</td>
-                <td class="Boxbutton" id="DeleteInfo">Delete</td>
-
-              </tr>
-            </table>
-          </div>
-          <div class="search" id="search-engine">
-            <p class="TextSearch" id="TextSearch">Type in your Name or Number</p>
-            <img 
-            class="searchIcon"
-            alt=""
-            src="../public/Beverages.png"/>
-          </div>
+    <div class="Bgupper">
+      <img
+        class="beverageslogo"
+        alt=""
+        src="../public/beverages-2-4@2x.png"
+        id="beverages24"
+      />
+      <div class="bobasticlink" id="bOBASTICText">
+        <b>BOBASTIC</b>
+      </div>
+      <b class="order">Order</b>
+      <div class="tab1">
+        <b class="payment">Payment</b>
+      </div>
+      <b class="check-out1">Check-out</b>
+    </div>
+    <!-- order area sa left side -->
+    <div class ="orderBg">
+      <div class = "orderList" id="TableContainer">
           <img
-            class="arrow-icon"
+            class ="delete"
+            src="../public/x.png"
             alt=""
-            src="../public/arrow-21.svg"
-            id="arrowIcon"
+            id="deletebutton"
           />
-      <script type="text/javascript" src="/assets/home.js"></script>
+      </div>
+      
+       <!-- order box area -->
+      <div class="orderbox"> 
+        <button class="paybox" id="PayButton">
+          <p class="pay" id="payText">Pay</p>
+        </button>
+
+        <div class="totalbox"></div>
+        <b class="b39">1,073.0 </b>
+        <p class="total1">Total</p>
+        <!-- Clear box -->
+        <button class="clearbox" id ="Clearbutton">
+          <p class="clear">Clear</p>
+        </button>
+
+        <!-- add box -->
+        <button class="addbox" id="Addbutton">
+          <p class="add">Add</p>
+        </button>
+      </div> 
+      <div class="menuBg">
+        <div class="menuborder">
+          <div class="cashbox">
+            <b class="cash">Cash</b>
+          </div>
+          <div class="Gcashbox">
+            <b class="cash">Gcash</b>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+
+
+
+
+
+
+    <script>
+      var popupcancel = document.getElementById("popupcancel");
+      if (popupcancel) {
+        popupcancel.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      
+      var popupcancelText = document.getElementById("popupcancelText");
+      if (popupcancelText) {
+        popupcancelText.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      
+      var popupcancel = document.getElementById("popupcancel");
+      if (popupcancel) {
+        popupcancel.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      
+      var popupcancel = document.getElementById("popupcancel");
+      if (popupcancel) {
+        popupcancel.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      
+      var popupcancelText = document.getElementById("popupcancelText");
+      if (popupcancelText) {
+        popupcancelText.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      
+      var cashText = document.getElementById("cashText");
+      if (cashText) {
+        cashText.addEventListener("click", function () {
+          var popup = document.getElementById("cashPaymentContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var gcashText = document.getElementById("gcashText");
+      if (gcashText) {
+        gcashText.addEventListener("click", function () {
+          var popup = document.getElementById("gCASHPAYMENTContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var paymayaText = document.getElementById("paymayaText");
+      if (paymayaText) {
+        paymayaText.addEventListener("click", function () {
+          var popup = document.getElementById("pAYMAYAPAYMENTContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var rectangle8 = document.getElementById("rectangle8");
+      if (rectangle8) {
+        rectangle8.addEventListener("click", function (e) {
+          window.location.href = "./FINALCHECKOUT.ejs";
+        });
+      }
+      
+      var backText = document.getElementById("backText");
+      if (backText) {
+        backText.addEventListener("click", function (e) {
+          window.location.href = "./FINALORDER1.ejs";
+        });
+      }
+      
+      var continueText = document.getElementById("continueText");
+      if (continueText) {
+        continueText.addEventListener("click", function (e) {
+          window.location.href = "./FINALCHECKOUT.ejs";
+        });
+      }
+      
+      var boobaText = document.getElementById("boobaText");
+      if (boobaText) {
+        boobaText.addEventListener("click", function () {
+          var popup = document.getElementById("gCASHPAYMENTContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var beverages24 = document.getElementById("beverages24");
+      if (beverages24) {
+        beverages24.addEventListener("click", function (e) {
+          window.location.href = "./HOMEPAGE.ejs";
+        });
+      }
+      
+      var bOBASTICText = document.getElementById("bOBASTICText");
+      if (bOBASTICText) {
+        bOBASTICText.addEventListener("click", function (e) {
+          window.location.href = "./HOMEPAGE.ejs";
+        });
+      }
+      
+      var orderText = document.getElementById("orderText");
+      if (orderText) {
+        orderText.addEventListener("click", function (e) {
+          window.location.href = "./FINALORDER1.ejs";
+        });
+      }
+      </script>
   </body>
 </html>

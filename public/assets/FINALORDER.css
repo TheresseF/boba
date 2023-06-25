@@ -1,24 +1,5 @@
 
 /* menu area */
-.menuBg {
-  position: fixed;
-  top: 14%;
-  left: 35%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-tan-100);
-  border: 0.3vw dashed var(--color-tan-300);
-  width: 62%;
-  height: 80%;
-}
-.menuborder{
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--color-dimgray-200);
-  border-radius: var(--br-3xs) var(--br-3xs) 0 0;
-  width: 100%;
-  height: 10%;
-}
 .drinks{
 top: 2.5vh;
 left: 10vw;
@@ -38,10 +19,13 @@ color: peachpuff;
 top: 43vh;
 left: 27.5vw;
 color: rgb(204, 135, 74);
-}
-.drinks,.size, .food,.extra{
 font-size: x-large;
 font-family: var(--font-catamaran);
+position: absolute;
+}
+.drinks,.size, .food{
+font-size: x-large;
+font-family: var(---font-titillium-web);
 position: absolute;
 }
 
@@ -129,7 +113,7 @@ font-size: x-large;
 }
 .esizes{  
 top: 20%;
-left: 32.5%;
+left: 30%;
 position: absolute;
 font-family: var(--font-catamaran);
 color: cornsilk;
@@ -314,7 +298,7 @@ width: 20%;
 background-color: var(--color-cornsilk);
 border: 1px solid tan;
 border: 0.2vw solid var(--color-sienna-100);
-border-radius: var(--br-3xs);
+border-radius: var(--br-31xl);
 }
 .quantityboxsample2 {
 position: absolute;
@@ -325,7 +309,7 @@ width: 20%;
 background-color: var(--color-cornsilk);
 border: 1px solid tan;
 border: 0.2vw solid var(--color-sienna-100);
-border-radius: var(--br-3xs);
+border-radius: var(--br-31xl);
 }
 .plus{
 position: absolute;

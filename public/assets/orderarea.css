@@ -1,6 +1,6 @@
 /* order area sa left side */
 .orderBg {
-  position: absolute;
+  position: fixed;
   top: 14vh;
   left: 2%;
   border-radius: var(--br-3xs) var(--br-3xs) 0 0;
@@ -29,19 +29,19 @@
 }
 /* pay box */
 .paybox {
-    left: 21vw;
+    left: 20vw;
     /* align-items: center; */
     background-color: var(--color-darkseagreen);
     border: 2px solid var(--color-seagreen-100);
 }
 /* clear box */
 .clearbox {
-    left: 11vw;
+    left: 10.3vw;
     /* align-items: center; */
 }
 /* add box */
 .addbox{
-    left: 3%;
+    left: 2%;
     /* align-items: center;   */
     
 }
@@ -74,8 +74,9 @@
 .clearbox,
 .addbox,    
 .paybox{
-    width: 8vw;
+    width: 8.5vw;
     height: 5vh;
+    border-radius: var(--br-11xl);
 }
 
 .clear, .add, .pay {
