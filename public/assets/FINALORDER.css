@@ -186,6 +186,7 @@ width: 11vw;
 border-radius: var(--br-3xs);
 background-color: var(--color-wheat-100);
 border: 0.1vw dashed var(--color-sienna-100);
+cursor: pointer;
 }
 .box3, .box4,.box10, .box15,.box16{
 position: absolute;
@@ -193,6 +194,7 @@ width: 11vw;
 background-color: var(--color-navajowhite-100);
 border: 0.1vw dashed var(--color-sienna-100);
 border-radius: var(--br-3xs);
+cursor: pointer;
 }
 .box5, .box6,.box11, .box17,.box18{
 position: absolute;
@@ -200,6 +202,7 @@ width: 11vw;
 background-color: var(--color-navajowhite-200);
 border-radius: var(--br-3xs);
 border: 0.1vw dashed var(--color-sienna-100);
+cursor: pointer;
 }
 .box7, .box8,.box12, .box19,.box20{
 position: absolute;
@@ -207,6 +210,7 @@ width: 11vw;
 background-color: var(--color-burlywood-100);
 border-radius: var(--br-3xs);
 border: 0.1vw dashed var(--color-sienna-100);
+cursor: pointer;
 }
 /* drink text*/
 
@@ -328,11 +332,13 @@ position: absolute;
 top: 0.7vh;
 left: 80%;
 width: 2vw;
+cursor: pointer;
 }
 .minus{
 position: absolute;
 top: 0.7vh;
 left: 3%;
 width: 2vw;
+cursor: pointer;
 }
 /* ------------------------------- */

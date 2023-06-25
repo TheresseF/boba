@@ -1,6 +1,6 @@
 /* order area sa left side */
 .orderBg {
-  position: relative;
+  position: absolute;
   top: 14vh;
   left: 2%;
   border-radius: var(--br-3xs) var(--br-3xs) 0 0;
@@ -9,7 +9,13 @@
   width: 30vw;
   height: 85vh;
 }
-
+.orderList{
+    position: absolute;
+    top: 2%;
+    width: 30vw;
+    height: 80vh;
+    background-color: transparent;
+}
 /* order area box below */
 .orderbox {
     position: fixed;
@@ -44,6 +50,7 @@
 .clearbox{
     position: absolute;
     top: 27vh;
+    cursor: pointer;
 }
 
 /* total box */
@@ -121,4 +128,5 @@
     top:2.5%;
     left: 90%;
     width: 1.5vw;
+    cursor: pointer;
   }

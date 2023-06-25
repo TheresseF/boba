@@ -30,12 +30,14 @@
       <!-- upper design to homepage -->
       
       <div class="Bgupper">
-        <img
-          class="beverageslogo"
-          alt=""
-          src="../public/beverages-2-4@2x.png"
-          id="beverages24"
-        />
+        <button>
+          <img
+            class="beverageslogo"
+            alt=""
+            src="../public/beverages-2-4@2x.png"
+            id="beverages24"
+          />
+        </button>
         <div class="bobasticlink" id="bOBASTICText">
           <b>BOBASTIC</b>
         </div>
@@ -48,29 +50,35 @@
 
       <!-- order area sa left side -->
       <div class ="orderBg">
-        <img
-          class ="delete"
-          src="../public/x.png"
-          alt=""
-          id="deletebutton"/>
-        <!-- order box area -->
+        <div class = "orderList" id="TableContainer">
+          <button>
+            <img
+              class ="delete"
+              src="../public/x.png"
+              alt=""
+              id="deletebutton"
+            />
+        </button>
+        </div>
+        
+         <!-- order box area -->
         <div class="orderbox"> 
-          <div class="paybox" id="rectangle15">
+          <button class="paybox" id="PayButton">
             <p class="pay" id="payText">Pay</p>
-          </div>
+          </button>
 
           <div class="totalbox"></div>
           <b class="b39">1,073.0 </b>
           <p class="total1">Total</p>
           <!-- Clear box -->
-          <div class="clearbox">
+          <button class="clearbox" id ="Clearbutton">
             <p class="clear">Clear</p>
-          </div>
+          </button>
 
           <!-- add box -->
-          <div class="addbox">
+          <button class="addbox" id="Addbutton">
             <p class="add">Add</p>
-          </div>
+          </button>
         </div> 
         
       </div>
@@ -84,108 +92,138 @@
           <b class="food">Foods</b>
         </div>
         <!-- drink -->
-        <div class="box1">
+        <button class="box1" id="Chocolate">
           <b class="chocolate">Chocolate</b>
-        </div>
-        <div class="box2">
+        </button>
+
+        <button class="box2" id="Strawberry">
           <b class="strawberry">Strawberry</b>
-        </div>
-        <div class="box3">
+        </button>
+
+        <button class="box3" id="Matcha">
           <b class="matcha">Matcha </b>
-        </div>
-        <div class="box4">
+        </button>
+
+        <button class="box4" id="Hokkaido">
           <b class="hokkaido">Hokkaido</b>
-        </div>
-        <div class="box5">
+        </button>
+
+        <button class="box5" id="Blueberry">
           <b class="blueberry">Blueberry</b>
-        </div>
-        <div class="box6">
+        </button>
+
+        <button class="box6" id="DarkM">
           <b class="first">Dark</b>
           <b class="second">Mocha</b>
-        </div>
-        <div class="box7">
+        </button>
+
+        <button class="box7" id="RedV">
           <b class="red-velvet">Red Velvet</b>
-        </div>
-        <div class="box8">
+        </button>
+
+        <button class="box8" id="BrownS">
           <b class="brown">Brown</b>
           <b class="sugar">Sugar</b>
-        </div>
+        </button>
 
-        <div class="quantityboxsample">
-          <img
+        <div class="quantityboxsample" id="Quantity">
+          <button>
+            <img
             class ="plus" 
             src="../public/plus.png" 
             alt="" 
-            id ="plusminus"
+            id ="plus"
           />
-          <img
+          </button>
+          <button>
+            <img
             class ="minus" 
             src="../public/minus.png" 
             alt="" 
-            id ="minusplus"
+            id ="minus"
           />
+          </button>
+          
       </div>
 
         <!-- size -->
         <b class="extra">EXTRA</b>
-        <div class="box9">
+
+        <button class="box9" id="Lsize">
           <b class="sizes">Large</b>
-        </div>
-        <div class="box10">
+        </button>
+
+        <button class="box10" id="Msize">
           <b class="medium">Medium</b>
-        </div>
-        <div class="box11">
+        </button>
+
+        <button class="box11" id="Ssize">
           <b class="sizes">Small</b>
-        </div>
-        <div class="box12">
+        </button>
+
+        <button class="box12" id="Extra">
           <b class="esizes">Boba</b>
-        </div>
+        </button>
+
         <img class="logo2" alt="" src="../public/beverages-2-31@2x.png" />
         <img class="ang-caption" alt="" src="../public/ang-caption@2x.png" />
 
         <!-- food -->
-        <div class="box13">
+        <button class="box13" id="CinnD">
           <b class="cinn-danish">Cinn Danish</b>
-        </div>
-        <div class="box14">
+        </button>
+
+        <button class="box14" id="CinnB">
           <b class="cinn-bun">Cinn Bun</b>
-        </div>
-        <div class="box15">
+        </button>
+
+        <button class="box15" id="Sausage">
           <b class="first">Sausage</b>
           <b class="second">Roll</b>
-        </div>
-        <div class="box16">
+        </button>
+
+        <button class="box16" id="Flatbread">
           <b class="flatbread">Flatbread</b>
-        </div>
-        <div class="box17">
+        </button>
+
+        <button class="box17" id="TunaPan">
           <b class="first">Tuna</b>
           <b class="second">Pandesal</b>
-        </div>
-        <div class="box18">
+        </button>
+
+        <button class="box18" id="FrenchC">
           <b class="first1">French Butter</b>
           <b class="second">Croissant</b>
-        </div>
-        <div class="box19">
+        </button>
+
+        <button class="box19" id="MacCookie">
           <b class="brown">Macademia</b>
           <b class="sugar">Cookie</b>
-        </div>
-        <div class="box20">
+        </button>
+
+        <button class="box20" id="Donut">
           <b class="brown">Chocolate</b>
           <b class="sugar">Donut</b>
-        </div>
+        </button>
+
         <div class="quantityboxsample2">
-          <img
+          <button id="plusbutton">
+            <img
             class ="plus" 
             src="../public/plus.png" 
             alt="" 
-            id ="plusminus"
+            id ="plus2"
           />
-          <img
+          </button>
+          <button id="minusbutton">
+            <img
             class ="minus" 
             src="../public/minus.png" 
             alt="" 
-            id ="minusplus"
+            id ="minus2"
           />
+          </button>
+          
 
       </div>
 

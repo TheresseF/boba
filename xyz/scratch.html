@@ -5,8 +5,8 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <link rel="stylesheet" href="../public/assets/global.css" />
     <link rel="stylesheet" href="./order.css" />
-    <link rel="stylesheet" href="./upperdesign.css" />
-    <link rel="stylesheet" href="./orderarea.css" />
+    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
+    <link rel="stylesheet" href="../public/assets/orderarea.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -27,7 +27,7 @@
     <body>
 
       <!-- upper design to homepage -->
-      
+
       <div class="Bgupper">
         <img
           class="beverageslogo"
@@ -47,14 +47,17 @@
 
       <!-- order area sa left side -->
       <div class ="orderBg">
-        <img
+        <div class = "orderList" id="TableContainer">
+          <img
           class ="delete"
           src="../public/x.png"
           alt=""
           id="deletebutton"/>
-        <!-- order box area -->
+        </div>
+        
+         <!-- order box area -->
         <div class="orderbox"> 
-          <div class="paybox" id="rectangle15">
+          <div class="paybox" onclick="pay">
             <p class="pay" id="payText">Pay</p>
           </div>
 
@@ -62,12 +65,12 @@
           <b class="b39">1,073.0 </b>
           <p class="total1">Total</p>
           <!-- Clear box -->
-          <div class="clearbox">
+          <div class="clearbox" id="clearbox">
             <p class="clear">Clear</p>
           </div>
 
           <!-- add box -->
-          <div class="addbox">
+          <div class="addbox" id ="addbox">
             <p class="add">Add</p>
           </div>
         </div> 
@@ -115,13 +118,13 @@
             class ="plus" 
             src="../public/plus.png" 
             alt="" 
-            id ="plusminus"
+            id ="plus"
           />
           <img
             class ="minus" 
             src="../public/minus.png" 
             alt="" 
-            id ="minusplus"
+            id ="minus"
           />
       </div>
 
@@ -177,13 +180,13 @@
             class ="plus" 
             src="../public/plus.png" 
             alt="" 
-            id ="plusminus"
+            id ="plus2"
           />
           <img
             class ="minus" 
             src="../public/minus.png" 
             alt="" 
-            id ="minusplus"
+            id ="minus2"
           />
 
       </div>
