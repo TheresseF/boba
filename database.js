@@ -10,4 +10,10 @@ const poo = createPool({
     connectionLimit: 10
 })
 
-pool.query()
+pool.query(`select * from registration`, (err, result, fields) => {
+    if(err){
+        return 
+    }
+})
+
+module.exports = pool;

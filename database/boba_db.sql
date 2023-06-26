@@ -8,7 +8,6 @@ CREATE TABLE IF NOT EXISTS `Order_List` (
   `Status` char(50),
   KEY `Primary Key` (`Order_Number`)
 );
-
 CREATE TABLE IF NOT EXISTS `Customer_List` (
   `Customer_Suki_ID` char(100),
   `First_Name` char(50),
