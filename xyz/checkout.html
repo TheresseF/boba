@@ -1,64 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
-        
-        <script src="https://co0de.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <link href = "../public/assets/upperdesign.css" rel="stylesheet" type="text/css"/>
-        <link href = "../public/assets/global.css" rel="stylesheet" type="text/css"/>
-        <link href = "./checkout.css" rel="stylesheet" type="text/css"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../public/assets/global.css" />
+    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
+    <link rel="stylesheet" href="../public/assets/orderarea.css" />
+    <link rel="stylesheet" href="../public/assets/ACTIVATE.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=League Spartan:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="Background"><p>.</p></div>
+    <div class="Bgupper">
+      <img
+        class="beverageslogo"
+        alt=""
+        src="../public/beverages-2-4@2x.png"
+        id="beverages24"
+      />
+    <div class="bobasticlink" id="bOBASTICText">
+      <b>BOBASTIC</b>
+    </div>
 
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=League Spartan:wght@700&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@700&display=swap"
-        />
-      </head>
-    <body>
-      <!-- upper design to homepage -->
-      
-      <div class="Bgupper">
-        <img
-          class="beverageslogo"
-          alt=""
-          src="../public/beverages-2-4@2x.png"
-          id="beverages24"
-        />
-        <img
-          class="arrow-icon"
-          alt=""
-          src="../public/arrow-21.svg"
-          id="arrowIcon2"
-        />
-        <div class="bobasticlink" id="bOBASTICText">
-          <b>BOBASTIC</b>
-        </div>
+    <img
+            class="arrow-icon"
+            alt=""
+            src="../public/arrow-21.svg"
+            id="arrowIcon2"
+    />
+    <!-- login Area -->
+    <div class="loginArea">
+      <img class="logobg" alt="" src="../public/beverages-2-31@2x.png" />
+      <img class="logobg2" alt="" src="../public/beverages-2-31@2x.png" />
+      <div class="Header">
+        <b class="Bb">BOBACARD</b>
+        <p class="dots">. . .</p>
       </div>
-        <div class ="vackgrawnd">
-          <div class="pointbox">
-            <div class ="points">
-              <b class="poin">POINTS</b>
-              <!-- PointerContainer kay text box na modisplay ug data -->
-              <div class="pointcontainer" id="PointerContainer"></div>
-            </div>
-            <!-- NameBox kay text box na modisplay ug data -->
-            <div class="Name" id="NameBox"><p></p></div>
-            <!-- Phonebox kay text box na modisplay ug data -->
-            <div class="Phone" id="PhoneBox"><p></p></div>
-
-          </div>
+      <form action = "#">
+        <div class="container">
+          <input type ="text" placeholder="Bobacard Number" required>
+          <input type ="text" placeholder="Contact Number"  required>
+          <input type ="password" placeholder="Password"  required>
+          <button type ="submit" id="ActiveSub">Activate</button>
         </div>
-    </body>
+      </form>
+
+        <div class="font">
+          <span class = "fontline"> Already have your Card activated?</span>
+          <span class="intheline" id="LogIn">Log in here</span>
+        </div>
+      
+      <script type="text/javascript" src="/assets/home.js"></script>
+    <!-- <script>
+      var beverages24 = document.getElementById("beverages24");
+      if (beverages24) {
+        beverages24.addEventListener("click", function (e) {
+          window.location.href = "./HOMEPAGE.ejs";
+        });
+      }
+      
+      var bOBASTICText = document.getElementById("bOBASTICText");
+      if (bOBASTICText) {
+        bOBASTICText.addEventListener("click", function (e) {
+          window.location.href = "./HOMEPAGE.ejs";
+        });
+      }
+      
+      var dontHaveYour = document.getElementById("dontHaveYour");
+      if (dontHaveYour) {
+        dontHaveYour.addEventListener("click", function (e) {
+          window.location.href = "./ACTIVATE.ejs";
+        });
+      }
+      </script> -->
+  </body>
 </html>
