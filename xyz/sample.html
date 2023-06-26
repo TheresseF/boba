@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="../public/assets/global.css" />
-    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
-    <link rel="stylesheet" href="../public/assets/orderarea.css" />
-    <link rel="stylesheet" href="../public/assets/ACTIVATE.css" />
+    <link rel="stylesheet" href="/assets/global.css" />
+    <link rel="stylesheet" href="/assets/upperdesign.css" />
+    <link rel="stylesheet" href="/assets/orderarea.css" />
+    <link rel="stylesheet" href="/assets/CARDQUERY1.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -30,7 +30,7 @@
       <img
         class="beverageslogo"
         alt=""
-        src="../public/beverages-2-4@2x.png"
+        src="/beverages-2-4@2x.png"
         id="beverages24"
       />
     <div class="bobasticlink" id="bOBASTICText">
@@ -40,34 +40,30 @@
     <img
             class="arrow-icon"
             alt=""
-            src="../public/arrow-21.svg"
+            src="/arrow-21.svg"
             id="arrowIcon"
     />
     <!-- login Area -->
     <div class="loginArea">
-      <img class="logobg" alt="" src="../public/beverages-2-31@2x.png" />
-      <img class="logobg2" alt="" src="../public/beverages-2-31@2x.png" />
+      <img class="logobg" alt="" src="/beverages-2-31@2x.png" />
+      <img class="logobg2" alt="" src="/beverages-2-31@2x.png" />
       <div class="Header">
         <b class="Bb">BOBACARD</b>
         <p class="dots">. . .</p>
       </div>
-        <div class="login">
-          <p class="form" id="FormButton">Bobacard Number</p>
-        </div>
-        <div class="Num" id="NumberButton">
-          <p class="form">Contact Number</p>
-        </div>
-        <div class="passw" id="PasswordButton">
-          <p class="passwo">Password</p>
-        </div>
-        <div class="Activatebutton" id="ActiveButton">
-          <div class="activ">Activate</div>
+      <form action = "#">
+        <div class="container">
+          <input type ="text" placeholder="BobabCarad/Contact Number"  required>
+          <input type ="password" placeholder="Password"  required>
+          <button type ="submit">Log In</button>
         </div>
         <div class="font">
-          <p class = "fontline"> Already have your Card activated?</p>
-          <p class="intheline" id="LogIn">Log in here</p>
+          <p class = "fontline"> Don't have your card activated?</p>
+          <p class="intheline" id="Activate">Activate here</p>
         </div>
     </div>
+    
+  </div>
 
     <script>
       var beverages24 = document.getElementById("beverages24");
@@ -93,3 +89,4 @@
       </script>
   </body>
 </html>
+~

@@ -29,7 +29,7 @@ $(document).ready(function() {
     window.location.href ='/Payment';
   })
 
-  $('#ConButton').click(function({
+  $('#ConButton').click(function(){
     
-  }))
+  })
 });
