@@ -59,17 +59,33 @@
             </tr>
             <!-- sample -->
             <tr>
-              <td><b>Choclate</b></td>
-              <td><b>B</b></td>
-              <td><b>S</b></td>
-              <td><b>1</b></td>
+              <td class="c"><b>Choclate</b></td>
+              <td class="c"><b>B</b></td>
+              <td class="c"><b>S</b></td>
+              <td>
+                <div>
+                  <img
+                    class ="plus" 
+                    src="../public/plus.png" 
+                    alt="" 
+                    id ="plus"
+                  />
+                  <span class = "unit" id="unit">1</span>
+                  <img
+                    class ="minus" 
+                    src="../public/minus.png" 
+                    alt="" 
+                    id ="minus"
+                  />
+                </div>
+              </td>
               <td>
                 <img
-              class ="delete"
-              src="/x.png"
-              alt=""
-              id="deletebutton"
-            />
+                  class ="delete"
+                  src="../public/x.png"
+                  alt=""
+                  id="deletebutton"
+                />
               </td>
             </tr>
           </table>
@@ -140,21 +156,6 @@
           <b class="sugar">Sugar</b>
         </button>
 
-        <div class="quantityboxsample" id="Quantity">
-          <img
-            class ="plus" 
-            src="/plus.png" 
-            alt="" 
-            id ="plus"
-          />
-          <img
-            class ="minus" 
-            src="/minus.png" 
-            alt="" 
-            id ="minus"
-          />
-      </div>
-
         <!-- size -->
         <b class="extra">EXTRA</b>
 
@@ -214,21 +215,6 @@
           <b class="brown">Chocolate</b>
           <b class="sugar">Donut</b>
         </button>
-
-        <div class="quantityboxsample2">
-          <img
-            class ="plus" 
-            src="/plus.png" 
-            alt="" 
-            id ="plus2"
-          />
-          <img
-            class ="minus" 
-            src="/minus.png" 
-            alt="" 
-            id ="minus2"
-          />
-      </div>
 
     <script>
       var popupcheckout = document.getElementById("popupcheckout");

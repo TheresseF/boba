@@ -84,7 +84,7 @@
 .clear {
     top: 1vh;
     margin: 0;
-    left: 2.1vw;
+    left: 2.3vw;
 }
 .add {
     top: 1vh;
@@ -154,11 +154,12 @@
   display: inline-block;
 }
 .delete{
-    position: absolute;
-    top: 4.5vh;
-    left: 89%;
+    position: relative;
+    /* top: 4.5vh; */
+    left: 30%;
     width: 1.5vw;
     cursor: pointer;
+    text-align: center;
 }
 
 /* table */
@@ -172,7 +173,6 @@ th {
 }
 td {
     padding: 8px;
-    text-align: center;
     color: var(--color-sienna-300);
 }
 .b{
@@ -183,3 +183,28 @@ td {
     width: 1%;
     color: #eed2ac; 
 } 
+.c{
+    text-align: center;
+}
+.plus{
+    position: relative;
+    display: inline;    
+    /* top: 0.7vh; */
+    left: 0%;
+    width: 1.2vw;
+    /* text-align: left; */
+    cursor: pointer;
+}
+.minus{
+    position: relative;
+    display: inline;
+    margin: 0;
+    /* top: 0.7vh; */
+    left: 30%;
+    /* text-align: right; */
+    width: 1.2vw;
+    cursor: pointer;
+}
+.unit{
+    margin-left: 1.1vw;
+}

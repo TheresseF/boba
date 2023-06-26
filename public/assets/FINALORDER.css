@@ -289,40 +289,5 @@ top: 25px;
 left: 7.81px;
 }
 
-.quantityboxsample {
-position: absolute;
-top: 90%;
-left: 10%;
-height: 7%;
-width: 20%;
-background-color: var(--color-cornsilk);
-border: 1px solid tan;
-border: 0.2vw solid var(--color-sienna-100);
-border-radius: var(--br-31xl);
-}
-.quantityboxsample2 {
-position: absolute;
-top: 90%;
-left: 68%;
-height: 7%;
-width: 20%;
-background-color: var(--color-cornsilk);
-border: 1px solid tan;
-border: 0.2vw solid var(--color-sienna-100);
-border-radius: var(--br-31xl);
-}
-.plus{
-position: absolute;
-top: 0.7vh;
-left: 80%;
-width: 2vw;
-cursor: pointer;
-}
-.minus{
-position: absolute;
-top: 0.7vh;
-left: 3%;
-width: 2vw;
-cursor: pointer;
-}
+
 /* ------------------------------- */
