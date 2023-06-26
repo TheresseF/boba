@@ -90,3 +90,8 @@ function deleteRow(button) {
     drinkRows.splice(drinkRows.indexOf(row), 1);
   }
 }
+
+function clearTable() {
+  var tbody = document.getElementById("otBody");
+  tbody.innerHTML = "";
+}

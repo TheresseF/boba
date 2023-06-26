@@ -9,6 +9,7 @@
     <link href = "/assets/global.css" rel="stylesheet" type="text/css"/>
     <link href = "/assets/orderarea.css" rel="stylesheet" type="text/css"/>
     <link href = "/assets/upperdesign.css" rel="stylesheet" type="text/css"/>
+    <link href = "/assets/orderlist.css" rel="stylesheet" type="text/css"/>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -25,9 +26,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
     />
+    <script src="/assets/orderlist.js"></script>
   </head>
   <body>
-    <div class="container">
       <!-- upper design to homepage -->
       
       <div class="Bgupper">
@@ -52,46 +53,20 @@
         <div class = "orderList" id="TableContainer">
           <div class="boderOrder">
               
-          <table>
-            <tr>
-              <th class="b">Product</th>
-              <th class ="a">Extra</th>
-              <th class="a">Size</th>
-              <th class="a">Quantity</th>
-              <th class="a">Delete</th>
-            </tr>
-            <!-- sample -->
-            <tr>
-              <td class="c"><b>Choclate</b></td>
-              <td class="c"><b>B</b></td>
-              <td class="c"><b>S</b></td>
-              <td>
-                <div>
-                  <img
-                    class ="plus" 
-                    src="/plus.png" 
-                    alt="" 
-                    id ="plus"
-                  />
-                  <span class = "unit" id="unit">1</span>
-                  <img
-                    class ="minus" 
-                    src="/minus.png" 
-                    alt="" 
-                    id ="minus"
-                  />
-                </div>
-              </td>
-              <td>
-                <img
-                  class ="delete"
-                  src="/x.png"
-                  alt=""
-                  id="deletebutton"
-                />
-              </td>
-            </tr>
-          </table>
+            <table id="orderTable">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Extra</th>
+                  <th>Size</th>
+                  <th>Quantity</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody id="otBody">
+              </tbody>
+            </table>
+
         </div>
         </div>
         
@@ -105,7 +80,7 @@
           <b class="b39" id="totalprice">1,073.0 </b>
           <p class="total1" id="TotalInput">Total</p>
           <!-- Clear box -->
-          <button class="clearbox" id ="Clearbutton">
+          <button class="clearbox" id ="Clearbutton" onclick="clearTable()">
             <p class="clear">Clear</p>
           </button>
 
@@ -119,43 +94,43 @@
 
       <!-- Menu area -->
       <div class="menuBg">
-        <!-- <img class="menuborder" alt="" src="../public/rectangle-82.svg" /> -->
+        <!-- <img class="menuborder" alt="" src="/rectangle-82.svg" /> -->
         <div class ="menuborder">
           <b class="drinks">Drinks</b>
           <b class="size">Size</b>
           <b class="food">Foods</b>
         </div>
         <!-- drink -->
-        <button class="box1" id="Chocolate">
+        <button class="box1" id="Chocolate" onclick="addRow('Chocolate', 'drink')">
           <b class="chocolate">Chocolate</b>
         </button>
 
-        <button class="box2" id="Strawberry">
+        <button class="box2" id="Strawberry" onclick="addRow('Strawberry', 'drink')">
           <b class="strawberry">Strawberry</b>
         </button>
 
-        <button class="box3" id="Matcha">
+        <button class="box3" id="Matcha" onclick="addRow('Matcha', 'drink')">
           <b class="matcha">Matcha </b>
         </button>
 
-        <button class="box4" id="Hokkaido">
+        <button class="box4" id="Hokkaido" onclick="addRow('Hokkaido', 'drink')">
           <b class="hokkaido">Hokkaido</b>
         </button>
 
-        <button class="box5" id="Blueberry">
+        <button class="box5" id="Blueberry" onclick="addRow('Blueberry', 'drink')">
           <b class="blueberry">Blueberry</b>
         </button>
 
-        <button class="box6" id="DarkM">
+        <button class="box6" id="DarkM" onclick="addRow('Dark Mocha', 'drink')">
           <b class="first">Dark</b>
           <b class="second">Mocha</b>
         </button>
 
-        <button class="box7" id="RedV">
+        <button class="box7" id="RedV" onclick="addRow('Red Velvet', 'drink')">
           <b class="red-velvet">Red Velvet</b>
         </button>
 
-        <button class="box8" id="BrownS">
+        <button class="box8" id="BrownS" onclick="addRow('Brown Sugar', 'drink')">
           <b class="brown">Brown</b>
           <b class="sugar">Sugar</b>
         </button>
@@ -163,65 +138,63 @@
         <!-- size -->
         <b class="extra">EXTRA</b>
 
-        <button class="box9" id="Lsize">
+        <button class="box9" id="Lsize" onclick="addSize('Large')">
           <b class="sizes">Large</b>
         </button>
 
-        <button class="box10" id="Msize">
+        <button class="box10" id="Msize" onclick="addSize('Medium')">
           <b class="medium">Medium</b>
         </button>
 
-        <button class="box11" id="Ssize">
+        <button class="box11" id="Ssize" onclick="addSize('Small')">
           <b class="sizes">Small</b>
         </button>
 
-        <button class="box12" id="Extra">
+        <button class="box12" id="Extra" onclick="addBoba()">
           <b class="esizes">Boba</b>
         </button>
 
-        <img class="logo2" alt="" src="/assets/beverages-2-31@2x.png" />
-        <img class="ang-caption" alt="" src="/assets/ang-caption@2x.png" />
+        <img class="logo2" alt="" src="beverages-2-31@2x.png" />
+        <img class="ang-caption" alt="" src="ang-caption@2x.png" />
 
         <!-- food -->
-        <button class="box13" id="CinnD">
+        <button class="box13" id="CinnD" onclick="addRow('Cinn Danish', 'food')">
           <b class="cinn-danish">Cinn Danish</b>
         </button>
 
-        <button class="box14" id="CinnB">
+        <button class="box14" id="CinnB" onclick="addRow('Cinn Bun', 'food')">
           <b class="cinn-bun">Cinn Bun</b>
         </button>
 
-        <button class="box15" id="Sausage">
+        <button class="box15" id="Sausage" onclick="addRow('Sausage Roll', 'food')">
           <b class="first">Sausage</b>
           <b class="second">Roll</b>
         </button>
 
-        <button class="box16" id="Flatbread">
+        <button class="box16" id="Flatbread" onclick="addRow('Flatbread', 'food')">
           <b class="flatbread">Flatbread</b>
         </button>
 
-        <button class="box17" id="TunaPan">
+        <button class="box17" id="TunaPan" onclick="addRow('Tuna Pandesal', 'food')">
           <b class="first">Tuna</b>
           <b class="second">Pandesal</b>
         </button>
 
-        <button class="box18" id="FrenchC">
+        <button class="box18" id="FrenchC" onclick="addRow('French Butter Croissant', 'food')">
           <b class="first1">French Butter</b>
           <b class="second">Croissant</b>
         </button>
 
-        <button class="box19" id="MacCookie">
+        <button class="box19" id="MacCookie" onclick="addRow('Macademia Cookie', 'food')">
           <b class="brown">Macademia</b>
           <b class="sugar">Cookie</b>
         </button>
 
-        <button class="box20" id="Donut">
+        <button class="box20" id="Donut" onclick="addRow('Donut', 'food')">
           <b class="brown">Chocolate</b>
           <b class="sugar">Donut</b>
         </button>
 
-      <script type="text/javascript" src="/assets/home.js"></script>
-    </div>
     <!-- <script>
       var popupcheckout = document.getElementById("popupcheckout");
       if (popupcheckout) {
@@ -299,6 +272,6 @@
       }
       </script> -->
 
-      
+      <script type="text/javascript" src="/assets/home.js"></script>
   </body>
 </html>
