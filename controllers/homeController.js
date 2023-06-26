@@ -3,11 +3,11 @@ module.exports = function(app){
         res.render('homepage');
     });
 
-    app.get('/cardquery-button-click', function(req, res){
+    app.get('/cardquery', function(req, res){
         res.render('cardquery');
     });
 
-    app.get('/order-button-click', function(req, res){
+    app.get('/order', function(req, res){
         res.render('finalorder');
     });
 
