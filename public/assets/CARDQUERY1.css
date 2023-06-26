@@ -72,3 +72,51 @@
   color: #004AAD;
   font-weight: bold;
 }
+input[type ="text"], [type = "password"] {
+  height: 7vh;
+  width: 30vw;
+  display: inline-block;
+  background-color: #ad845b;
+  border: 0.2vw solid #603a22;
+  border-radius: var(--br-11xl);
+  text-align: center;
+  margin-left: 15%;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+button[type="submit"] {
+  background-color: #afc172;
+  border: 0.2vw solid #808465;
+  height: 7vh;
+  width: 10vw;
+  border-radius: var(--br-3xs);
+  color: #428041;
+  margin-left: 37.5%;
+  margin-top: 1vh;
+}
+button[type="submit"] {
+  background-color: #afc172;
+  border: 0.2vw solid #808465;
+  height: 7vh;
+  width: 10vw;
+  border-radius: var(--br-3xs);
+  color: #428041;
+  margin-left: 37.5%;
+  margin-top: 1vh;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  position: absolute;
+  top: 32vh;
+  left: 23vw;
+  padding: 16px;
+  height: 56vh;
+  width: 45vw;
+  /* background-color: #004AAD; */
+}

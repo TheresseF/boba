@@ -31,6 +31,5 @@ module.exports = function(app){
     app.get('/CheckOut', function(req, res){
         res.render('finalcheckout')
     })
-    
 
 };

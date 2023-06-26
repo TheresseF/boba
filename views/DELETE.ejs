@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/assets/global.css" />
+    <link rel="stylesheet" href="/assets/upperdesign.css" />
+    <link rel="stylesheet" href="/assets/orderarea.css" />
+    <link rel="stylesheet" href="/assets/CARDQUERY1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=League Spartan:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="Background"><p>.</p></div>
+    <div class="Bgupper">
+      <img
+        class="beverageslogo"
+        alt=""
+        src="/beverages-2-4@2x.png"
+        id="beverages24"
+      />
+    <div class="bobasticlink" id="bOBASTICText">
+      <b>BOBASTIC</b>
+    </div>
+
+    <img
+            class="arrow-icon"
+            alt=""
+            src="/arrow-21.svg"
+            id="arrowIcon"
+    />
+    <!-- login Area -->
+    <div class="loginArea">
+      <img class="logobg" alt="" src="/beverages-2-31@2x.png" />
+      <img class="logobg2" alt="" src="/beverages-2-31@2x.png" />
+      <div class="Header">
+        <b class="Bb">BOBACARD</b>
+        <p class="dots">. . .</p>
+      </div>
+      <form action = "#">
+        <div class="container">
+          <input type ="text" placeholder="BobabCarad/Contact Number"  required>
+          <input type ="password" placeholder="Password"  required>
+          <button type ="submit">Delete</button>
+        </div>
+        <div class="font">
+          <p class = "fontline"> Don't have your card activated?</p>
+          <p class="intheline" id="Activate">Activate here</p>
+        </div>
+    </div>
+    
+  </div>
+
+    <script>
+      var beverages24 = document.getElementById("beverages24");
+      if (beverages24) {
+        beverages24.addEventListener("click", function (e) {
+          window.location.href = "./HOMEPAGE.ejs";
+        });
+      }
+      
+      var bOBASTICText = document.getElementById("bOBASTICText");
+      if (bOBASTICText) {
+        bOBASTICText.addEventListener("click", function (e) {
+          window.location.href = "./HOMEPAGE.ejs";
+        });
+      }
+      
+      var dontHaveYour = document.getElementById("dontHaveYour");
+      if (dontHaveYour) {
+        dontHaveYour.addEventListener("click", function (e) {
+          window.location.href = "./ACTIVATE.ejs";
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -32,4 +32,8 @@ $(document).ready(function() {
   $('#ConButton').click(function(){
     window.location.href ='/CheckOut';
   })
+
+  $('#Exitbutton').click(function(){
+    window.location.href ='/';
+  })
 });
