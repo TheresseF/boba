@@ -1,11 +1,23 @@
 $(document).ready(function () {
     // card-query-page
+    $('#arrow-icon').click(function () {
+        window.location.href = '/';
+      });
+
+    $('#beverages24').click(function() {
+        window.location.href = '/';
+    });
+    
+    $('#bOBASTICText').click(function() {
+        window.location.href = '/';
+    });
+
+    $('#arrow-icon2').click(function () {
+        window.location.href = '/cardquery';
+      });
+    
     $('.ViewButton').click(function () {
       window.location.href = '/LogIn';
-    });
-  
-    $('#arrowIcon2').click(function () {
-      window.location.href = '/cardquery';
     });
   
     $('#Activate').click(function () {
@@ -19,6 +31,13 @@ $(document).ready(function () {
     $('#ActiveSub').click(function () {
       window.location.href = '/cardquery';
     });
+
+    //Function to handle edit button click event
+    $('.EditButton').click(function () {
+        const customerId = $(this).data("id");
+        // Redirect to the edit page with the customerId as a parameter
+        window.location.href = `/edit/${customerId}`;
+      });
   
     // Function to handle delete button click event
     $(".cq-delete-btn").on("click", function () {
