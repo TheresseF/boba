@@ -1,5 +1,6 @@
 $(document).ready(function() {
   
+  //navigation
   $('#beverages24').click(function() {
     window.location.href = '/';
   });
@@ -12,6 +13,7 @@ $(document).ready(function() {
     window.location.href = '/';
   });
 
+  //homepage-buttons
   $('#cardQueryButton').click(function() {
     window.location.href = '/cardquery';
   });
@@ -20,13 +22,30 @@ $(document).ready(function() {
     window.location.href = '/order';
   });
 
+  //card-query-page
+  $('#ViewButton').click(function(){
+    window.location.href ='/LogIn';
+  })
+
+  $('#arrowIcon2').click(function(){
+    window.location.href ='/cardquery';
+  })
+
+  $('#Activate').click(function(){
+    window.location.href ='/ActivateCard';
+  })
+  $('#LogIn').click(function(){
+    window.location.href ='/LogIn';
+  })
+  $('#ActiveSub').click(function(){
+    window.location.href ='/cardquery';
+  })
+  
+  //order-page
   $('#popuporderText').click(function() {
     window.location.href = '/popuporder-button-click';
   });
 
-  $('#ViewButton').click(function(){
-    window.location.href ='/LogIn';
-  })
   $('#PayButton').click(function(){
     window.location.href ='/Payment';
   })
@@ -39,43 +58,12 @@ $(document).ready(function() {
     window.location.href ='/';
   })
 
-  $('#arrowIcon2').click(function(){
-    window.location.href ='/cardquery';
-  })
-
-  $('#arrowIcon').click(function() {
-    window.location.href = '/';
-  });
-
-  $('#beverages24').click(function() {
-    window.location.href = '/';
-  });
-
-  $('#bOBASTICText').click(function() {
-    window.location.href = '/';
-  });
-
-  $('#ViewButton').click(function(){
-    window.location.href ='/LogIn';
-  })
-
-  $('#arrowIcon2').click(function(){
-    window.location.href ='/card_query';
-  })
-  $('#Activate').click(function(){
-    window.location.href ='/ActivateCard';
-  })
-  $('#LogIn').click(function(){
-    window.location.href ='/LogIn';
-  })
-  $('#ActiveSub').click(function(){
-    window.location.href ='/card_query';
-  })
   $('#Backbutton').click(function(){
     window.location.href ='/order';
   })
   $('#Back').click(function(){
     window.location.href ='/order';
   })
+
 
 });

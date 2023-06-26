@@ -46,17 +46,17 @@ app.get('/cardquery', (req, res) => {
 });
 
 //Database Management
-app.delete('/data: Customer_Suki_ID', (req, res) => {
+app.delete('/data/:Customer_Suki_ID', (req, res) => {
     const Customer_Suki_ID = req.params.Customer_Suki_ID;
 
-    connection.query('DELETE FROM customer_list WHERE Customer_Suki_ID =?', [Customer_Suki_ID], (error, result) => {
-        if(error){
+    connection.query('DELETE FROM customer_list WHERE Customer_Suki_ID = ?', [Customer_Suki_ID], (error, result) => {
+        if (error) {
             console.error('Failed to delete data: ', error);
-            res.status(500).json({error: 'Internal Server Error'});
+            res.status(500).json({ error: 'Internal Server Error' });
             return;
         }
 
-        res.json({message: 'Data deleted successfully'});
+        res.json({ message: 'Data deleted successfully' });
     });
 });
 

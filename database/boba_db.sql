@@ -15,10 +15,11 @@ CREATE TABLE IF NOT EXISTS `Customer_List` (
 
 CREATE TABLE IF NOT EXISTS `Order_List` (
   `Order_Number` char(50),
-  `Size` char(10),
   `Product_Code` char(15),
+  `Quantity` int,
   `Total_Cost` float,
   `Date` int,
+  
   KEY `Primary Key` (`Order_Number`)
 );
 
