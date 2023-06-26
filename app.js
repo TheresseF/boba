@@ -46,6 +46,23 @@ app.get('/cardquery', (req, res) => {
 });
 
 //Database Management
+// Edit Page
+app.get('/edit/:customerId', (req, res) => {
+    const customerId = req.params.customerId;
+  
+    // Retrieve customer data from the database using the customerId
+    connection.query('SELECT * FROM customer_list WHERE Customer_Suki_ID = ?', [customerId], (err, rows) => {
+      if (err) {
+        console.error('Error executing query:', err);
+        return;
+      }
+  
+      // Render the edit page and pass the customer data
+      res.render('activatecard', { customer: rows[0] });
+    });
+  });
+
+//Delete Page
 app.delete('/data/:Customer_Suki_ID', (req, res) => {
     const Customer_Suki_ID = req.params.Customer_Suki_ID;
 

@@ -31,6 +31,13 @@ $(document).ready(function () {
     $('#ActiveSub').click(function () {
       window.location.href = '/cardquery';
     });
+
+    //Function to handle edit button click event
+    $('.EditButton').click(function () {
+        const customerId = $(this).data("id");
+        // Redirect to the edit page with the customerId as a parameter
+        window.location.href = `/edit/${customerId}`;
+      });
   
     // Function to handle delete button click event
     $(".cq-delete-btn").on("click", function () {
