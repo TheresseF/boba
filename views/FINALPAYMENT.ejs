@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="/assets/global.css" />
-    <link rel="stylesheet" href="/assets/upperdesign.css" />
-    <link rel="stylesheet" href="/assets/orderarea.css" />
-    <link rel="stylesheet" href="/assets/FINALPAYMENT.css" />
-    
+    <link rel="stylesheet" href="../public/assets/global.css" />
+    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
+    <link rel="stylesheet" href="../public/assets/orderarea.css" />
+    <link rel="stylesheet" href="../public/assets/FINALPAYMENT.css"/>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
     />
     <link
       rel="stylesheet"
@@ -20,12 +23,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@700&display=swap"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
-    />
   </head>
   <body>
+  <div class="container">
     <div class="Bgupper">
       <img
         class="beverageslogo"
@@ -108,16 +108,66 @@
 
       </div> 
       <div class="menuBg">
-        <div class="menuborder">
-          <div class="cashbox">
-            <b class="cash">Cash</b>
-          </div>
-          <div class="Gcashbox">
-            <b class="cash">Gcash</b>
-          </div>
-          <div class="Paymayabox">
-            <b class="Paymaya">Paymaya</b>
-          </div>
+        <div class="menuborder"></div>
+        //CASH 
+          <div class="cash-container">
+            <button class="cashbox" autofocus id="cashboxpop" onclick="openPopup()"> 
+              <b class="cash"> Cash </b> </button>
+              <div id= overlay class="overlay"></div>
+              <div class="cash-popup" autofocus id="cashpopup"> 
+                <div class="order-rectangle-114"></div>
+                  <button class="cancel-frame" autofocus onclick="closePopup()">
+                    <b class="cancel2">Cancel</b>
+                  </button>
+                  <a href="FINALCHECKOUT.ejs">
+                  <button class="proceed-frame" autofocus id="ProceedButton">
+                    <b class="cancel2">Proceed</b>
+                  </button>
+                  </a>
+                  <div class="order-rectangle-114"></div>
+                  <b class="please-input-cash">Please input cash amount</b>
+                  <input
+                    class="order-rectangle-132"
+                    type="number"
+                    placeholder="Input Cash Amount"
+                    min="{1}"
+                    maxlength
+                    minlength
+                  />
+              </div>
+            </div>
+
+            //GCASH
+            <div class="Gcash-container">
+              <button class="Gcashbox" autofocus id="gcashboxpop" onclick="GcashopenPopup()"> 
+                <b class="Gcash"> GCash </b> </button>
+                <div id= overlay class="overlay"></div>
+                <div class="cash-popup" autofocus id="gcashpopup"> 
+                  <div class="order-rectangle-114"></div>
+                    <button class="cancel-frame" autofocus onclick="GcashclosePopup()">
+                      <b class="cancel2">Cancel</b>
+                    </button>
+                    <a href="FINALCHECKOUT.ejs">
+                    <button class="proceed-frame" autofocus id="ProceedButton">
+                      <b class="cancel2">Proceed</b>
+                    </button>
+                    </a>
+                    <div class="order-rectangle-114"></div>
+                    <b id="gcash-text" class="please-input-cash"> Please input Gcash amount</b>
+                    <input
+                      class="order-rectangle-132"
+                      type="number"
+                      placeholder="Input Cash Amount"
+                      min="{1}"
+                      maxlength
+                      minlength
+                    />
+                </div>
+              </div>
+            
+           
+          
+
           <div class="Bobacardbox">
             <b class="asking">Do you have a BobaCard?</b>
             <p class="for">If you have a BobaCard, you can earn points from your purchase.</p>
@@ -132,194 +182,39 @@
               <input type="password" placeholder="Password" required>
 
             </div>
-          </form>    
+          </form> 
         </div>
-      
+      </div>
     </div>
+  </div>
+</div>   
+    
 
-    <script type="text/javascript" src="/assets/home.js"></script>
-<!-- 
     <script>
-      var popupcancel = document.getElementById("popupcancel");
-      if (popupcancel) {
-        popupcancel.addEventListener("click", function (e) {
-          window.location.href = "./FINALPAYMENT1.ejs";
-        });
+      //CASH
+      let popup = document.getElementById("cashpopup"); 
+      let ppopup = document.getElementById("gcashpopup"); 
+      let overlay = document.getElementById("overlay");
+
+      function openPopup(){
+        popup.classList.add("open-popup"); //display popup diba
+        overlay.style.display = "block";
       }
-      
-      var popupcancelText = document.getElementById("popupcancelText");
-      if (popupcancelText) {
-        popupcancelText.addEventListener("click", function (e) {
-          window.location.href = "./FINALPAYMENT1.ejs";
-        });
+      function closePopup(){
+        popup.classList.remove("open-popup");
+        overlay.style.display = "none"; // Hide the overlay
       }
-      
-      var popupcancel = document.getElementById("popupcancel");
-      if (popupcancel) {
-        popupcancel.addEventListener("click", function (e) {
-          window.location.href = "./FINALPAYMENT1.ejs";
-        });
+
+      function GcashopenPopup(){
+        ppopup.classList.add("open-popup"); //display popup diba
+        overlay.style.display = "block";
       }
-      
-      var popupcancel = document.getElementById("popupcancel");
-      if (popupcancel) {
-        popupcancel.addEventListener("click", function (e) {
-          window.location.href = "./FINALPAYMENT1.ejs";
-        });
+
+      function GcashclosePopup(){
+        ppopup.classList.remove("open-popup");
+        overlay.style.display = "none"; // Hide the overlay
       }
-      
-      var popupcancelText = document.getElementById("popupcancelText");
-      if (popupcancelText) {
-        popupcancelText.addEventListener("click", function (e) {
-          window.location.href = "./FINALPAYMENT1.ejs";
-        });
-      }
-      
-      var cashText = document.getElementById("cashText");
-      if (cashText) {
-        cashText.addEventListener("click", function () {
-          var popup = document.getElementById("cashPaymentContainer");
-          if (!popup) return;
-          var popupStyle = popup.style;
-          if (popupStyle) {
-            popupStyle.display = "flex";
-            popupStyle.zIndex = 100;
-            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
-            popupStyle.alignItems = "center";
-            popupStyle.justifyContent = "center";
-          }
-          popup.setAttribute("closable", "");
-      
-          var onClick =
-            popup.onClick ||
-            function (e) {
-              if (e.target === popup && popup.hasAttribute("closable")) {
-                popupStyle.display = "none";
-              }
-            };
-          popup.addEventListener("click", onClick);
-        });
-      }
-      
-      var gcashText = document.getElementById("gcashText");
-      if (gcashText) {
-        gcashText.addEventListener("click", function () {
-          var popup = document.getElementById("gCASHPAYMENTContainer");
-          if (!popup) return;
-          var popupStyle = popup.style;
-          if (popupStyle) {
-            popupStyle.display = "flex";
-            popupStyle.zIndex = 100;
-            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
-            popupStyle.alignItems = "center";
-            popupStyle.justifyContent = "center";
-          }
-          popup.setAttribute("closable", "");
-      
-          var onClick =
-            popup.onClick ||
-            function (e) {
-              if (e.target === popup && popup.hasAttribute("closable")) {
-                popupStyle.display = "none";
-              }
-            };
-          popup.addEventListener("click", onClick);
-        });
-      }
-      
-      var paymayaText = document.getElementById("paymayaText");
-      if (paymayaText) {
-        paymayaText.addEventListener("click", function () {
-          var popup = document.getElementById("pAYMAYAPAYMENTContainer");
-          if (!popup) return;
-          var popupStyle = popup.style;
-          if (popupStyle) {
-            popupStyle.display = "flex";
-            popupStyle.zIndex = 100;
-            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
-            popupStyle.alignItems = "center";
-            popupStyle.justifyContent = "center";
-          }
-          popup.setAttribute("closable", "");
-      
-          var onClick =
-            popup.onClick ||
-            function (e) {
-              if (e.target === popup && popup.hasAttribute("closable")) {
-                popupStyle.display = "none";
-              }
-            };
-          popup.addEventListener("click", onClick);
-        });
-      }
-      
-      var rectangle8 = document.getElementById("rectangle8");
-      if (rectangle8) {
-        rectangle8.addEventListener("click", function (e) {
-          window.location.href = "./FINALCHECKOUT.ejs";
-        });
-      }
-      
-      var backText = document.getElementById("backText");
-      if (backText) {
-        backText.addEventListener("click", function (e) {
-          window.location.href = "./FINALORDER1.ejs";
-        });
-      }
-      
-      var continueText = document.getElementById("continueText");
-      if (continueText) {
-        continueText.addEventListener("click", function (e) {
-          window.location.href = "./FINALCHECKOUT.ejs";
-        });
-      }
-      
-      var boobaText = document.getElementById("boobaText");
-      if (boobaText) {
-        boobaText.addEventListener("click", function () {
-          var popup = document.getElementById("gCASHPAYMENTContainer");
-          if (!popup) return;
-          var popupStyle = popup.style;
-          if (popupStyle) {
-            popupStyle.display = "flex";
-            popupStyle.zIndex = 100;
-            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
-            popupStyle.alignItems = "center";
-            popupStyle.justifyContent = "center";
-          }
-          popup.setAttribute("closable", "");
-      
-          var onClick =
-            popup.onClick ||
-            function (e) {
-              if (e.target === popup && popup.hasAttribute("closable")) {
-                popupStyle.display = "none";
-              }
-            };
-          popup.addEventListener("click", onClick);
-        });
-      }
-      
-      var beverages24 = document.getElementById("beverages24");
-      if (beverages24) {
-        beverages24.addEventListener("click", function (e) {
-          window.location.href = "./HOMEPAGE.ejs";
-        });
-      }
-      
-      var bOBASTICText = document.getElementById("bOBASTICText");
-      if (bOBASTICText) {
-        bOBASTICText.addEventListener("click", function (e) {
-          window.location.href = "./HOMEPAGE.ejs";
-        });
-      }
-      
-      var orderText = document.getElementById("orderText");
-      if (orderText) {
-        orderText.addEventListener("click", function (e) {
-          window.location.href = "./FINALORDER1.ejs";
-        });
-      }
-      </script> -->
+
+      </script>
   </body>
 </html>
