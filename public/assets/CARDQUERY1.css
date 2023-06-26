@@ -1,198 +1,113 @@
-.card-query-child15 {
+.Background{
   position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--color-dimgray-200);
-  width: 746px;
-  height: 40px;
-}
-.b62,
-.b63 {
-  position: absolute;
-  top: 93px;
-  left: 235px;
-  display: none;
-  width: 35px;
-  height: 9px;
-}
-.b63 {
-  top: 201px;
-}
-.beverages-2-45 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 32px;
-  height: 40px;
-  object-fit: cover;
-  cursor: pointer;
-}
-.b64 {
-  font-family: var(--font-catamaran);
-}
-.bobastic5 {
-  position: absolute;
-  top: 15px;
-  left: 16px;
-  text-decoration: underline;
-  display: inline-block;
-  width: 97px;
-  height: 26px;
-  cursor: pointer;
-}
-.beverages-2-4-parent3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 113px;
-  height: 41px;
-  font-size: var(--font-size-sm);
-  color: var(--color-tan-100);
-  font-family: var(--font-league-spartan);
-}
-.card-query-child16,
-.card-query-child17 {
-  position: absolute;
-  border-radius: var(--br-3xs);
-}
-.card-query-child16 {
-  top: 7px;
-  left: 284px;
-  background-color: var(--color-cornsilk);
-  width: 116px;
-  height: 42px;
-  display: none;
-}
-.card-query-child17 {
-  top: 76px;
-  left: 32px;
-  background-color: var(--color-wheat-200);
-  width: 678px;
-  height: 344px;
-}
-.beverages-2-53 {
-  position: absolute;
-  top: calc(50% - 177px);
-  left: calc(50% - 139px);
-  width: 554px;
-  height: 401px;
-  object-fit: cover;
-}
-.card-query-child18 {
-  position: absolute;
-  top: 307px;
-  left: 334px;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-darkkhaki-100);
-  border: 1px solid var(--color-gray-100);
-  box-sizing: border-box;
-  width: 75px;
-  height: 34px;
-}
-.beverages-2-61 {
-  position: absolute;
-  top: calc(50% - 179px);
-  left: calc(50% - 373px);
-  width: 511px;
-  height: 378px;
-  object-fit: cover;
-}
-.bobacard3 {
-  margin: 0;
-}
-.b65,
-.bobacard2 {
-  position: absolute;
-  color: var(--color-sienna-200);
-}
-.bobacard2 {
-  top: 90px;
-  left: 140px;
-  font-size: var(--font-size-29xl);
-  display: inline-block;
-  width: 467px;
-  height: 100px;
-  -webkit-text-stroke: 1px rgba(157, 101, 50, 0.5);
-}
-.b65 {
-  top: 65px;
-  left: 319px;
-  font-size: var(--font-size-77xl);
-}
-.rectangle-138-input1 {
-  position: absolute;
-  top: 212px;
-  left: 273px;
-  border-radius: var(--br-11xl);
-  background-color: var(--color-tan-600);
-  border: 1px solid var(--color-saddlebrown-100);
-  box-sizing: border-box;
-  width: 196px;
-  height: 40px;
-}
-.activate-here {
-  text-decoration: underline;
-  color: var(--color-royalblue);
-}
-.dont-have-your-container {
-  position: absolute;
-  top: 371px;
-  left: 264px;
-  font-size: var(--font-size-2xs);
-  cursor: pointer;
-  color: var(--color-black);
-}
-.contactbobacard-number {
-  position: absolute;
-  top: 222px;
-  left: 302px;
-  font-family: var(--font-titillium-web);
-  color: var(--color-wheat-200);
-}
-.rectangle-141-input1 {
-  position: absolute;
-  top: 258px;
-  left: 274px;
-  border-radius: var(--br-11xl);
-  background-color: var(--color-tan-600);
-  border: 1px solid var(--color-saddlebrown-100);
-  box-sizing: border-box;
-  width: 194px;
-  height: 38px;
-}
-.password3 {
-  position: absolute;
-  top: 267px;
-  left: 345px;
-  font-family: var(--font-titillium-web);
-  color: var(--color-wheat-200);
-}
-.log-in,
-.log-in-wrapper {
-  position: absolute;
-  top: 7px;
-  left: 21px;
-}
-.log-in-wrapper {
-  top: 307px;
-  left: 334px;
-  border-radius: var(--br-3xs);
-  background-color: rgba(175, 193, 114, 0.79);
-  border: 1px solid rgba(0, 0, 0, 0.41);
-  box-sizing: border-box;
-  width: 75px;
-  height: 34px;
-  color: var(--color-seagreen-200);
-  font-family: var(--font-titillium-web);
-}
-.card-query1 {
-  position: relative;
-  background-color: var(--color-cornsilk);
   width: 100%;
-  height: 398px;
-  overflow: hidden;
-  text-align: center;
-  font-size: var(--font-size-xs);
-  color: var(--color-dimgray-200);
+  height: 100%;
+  background-color: #FCF4D7;
+}
+.loginArea{
+  position: absolute;
+  background-color: #EED2AC;
+  width: 90vw;
+  height: 80vh;
+  top: 17vh;
+  left: 5vw;
+  border-radius: var(--br-11xl);
+}
+.logobg{
+  position: absolute;
+  margin: 0;
+  left: 5vw;
+  transform: scaleX(-1);
+  width: 40vw;
+}
+.logobg2{
+  position: absolute;
+  margin: 0;
+  left: 45vw;
+  width: 40vw;
+}
+.Header{
+  position: absolute;
   font-family: var(--font-catamaran);
+  color: #9D6532;
+  font-size: 5em;
+}
+.Bb{
+  position: absolute;
+  left: 30vw;
+  top: 5vh;
+}
+.dots{
+  position: absolute;
+  left: 42vw;
+  top: 10h;
+  width: 10vw;
+}
+.Num, .passw{
+  position: absolute;
+  background-color: #AD845B;
+  border: 0.2vw solid #603A22 ;
+  height: 7vh;
+  width: 25vw;
+  border-radius: var(--br-11xl);
+}
+.form{
+  position: absolute;
+  margin: 0;
+  color: #EED2AC;
+  top: 1vh;
+  left: 30%;
+}
+.Num{
+  top: 40vh;
+  left: 36.5%;
+}
+.passw{
+  top: 49vh;
+  left: 36.5%;
+}
+.passwo{
+  position: absolute;
+  margin: 0;
+  color: #EED2AC;
+  top: 1vh;
+  left: 37%;
+}
+.Activatebutton{
+  position: absolute;
+  background-color: #AFC172;
+  border: 0.2vw solid #808465;
+  top: 60vh;
+  left: 40vw;
+  height: 7vh;
+  width: 10vw;
+  border-radius: var(--br-3xs);
+}
+.activ{
+  position: absolute;
+  color: #428041;
+  font-family: var(--font-titillium-web);
+  left: 3.3vw;
+  width: 4vw;
+  top: 1vh;
+}
+.font{
+  position: absolute;
+  color: black;
+  bottom: 10vh;
+}
+.fontline{
+  position: absolute;
+  font-family: var(--font-catamaran);
+  width: 20vw;
+  left: 35vw;
+}
+.intheline{
+  position: absolute;
+  font-family: var(--font-catamaran);
+  width: 20vw;
+  left: 51vw;
+  text-decoration: underline;
+  color: #004AAD;
+  font-weight: bold;
 }

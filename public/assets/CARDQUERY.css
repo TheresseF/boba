@@ -61,14 +61,6 @@ td {
   color: #b8b1a8;
   font-size: medium;
 }
-.arrow-icon {
-  position: absolute;
-  top: 11.5vh;
-  left: 3vw;
-  width: 21.6px;
-  height: 5vh;
-  cursor: pointer;
-}
 
 .searchIcon{
   position: absolute;

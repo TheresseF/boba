@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Order</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <link href = "../public/assets/FINALORDER.css" rel="stylesheet" type="text/css"/>
-    <link href = "../public/assets/global.css" rel="stylesheet" type="text/css"/>
-    <link href = "../public/assets/orderarea.css" rel="stylesheet" type="text/css"/>
-    <link href = "../public/assets/upperdesign.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../public/assets/global.css" />
+    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
+    <link rel="stylesheet" href="../public/assets/orderarea.css" />
+    <link rel="stylesheet" href="../public/assets/CARDQUERY1.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -27,286 +25,70 @@
     />
   </head>
   <body>
-      <!-- upper design to homepage -->
-      
-      <div class="Bgupper">
-          <img
-            class="beverageslogo"
+    <div class="Background"><p>.</p></div>
+    <div class="Bgupper">
+      <img
+        class="beverageslogo"
+        alt=""
+        src="../public/beverages-2-4@2x.png"
+        id="beverages24"
+      />
+    <div class="bobasticlink" id="bOBASTICText">
+      <b>BOBASTIC</b>
+    </div>
+
+    <img
+            class="arrow-icon"
             alt=""
-            src="../public/beverages-2-4@2x.png"
-            id="beverages24"
-          />
-        <div class="bobasticlink" id="bOBASTICText">
-          <b>BOBASTIC</b>
-        </div>
-        <div class="tab">
-          <b class="order1">Order</b>
-        </div>
-        <b class="check-out1">Check-out</b>
-        <b class="payment1">Payment</b>
+            src="../public/arrow-21.svg"
+            id="arrowIcon"
+    />
+    <!-- login Area -->
+    <div class="loginArea">
+      <img class="logobg" alt="" src="../public/beverages-2-31@2x.png" />
+      <img class="logobg2" alt="" src="../public/beverages-2-31@2x.png" />
+      <div class="Header">
+        <b class="Bb">BOBACARD</b>
+        <p class="dots">. . .</p>
       </div>
-
-      <!-- order area sa left side -->
-      <div class ="orderBg">
-        <div class = "orderList" id="TableContainer">
-          <table>
-            <tr>
-              <th class="b">Product</th>
-              <th class ="a">Extra</th>
-              <th class="a">Size</th>
-              <th class="a">Quantity</th>
-              <th class="a">Delete</th>
-            </tr>
-            <!-- sample -->
-            <tr>
-              <td><b>Choclate</b></td>
-              <td><b>B</b></td>
-              <td><b>S</b></td>
-              <td><b>1</b></td>
-              <td>
-                <img
-              class ="delete"
-              src="../public/x.png"
-              alt=""
-              id="deletebutton"
-            />
-              </td>
-            </tr>
-          </table>
+        <div class="Num" id="NumberButton">
+          <p class="form">Contact Number</p>
         </div>
-        
-         <!-- order box area -->
-        <div class="orderbox"> 
-          <button class="paybox" id="PayButton">
-            <p class="pay" id="payText">Pay</p>
-          </button>
-
-          <div class="totalbox"></div>
-          <b class="b39">1,073.0 </b>
-          <p class="total1">Total</p>
-          <!-- Clear box -->
-          <button class="clearbox" id ="Clearbutton">
-            <p class="clear">Clear</p>
-          </button>
-
-          <!-- add box -->
-          <button class="addbox" id="Addbutton">
-            <p class="add">Add</p>
-          </button>
-        </div> 
-        
-      </div>
-
-      <!-- Menu area -->
-      <div class="menuBg">
-        <!-- <img class="menuborder" alt="" src="../public/rectangle-82.svg" /> -->
-        <div class ="menuborder">
-          <b class="drinks">Drinks</b>
-          <b class="size">Size</b>
-          <b class="food">Foods</b>
+        <div class="passw" id="PasswordButton">
+          <p class="passwo">Password</p>
         </div>
-        <!-- drink -->
-        <button class="box1" id="Chocolate">
-          <b class="chocolate">Chocolate</b>
-        </button>
-
-        <button class="box2" id="Strawberry">
-          <b class="strawberry">Strawberry</b>
-        </button>
-
-        <button class="box3" id="Matcha">
-          <b class="matcha">Matcha </b>
-        </button>
-
-        <button class="box4" id="Hokkaido">
-          <b class="hokkaido">Hokkaido</b>
-        </button>
-
-        <button class="box5" id="Blueberry">
-          <b class="blueberry">Blueberry</b>
-        </button>
-
-        <button class="box6" id="DarkM">
-          <b class="first">Dark</b>
-          <b class="second">Mocha</b>
-        </button>
-
-        <button class="box7" id="RedV">
-          <b class="red-velvet">Red Velvet</b>
-        </button>
-
-        <button class="box8" id="BrownS">
-          <b class="brown">Brown</b>
-          <b class="sugar">Sugar</b>
-        </button>
-
-        <div class="quantityboxsample" id="Quantity">
-          <img
-            class ="plus" 
-            src="../public/plus.png" 
-            alt="" 
-            id ="plus"
-          />
-          <img
-            class ="minus" 
-            src="../public/minus.png" 
-            alt="" 
-            id ="minus"
-          />
-      </div>
-
-        <!-- size -->
-        <b class="extra">EXTRA</b>
-
-        <button class="box9" id="Lsize">
-          <b class="sizes">Large</b>
-        </button>
-
-        <button class="box10" id="Msize">
-          <b class="medium">Medium</b>
-        </button>
-
-        <button class="box11" id="Ssize">
-          <b class="sizes">Small</b>
-        </button>
-
-        <button class="box12" id="Extra">
-          <b class="esizes">Boba</b>
-        </button>
-
-        <img class="logo2" alt="" src="../public/beverages-2-31@2x.png" />
-        <img class="ang-caption" alt="" src="../public/ang-caption@2x.png" />
-
-        <!-- food -->
-        <button class="box13" id="CinnD">
-          <b class="cinn-danish">Cinn Danish</b>
-        </button>
-
-        <button class="box14" id="CinnB">
-          <b class="cinn-bun">Cinn Bun</b>
-        </button>
-
-        <button class="box15" id="Sausage">
-          <b class="first">Sausage</b>
-          <b class="second">Roll</b>
-        </button>
-
-        <button class="box16" id="Flatbread">
-          <b class="flatbread">Flatbread</b>
-        </button>
-
-        <button class="box17" id="TunaPan">
-          <b class="first">Tuna</b>
-          <b class="second">Pandesal</b>
-        </button>
-
-        <button class="box18" id="FrenchC">
-          <b class="first1">French Butter</b>
-          <b class="second">Croissant</b>
-        </button>
-
-        <button class="box19" id="MacCookie">
-          <b class="brown">Macademia</b>
-          <b class="sugar">Cookie</b>
-        </button>
-
-        <button class="box20" id="Donut">
-          <b class="brown">Chocolate</b>
-          <b class="sugar">Donut</b>
-        </button>
-
-        <div class="quantityboxsample2">
-          <img
-            class ="plus" 
-            src="../public/plus.png" 
-            alt="" 
-            id ="plus2"
-          />
-          <img
-            class ="minus" 
-            src="../public/minus.png" 
-            alt="" 
-            id ="minus2"
-          />
-      </div>
+        <div class="Activatebutton" id="ActiveButton">
+          <div class="activ">Log In</div>
+        </div>
+        <div class="font">
+          <p class = "fontline"> Don't have your card activated?</p>
+          <p class="intheline" id="LogIn">Activate here</p>
+        </div>
+    </div>
+    
+  </div>
 
     <script>
-      var popuprectangle8 = document.getElementById("popuprectangle8");
-      if (popuprectangle8) {
-        popuprectangle8.addEventListener("click", function (e) {
-          window.location.href = "./FINALCHECKOUT.ejs";
-        });
-      }
-      
-      var popupback = document.getElementById("popupback");
-      if (popupback) {
-        popupback.addEventListener("click", function (e) {
-          window.location.href = "./FINALORDER1.ejs";
-        });
-      }
-      
-      var popupcontinue = document.getElementById("popupcontinue");
-      if (popupcontinue) {
-        popupcontinue.addEventListener("click", function (e) {
-          window.location.href = "./FINALCHECKOUT.ejs";
-        });
-      }
-      
-      var popupbeverages24 = document.getElementById("popupbeverages24");
-      if (popupbeverages24) {
-        popupbeverages24.addEventListener("click", function (e) {
+      var beverages24 = document.getElementById("beverages24");
+      if (beverages24) {
+        beverages24.addEventListener("click", function (e) {
           window.location.href = "./HOMEPAGE.ejs";
         });
       }
       
-      var popupbOBASTICText = document.getElementById("popupbOBASTICText");
-      if (popupbOBASTICText) {
-        popupbOBASTICText.addEventListener("click", function (e) {
+      var bOBASTICText = document.getElementById("bOBASTICText");
+      if (bOBASTICText) {
+        bOBASTICText.addEventListener("click", function (e) {
           window.location.href = "./HOMEPAGE.ejs";
         });
       }
       
-      var popuporderText = document.getElementById("popuporderText");
-      if (popuporderText) {
-        popuporderText.addEventListener("click", function (e) {
-          window.location.href = "./FINALORDER1.ejs";
-        });
-      }
-      
-      var PayButton = document.getElementById("PayButton");
-      if (PayButton) {
-        PayButton.addEventListener("click", function () {
-          var popup = document.getElementById("fINALPAYMENTContainer");
-          if (!popup) return;
-          var popupStyle = popup.style;
-          if (popupStyle) {
-            popupStyle.display = "flex";
-            popupStyle.zIndex = 100;
-            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
-            popupStyle.alignItems = "center";
-            popupStyle.justifyContent = "center";
-          }
-          popup.setAttribute("closable", "");
-      
-          var onClick =
-            popup.onClick ||
-            function (e) {
-              if (e.target === popup && popup.hasAttribute("closable")) {
-                popupStyle.display = "none";
-              }
-            };
-          popup.addEventListener("click", onClick);
-        });
-      }
-      
-      var payText = document.getElementById("payText");
-      if (payText) {
-        payText.addEventListener("click", function (e) {
-          window.location.href = "./FINALPAYMENT1.ejs";
+      var dontHaveYour = document.getElementById("dontHaveYour");
+      if (dontHaveYour) {
+        dontHaveYour.addEventListener("click", function (e) {
+          window.location.href = "./ACTIVATE.ejs";
         });
       }
       </script>
-
-      <script type="text/javascript" src="/assets/home.js"></script>
   </body>
 </html>

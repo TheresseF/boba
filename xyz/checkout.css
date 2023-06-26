@@ -1,131 +1,116 @@
-.CheckOut{
-    position: fixed;
-    top: 12vh;
-    left: 2vw;
-    border: 0.2vw dashed var(--color-dimgray-200);
-    background-color: #E2C7A1;
-    border-radius:var(--br-11xl);
-    height: 85vh;
-    width: 95.5vw;
-}
-.picture{
+.Background{
     position: absolute;
-    width: 29.9vw;
-    height: 85vh;
-    border-right: 0.2vw dashed#7F664F;
-    background-color: #E2C7A1;
-    border-radius: var(--br-11xl) 0 0 var(--br-11xl);
-}
-.CheckList{
-    position: absolute;
-    top: 8.5vh;
-    left: 30vw;
-    width: 65.5vw;
-    height: 55.5vh;
-    /* background-color: black; */
-    background-color: #E2C7A1;
-    /* border-radius: 0 var(--br-11xl) 0 0; */
-    border-bottom: 0.2vw dashed#7F664F;
-}
-.logo{
-    position: absolute;
-    top: 11vh;
-    width: 25vw;
-}
-.List{
-    position: absolute;
-    top: 2vh;
-    left: 31.5vw;
-    color: #7F664F;
-    font-size: 2em;
-}
-
-/* table */
-table {
     width: 100%;
-    border-collapse: collapse;
+    height: 100%;
+    background-color: #FCF4D7;
 }
-
-.format{
-    width: 6vw;
-    text-align: center;
-    color: var(--color-saddlebrown-100);
-    background-color: transparent;
-}
-.format1{
-    width: 3vw;
-    text-align: center;
-    color: var(--color-saddlebrown-100);
-    background-color: transparent;
-}
-.format2{
-    width: 6vw;
-    padding: 8px;
-    text-align: center;
-    color: transparent;
-    color: var(--color-sienna-300);
-    background-color: transparent;
-}
-.format3{
-    width: 3vw;
-    padding: 8px;
-    text-align: center;
-    color: transparent;
-    color: var(--color-sienna-300);
-    background-color: transparent;
-}
-.AllTotal{
-    top: 67vh;
-    left: 31vw;
+.loginArea{
     position: absolute;
-    color: #7F664F;
-    font-size: 1.5em;
-    font-weight: bold;
+    background-color: #EED2AC;
+    width: 90vw;
+    height: 80vh;
+    top: 17vh;
+    left: 5vw;
+    border-radius: var(--br-11xl);
 }
-.totalBox{
-    position: absolute;
-    top: 67vh;
-    left: 36vw;
-    background-color: cornsilk;
-    border: 0.1vw solid#7F664F;
-    height: 5vh;
-    width: 15vw;
-    border-radius: var(--br-8xs);
-}
-.total{
+.logobg{
     position: absolute;
     margin: 0;
-    top: 0.5vh;
-    left: 1vw;
+    left: 5vw;
+    transform: scaleX(-1);
+    width: 40vw;
+}
+.logobg2{
+    position: absolute;
+    margin: 0;
+    left: 45vw;
+    width: 40vw;
+}
+.Header{
+    position: absolute;
     font-family: var(--font-catamaran);
+    color: #9D6532;
+    font-size: 5em;
 }
-.bobac{
+.Bb{
     position: absolute;
-    top: 71vh;
-    left: 31vw;
+    left: 30vw;
+    top: 5vh;
 }
-.bobac1{
+.dots{
     position: absolute;
-    top: 76vh;
-    left: 31vw;
+    left: 42vw;
+    top: 10h;
+    width: 10vw;
 }
-.bobac2{
+.login,.Num, .passw{
     position: absolute;
-    top: 73.6vh;
-    left: 37vw;
-    background-color: transparent;
-    /* border: 0.1vw solid#7F664F; */
-    height: 4.5vh;
+    background-color: #AD845B;
+    border: 0.2vw solid #603A22 ;
+    height: 5vh;
     width: 20vw;
-    border-radius: var(--br-8xs);
+    border-radius: var(--br-11xl);
 }
-.bobac3{
+.login{
+    top: 35vh;
+    left: 39%;
+}
+.form{
     position: absolute;
-    top: 78.5vh;
-    left: 39.5vw;
-    background-color: transparent;
-    /* border: 0.1vw solid#7F664F; */
-    height: 4.5vh;
+    margin: 0;
+    color: #EED2AC;
+    top: 1vh;
+    left: 30%;
+}
+.Num{
+    top: 42vh;
+    left: 39%;
+}
+.passw{
+    top: 49vh;
+    left: 39%;
+}
+.passwo{
+    position: absolute;
+    margin: 0;
+    color: #EED2AC;
+    top: 1vh;
+    left: 37%;
+}
+.Activatebutton{
+    position: absolute;
+    background-color: #AFC172;
+    border: 0.2vw solid #808465;
+    top: 60vh;
+    left: 40vw;
+    height: 7vh;
+    width: 10vw;
+    border-radius: var(--br-3xs);
+}
+.activ{
+    position: absolute;
+    color: #428041;
+    font-family: var(--font-titillium-web);
+    left: 2.9vw;
+    top: 1vh;
+}
+.font{
+    position: absolute;
+    color: black;
+    bottom: 10vh;
+}
+.fontline{
+    position: absolute;
+    font-family: var(--font-catamaran);
     width: 20vw;
-    border-radius: var(--br-8xs);
+    left: 35vw;
+}
+.intheline{
+    position: absolute;
+    font-family: var(--font-catamaran);
+    width: 20vw;
+    left: 52.5vw;
+    text-decoration: underline;
+    color: #004AAD;
+    font-weight: bold;
 }
