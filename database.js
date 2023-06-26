@@ -1,19 +1,26 @@
-const {
-    createPool
-} = require('mysql');
+import mysql from 'mysql2';
 
-const poo = createPool({
-    host:"localhost",
-    user:"root",
-    password: "",
-    database: "boba_db",
-    connectionLimit: 10
-})
+const pool = mysql.createPool({
+    host: '127.0.0.1',
+    user: 'root',
+    password: '',
+    database: 'bobastic',
+}).promise()
 
-pool.query(`select * from registration`, (err, result, fields) => {
-    if(err){
-        return 
+pool.query('SELECT * FROM bobastic.customer_list', (error, results, fields) => {
+    if (error) {
+      console.error(error);
+      return;
     }
-})
+    console.log(results);
+});
 
-module.exports = pool;
+connection.connect((err) => {
+    if (err) {
+      console.error('Error connecting to MySQL database:', err);
+      return;
+    }
+    console.log('Connected to MySQL database');
+  });
+  
+  module.exports = connection;
