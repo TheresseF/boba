@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <link href = "../public/assets/FINALORDER.css" rel="stylesheet" type="text/css"/>
-    <link href = "../public/assets/global.css" rel="stylesheet" type="text/css"/>
-    <link href = "../public/assets/orderarea.css" rel="stylesheet" type="text/css"/>
-    <link href = "../public/assets/upperdesign.css" rel="stylesheet" type="text/css"/>
+    <link href = "/assets/FINALORDER.css" rel="stylesheet" type="text/css"/>
+    <link href = "/assets/global.css" rel="stylesheet" type="text/css"/>
+    <link href = "/assets/orderarea.css" rel="stylesheet" type="text/css"/>
+    <link href = "/assets/upperdesign.css" rel="stylesheet" type="text/css"/>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -33,7 +33,7 @@
           <img
             class="beverageslogo"
             alt=""
-            src="../public/beverages-2-4@2x.png"
+            src="/beverages-2-4@2x.png"
             id="beverages24"
           />
         <div class="bobasticlink" id="bOBASTICText">
@@ -66,7 +66,7 @@
               <td>
                 <img
               class ="delete"
-              src="../public/x.png"
+              src="/x.png"
               alt=""
               id="deletebutton"
             />
@@ -143,13 +143,13 @@
         <div class="quantityboxsample" id="Quantity">
           <img
             class ="plus" 
-            src="../public/plus.png" 
+            src="/plus.png" 
             alt="" 
             id ="plus"
           />
           <img
             class ="minus" 
-            src="../public/minus.png" 
+            src="/minus.png" 
             alt="" 
             id ="minus"
           />
@@ -174,8 +174,8 @@
           <b class="esizes">Boba</b>
         </button>
 
-        <img class="logo2" alt="" src="../public/beverages-2-31@2x.png" />
-        <img class="ang-caption" alt="" src="../public/ang-caption@2x.png" />
+        <img class="logo2" alt="" src="/beverages-2-31@2x.png" />
+        <img class="ang-caption" alt="" src="/ang-caption@2x.png" />
 
         <!-- food -->
         <button class="box13" id="CinnD">
@@ -218,22 +218,22 @@
         <div class="quantityboxsample2">
           <img
             class ="plus" 
-            src="../public/plus.png" 
+            src="/plus.png" 
             alt="" 
             id ="plus2"
           />
           <img
             class ="minus" 
-            src="../public/minus.png" 
+            src="/minus.png" 
             alt="" 
             id ="minus2"
           />
       </div>
 
     <script>
-      var popuprectangle8 = document.getElementById("popuprectangle8");
-      if (popuprectangle8) {
-        popuprectangle8.addEventListener("click", function (e) {
+      var popupcheckout = document.getElementById("popupcheckout");
+      if (popupcheckout) {
+        popupcheckout.addEventListener("click", function (e) {
           window.location.href = "./FINALCHECKOUT.ejs";
         });
       }
