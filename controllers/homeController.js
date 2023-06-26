@@ -12,17 +12,17 @@ module.exports = function(app){
     // Card Query 1 : Log In
     app.get('/LogIn', function(req, res){
         res.render('cardquery1')
-    })
+    });
     
     // Reveal : Points
     app.get('/view_points', function(req, res){
         res.render('reveal')
-    })
+    });
 
     // Activate Card
-    app.get('/activate_crd', function(req, res){
+    app.get('/ActivateCard', function(req, res){
         res.render('activatecard')
-    })
+    });
 
     // Order Page
     app.get('/order', function(req, res){
@@ -38,8 +38,6 @@ module.exports = function(app){
     app.get('/check_out', function(req, res){
         res.render('finalcheckout')
     })
-
-
 
     app.get('/popuporder-button-click', function(req, res){
         res.render('finalorder1');
