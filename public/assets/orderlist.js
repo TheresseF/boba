@@ -4,6 +4,14 @@ function addRow(product, type) {
   var table = document.getElementById("orderTable");
   var tbody = document.getElementById("otBody");
 
+  if (drinkRows.length > 0 && (
+    drinkRows[0].getElementsByTagName("td")[1].innerHTML.trim() === "" ||
+    (drinkRows[0].getElementsByTagName("td")[2].innerHTML.trim() === "" && drinkRows[0].getElementsByTagName("td")[2].innerHTML.trim() !== "")
+  ) && type !== "drink") {
+    alert("Please select a size for the previous drink before adding a new row.");
+    return;
+  }
+
   var row = tbody.insertRow();
   var cellProd = row.insertCell();
   var cellSize = row.insertCell();
@@ -28,7 +36,7 @@ function addRow(product, type) {
 
   if (type === "drink") {
     drinkRows.unshift(row);
-    
+
   }
   if (type === "food") {
     drinkRows = [];
