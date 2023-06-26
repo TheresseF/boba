@@ -14,6 +14,11 @@ app.use(express.static('./public'));
 homeController(app);
 //cardQueryController(app);
 
+//database stuff
+// var router = express.Router();
+
+// var database 
+
 //listen to port
 app.listen(3000);
 console.log('app is now listening to port 3000');
