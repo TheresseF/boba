@@ -1,8 +1,11 @@
 {
   "dependencies": {
     "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
     "mysql": "^2.18.1",
     "mysql2": "^3.4.2"
   },
@@ -14,5 +17,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "tiris",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": []
 }

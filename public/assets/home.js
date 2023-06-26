@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('#cardQueryButton').click(function() {
-    window.location.href = '/card_query';
+    window.location.href = '/cardquery';
   });
 
   $('#addOrderButton').click(function() {
@@ -35,6 +35,26 @@ $(document).ready(function() {
 
   $('#Exitbutton').click(function(){
     window.location.href ='/';
+  })
+
+  $('#arrowIcon2').click(function(){
+    window.location.href ='/cardquery';
+  })
+
+  $('#arrowIcon').click(function() {
+    window.location.href = '/';
+  });
+
+  $('#beverages24').click(function() {
+    window.location.href = '/';
+  });
+
+  $('#bOBASTICText').click(function() {
+    window.location.href = '/';
+  });
+
+  $('#ViewButton').click(function(){
+    window.location.href ='/LogIn';
   })
 
   $('#arrowIcon2').click(function(){

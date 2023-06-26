@@ -43,29 +43,45 @@
           </div>
     
           <!-- content -->
-          <div class="Tstyle">
+          <div class="Tstyle" >
             <table>
-              <tr>
-                <th class="CN">Customer Number</th> 
-                <th class="short">First Name</th>
-                <th class="short">Middle Name</th>
-                <th class="short">Last Name</th>
-                <th class="CN">Phonenumber</th>
-                <th class="CN">Points</th>
-                <th class="trans"></th>
-                <th class="trans"></th>
-              </tr>
-              <tr>
-                <td class="CN">0987</td> 
-                <td class="short">April</td>
-                <td class="short">Boy</td>
-                <td class="short">Rosal</td>
-                <td class="CN">098765433456</td>
-                <td class="short">0.0</td>
-                <td class="Boxbutton" id="ViewButton">View</td>
-                <td class="Boxbutton" id="DeleteInfo">Delete</td>
+              <thead>
+                <tr>
+                  <th class="CN">Customer Number</th> 
+                  <th class="short">First Name</th>
+                  <th class="short">Last Name</th>
+                  <th class="short">Email</th>
+                  <th class="short">Address</th>
+                  <th class="CN">Phone number</th>
+                  <th class="CN">Points</th>
+                  <th class="trans"></th>
+                  <th class="trans"></th>
+                </tr>
+              </thead>
 
-              </tr>
+              <tbody>
+                <% customers.forEach(function(data) { %>
+                  <tr>
+                    <td><%= data.Customer_Suki_ID %></td>
+                    <td><%= data.First_Name %></td>
+                    <td><%= data.Last_Name %></td>
+                    <td><%= data.Email %></td>
+                    <td><%= data.Address %></td>
+                    <td><%= data.Phone_Number %></td>
+                    <td><%= data.Points %></td>
+                  </tr>
+                <% }); %>
+              </tbody>
+                  
+                <!-- <tr>
+                  <td class="CN">0987</td> 
+                  <td class="short">April</td>
+                  <td class="short">Rosal</td>
+                  <td class="CN">098765433456</td>
+                  <td class="short">0.0</td>
+                  <td class="Boxbutton" id="ViewButton">View</td>
+                  <td class="Boxbutton" id="DeleteInfo">Delete</td>
+                </tr> -->
             </table>
           </div>
           <div class="search" id="search-engine">

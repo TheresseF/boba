@@ -1,18 +1,50 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
+require('dotenv').config();
 
-var app = express();
-var homeController = require('./controllers/homeController');
+const app = express();
+const homeController = require('./controllers/homeController.js');
 
-//set up template engine
+// Set up template engine
 app.set('view engine', 'ejs');
 
-//static files
+// Static files
 app.use(express.static('./public'));
 
-//fire controllers
+// Fire controllers
 homeController(app);
 
-//listen to port
-app.listen(3000);
-console.log('app is now listening to port 3000');
+const connection = mysql.createConnection({
+    host: '127.0.0.1',
+    user: 'root',
+    password: '',
+    database: 'bobastic'
+});
+  
+//Connect to MYSQL
+connection.connect((err) => {
+    if(err){
+      console.log('Error connecting to database');
+    } else{
+      console.log('Database is connected successfully');
+    }
+});
+
+//Define a rout to retrieve and render the data
+app.get('/cardquery', (req, res) => {
+    const query = 'SELECT * FROM customer_list';
+
+    connection.query(query, (err, rows) => {
+        if(err){
+            console.error('Error executing query:', err);
+            return;
+        }
+
+        res.render('cardquery', {customers: rows});
+    });
+});
+
+// Listen to port
+app.listen(3000, () => {
+  console.log('app is now listening on port 3000');
+});
