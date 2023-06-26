@@ -25,4 +25,11 @@ $(document).ready(function() {
   $('#ViewButton').click(function(){
     window.location.href ='/LogIn';
   })
+  $('#paybox').click(function(){
+    window.location.href ='/Payment';
+  })
+
+  $('#ConButton').click(function({
+    
+  }))
 });

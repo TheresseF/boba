@@ -25,4 +25,9 @@ module.exports = function(app){
     app.get('/LogIn', function(req, res){
         res.render('cardquery1')
     })
+    app.get('/Payment', function(req, res){
+        res.render('finalpayment')
+    })
+
+    
 };
