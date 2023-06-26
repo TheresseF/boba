@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `Customer_List` (
   `Last_Name` char(50),
   `Email` char(50),
   `Address` char(100),
-  `Phone_Number` int,
+  `Phone_Number` char(50),
   `Points` int,
   KEY `Primary Key` (`Customer_Suki_ID`)
 );
