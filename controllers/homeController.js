@@ -1,15 +1,45 @@
 module.exports = function(app){
+    // Homepage
     app.get('/', function(req, res){
         res.render('homepage');
     });
 
+    // Card Query Page
     app.get('/card_query', function(req, res){
         res.render('cardquery');
     });
 
+    // Card Query 1 : Log In
+    app.get('/LogIn', function(req, res){
+        res.render('cardquery1')
+    })
+    
+    // Reveal : Points
+    app.get('/Points', function(req, res){
+        res.render('reveal')
+    })
+
+    // Activate Card
+    app.get('/ActivateCard', function(req, res){
+        res.render('activatecard')
+    })
+
+    // Order Page
     app.get('/order', function(req, res){
         res.render('finalorder');
     });
+
+    //Payment page
+    app.get('/Payment', function(req, res){
+        res.render('finalpayment')
+    })
+
+    //Check Out Page
+    app.get('/CheckOut', function(req, res){
+        res.render('finalcheckout')
+    })
+
+
 
     app.get('/popuporder-button-click', function(req, res){
         res.render('finalorder1');
@@ -22,19 +52,4 @@ module.exports = function(app){
     app.delete('/homepage', function(req, res){
 
     });
-    app.get('/LogIn', function(req, res){
-        res.render('cardquery1')
-    })
-    app.get('/Payment', function(req, res){
-        res.render('finalpayment')
-    })
-    app.get('/CheckOut', function(req, res){
-        res.render('finalcheckout')
-    })
-    app.get('/ActivateCard', function(req, res){
-        res.render('activatecard')
-    })
-    app.get('/Points', function(req, res){
-        res.render('reveal')
-    })
 };

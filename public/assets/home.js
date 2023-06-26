@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
   $('#cardQueryButton').click(function() {
     window.location.href = '/card_query';
   });
