@@ -69,6 +69,10 @@
                     <td><%= data.Address %></td>
                     <td><%= data.Phone_Number %></td>
                     <td><%= data.Points %></td>
+                    <td>
+                      <button class = "Boxbutton" data-id="${row.Customer_Suki_ID}" id="ViewButton">View</button>
+                      <button class = "Boxbutton" data-id="${row.Customer_Suki_ID}" id="cq-delete-btn">Delete</button>  
+                    </td>
                   </tr>
                 <% }); %>
               </tbody>

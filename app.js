@@ -14,6 +14,7 @@ app.use(express.static('./public'));
 // Fire controllers
 homeController(app);
 
+//Database Setup
 const connection = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
@@ -30,7 +31,7 @@ connection.connect((err) => {
     }
 });
 
-//Define a rout to retrieve and render the data
+//Define a route to retrieve and render the data
 app.get('/cardquery', (req, res) => {
     const query = 'SELECT * FROM customer_list';
 
@@ -41,6 +42,21 @@ app.get('/cardquery', (req, res) => {
         }
 
         res.render('cardquery', {customers: rows});
+    });
+});
+
+//Database Management
+app.delete('/data: Customer_Suki_ID', (req, res) => {
+    const Customer_Suki_ID = req.params.Customer_Suki_ID;
+
+    connection.query('DELETE FROM customer_list WHERE Customer_Suki_ID =?', [Customer_Suki_ID], (error, result) => {
+        if(error){
+            console.error('Failed to delete data: ', error);
+            res.status(500).json({error: 'Internal Server Error'});
+            return;
+        }
+
+        res.json({message: 'Data deleted successfully'});
     });
 });
 

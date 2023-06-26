@@ -10,7 +10,7 @@ module.exports = function(app){
     });
 
     // Card Query 1 : Log In
-    app.get('/log_in', function(req, res){
+    app.get('/LogIn', function(req, res){
         res.render('cardquery1')
     })
     

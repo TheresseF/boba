@@ -1,17 +1,5 @@
 $(document).ready(function() {
   
-  $('#cardQueryButton').click(function() {
-    window.location.href = '/cardquery';
-  });
-
-  $('#addOrderButton').click(function() {
-    window.location.href = '/order';
-  });
-
-  $('#arrowIcon').click(function() {
-    window.location.href = '/';
-  });
-
   $('#beverages24').click(function() {
     window.location.href = '/';
   });
@@ -20,9 +8,22 @@ $(document).ready(function() {
     window.location.href = '/';
   });
 
+  $('#arrowIcon').click(function() {
+    window.location.href = '/';
+  });
+
+  $('#cardQueryButton').click(function() {
+    window.location.href = '/cardquery';
+  });
+
+  $('#addOrderButton').click(function() {
+    window.location.href = '/order';
+  });
+
   $('#popuporderText').click(function() {
     window.location.href = '/popuporder-button-click';
   });
+
   $('#ViewButton').click(function(){
     window.location.href ='/LogIn';
   })
