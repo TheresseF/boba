@@ -1,9 +1,9 @@
 module.exports = function(app){
-    app.get('/homepage', function(req, res){
+    app.get('/', function(req, res){
         res.render('homepage');
     });
 
-    app.get('/cardquery', function(req, res){
+    app.get('/card_query', function(req, res){
         res.render('cardquery');
     });
 
@@ -11,22 +11,9 @@ module.exports = function(app){
         res.render('finalorder');
     });
 
-    app.get('/arrow-button-click', function(req, res){
-        res.render('homepage');
-    });
-
-    app.get('/logo-button-click', function(req, res){
-        res.render('homepage');
-    });
-
-    app.get('/logotext-button-click', function(req, res){
-        res.render('homepage');
-    });
-
     app.get('/popuporder-button-click', function(req, res){
         res.render('finalorder1');
     });
-
 
     app.post('/homepage', function(req, res){
 

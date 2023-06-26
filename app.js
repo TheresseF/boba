@@ -18,23 +18,23 @@ homeController(app);
 //database stuff
 //var router = express.Router();
 
-var connection = mysql.createConnection({
-    host:'localhost',
-    port:3306,
-    database: 'bobastic',
-    user:'root',
-    password:''
-});
+// var connection = mysql.createConnection({
+//     host:'localhost',
+//     port:3306,
+//     database: 'bobastic',
+//     user:'root',
+//     password:''
+// });
 
-var database_connection_status = "";
+// var database_connection_status = "";
 
-connection.connect(function(error){
-    if(error){
-       console.log('MySQL database Connection Error');
-    } else{
-       console.log('Node JS Application Successfully connected to MySQL Database');
-    }
-})
+// connection.connect(function(error){
+//     if(error){
+//        console.log('MySQL database Connection Error');
+//     } else{
+//        console.log('Node JS Application Successfully connected to MySQL Database');
+//     }
+// })
 
 //listen to port
 app.listen(3000);

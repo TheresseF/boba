@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('#cardQueryButton').click(function() {
-    window.location.href = '/cardquery';
+    window.location.href = '/card_query';
   });
 
   $('#addOrderButton').click(function() {
@@ -8,15 +8,15 @@ $(document).ready(function() {
   });
 
   $('#arrowIcon').click(function() {
-    window.location.href = '/arrow-button-click';
+    window.location.href = '/';
   });
 
   $('#beverages24').click(function() {
-    window.location.href = '/logo-button-click';
+    window.location.href = '/';
   });
 
   $('#bOBASTICText').click(function() {
-    window.location.href = '/logotext-button-click';
+    window.location.href = '/';
   });
 
   $('#popuporderText').click(function() {
