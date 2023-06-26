@@ -45,26 +45,40 @@ td {
 
 
 /* search engine */
-.search{
-  position: absolute;
+.search {
+  position: fixed;
   top: 12vh;
   left: 10vw;
-  background-color: #ffe6c3;
-  height: 4vh;
-  width: 70vw;
-  border-radius: var(--br-3xs);
   cursor: pointer;
-}
-.TextSearch{
-  margin: 0.5vh;
-  left: 25vw;
-  position:absolute;
-  color: #b8b1a8;
-  font-size: medium;
+  height: 4vh;
+  width: 80vw;
 }
 
-.searchIcon{
-  position: absolute;
-  height: 4vh;
-  left: 97.5%;
+.search form {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
+
+.search input[type="text"] {
+  flex: 1;
+  padding: 0.5vh;
+  color: #b8b1a8;
+  background-color: var(--color-tan-200);
+  border: none;
+  border-radius: var(--br-3xs);
+  text-align: center;
+}
+
+.search button[type="submit"] {
+  height: 100%;
+  background-color: var(--color-wheat-200);
+  border-radius: var(--br-11xl);
+  border: none;
+  width: 5vw;
+  cursor: pointer;
+  color: #b8b1a8;
+  font-size: 1em;
+  margin: 0;
+}
+
