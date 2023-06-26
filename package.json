@@ -4,8 +4,12 @@
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+<<<<<<< HEAD
     "express-flash": "^0.0.2",
     "express-session": "^1.17.3",
+=======
+    "init": "^0.1.2",
+>>>>>>> b3d613dbd4811d510484750dc1c53c7b1847f31b
     "mysql": "^2.18.1",
     "mysql2": "^3.4.2"
   },

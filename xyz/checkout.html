@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
-        
-        <script src="https://co0de.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <link href = "../public/assets/upperdesign.css" rel="stylesheet" type="text/css"/>
-        <link href = "../public/assets/global.css" rel="stylesheet" type="text/css"/>
-        <link href = "./checkout.css" rel="stylesheet" type="text/css"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=League Spartan:wght@700&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@700&display=swap"
-        />
-      </head>
-    <body>
-      <!-- upper design to homepage -->
+    <title>Card Query</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link href = "../public/assets/CARDQUERY.css" rel="stylesheet" type="text/css"/>
+    <link href = "../public/assets/global.css" rel="stylesheet" type="text/css"/>
+    <link href = "../public/assets/upperdesign.css" rel="stylesheet" type="text/css"/>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=League Spartan:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+    />
+  </head>
+  <body>
+            <!-- upper design to homepage -->
       
-      <div class="Bgupper">
-        <img
-          class="beverageslogo"
-          alt=""
-          src="../public/beverages-2-4@2x.png"
-          id="beverages24"
-        />
-        <div class="bobasticlink" id="bOBASTICText">
-          <b>BOBASTIC</b>
-        </div>
-      </div>
-        <div class ="vackgrawnd">
-          <div class="pointbox">
-            <div class ="points">
-              <b class="poin">POINTS</b>
-              <div class="pointcontainer" id="PointerContainer"></div>
+            <div class="Bgupper">
+              <img
+                class="beverageslogo"
+                alt=""
+                src="../public/beverages-2-4@2x.png"
+                id="beverages24"
+              />
+            <div class="bobasticlink" id="bOBASTICText">
+              <b>BOBASTIC</b>
             </div>
-            <div class="Name" id="NameBox"><p>...</p></div>
-            <div class="Phone" id="PhoneBox"><p>1234567</p></div>
-
           </div>
+    
+          <!-- content -->
+          <div class="Tstyle">
+            <table>
+              <tr>
+                <th class="CN">BobaCard Number</th> 
+                <th class="CN">First Name</th>
+                <th class="CN">Last Name</th>
+                <th class="CN">Phonenumber</th>
+                <th class="CN">Points</th>
+                <th class="trans"></th>
+                <th class="trans"></th>
+              </tr>
+              <tr>
+                <td class="acc">0987</td> 
+                <td class="CN">April</td>
+                <td class="CN">Rosal</td>
+                <td class="acc">098765433456</td>
+                <td class="CN">0.0</td>
+                <td class="Boxbutton" id="ViewButton">View</td>
+                <td class="Boxbutton" id="DeleteInfo">Delete</td>
+
+              </tr>
+            </table>
+          </div>
+          <!-- <div class="search" id="search-engine">
+            <p class="TextSearch" id="TextSearch">Type in your Name or Number</p>
+            
+          </div> -->
+          <div class="search">
+          <form action="#">
+              <input type="text" placeholder="Type in your Name or Number">
+              <button type="submit" placeholder ="Search"><span>&#128269;</span></button>          
+            </form>
         </div>
-    </body>
+          <img
+            class="arrow-icon"
+            alt=""
+            src="../public/arrow-21.svg"
+            id="arrowIcon"
+          />
+      <script type="text/javascript" src="/assets/home.js"></script>
+  </body>
 </html>
+ 

@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
   $('#cardQueryButton').click(function() {
     window.location.href = '/cardquery';
   });
@@ -25,7 +26,7 @@ $(document).ready(function() {
   $('#ViewButton').click(function(){
     window.location.href ='/LogIn';
   })
-  $('#paybox').click(function(){
+  $('#PayButton').click(function(){
     window.location.href ='/Payment';
   })
 
@@ -58,6 +59,22 @@ $(document).ready(function() {
   })
 
   $('#arrowIcon2').click(function(){
-    window.location.href ='/cardquery';
+    window.location.href ='/card_query';
   })
+  $('#Activate').click(function(){
+    window.location.href ='/ActivateCard';
+  })
+  $('#LogIn').click(function(){
+    window.location.href ='/LogIn';
+  })
+  $('#ActiveSub').click(function(){
+    window.location.href ='/card_query';
+  })
+  $('#Backbutton').click(function(){
+    window.location.href ='/order';
+  })
+  $('#Back').click(function(){
+    window.location.href ='/order';
+  })
+
 });

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Activate Card</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="../public/assets/global.css" />
-    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
-    <link rel="stylesheet" href="../public/assets/orderarea.css" />
-    <link rel="stylesheet" href="../public/assets/ACTIVATE.css" />
+    <link rel="stylesheet" href="/assets/global.css" />
+    <link rel="stylesheet" href="/assets/upperdesign.css" />
+    <link rel="stylesheet" href="/assets/orderarea.css" />
+    <link rel="stylesheet" href="/assets/ACTIVATE.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -30,7 +31,7 @@
       <img
         class="beverageslogo"
         alt=""
-        src="../public/beverages-2-4@2x.png"
+        src="/beverages-2-4@2x.png"
         id="beverages24"
       />
     <div class="bobasticlink" id="bOBASTICText">
@@ -40,13 +41,13 @@
     <img
             class="arrow-icon"
             alt=""
-            src="../public/arrow-21.svg"
-            id="arrowIcon2"
+            src="/arrow-21.svg"
+            id="arrowIcon"
     />
     <!-- login Area -->
     <div class="loginArea">
-      <img class="logobg" alt="" src="../public/beverages-2-31@2x.png" />
-      <img class="logobg2" alt="" src="../public/beverages-2-31@2x.png" />
+      <img class="logobg" alt="" src="/beverages-2-31@2x.png" />
+      <img class="logobg2" alt="" src="/beverages-2-31@2x.png" />
       <div class="Header">
         <b class="Bb">BOBACARD</b>
         <p class="dots">. . .</p>
@@ -56,15 +57,17 @@
           <input type ="text" placeholder="Bobacard Number" required>
           <input type ="text" placeholder="Contact Number"  required>
           <input type ="password" placeholder="Password"  required>
-          <button type ="submit">Activate</button>
+          <button type ="submit" id="ActiveSub">Activate</button>
         </div>
+      </form>
 
         <div class="font">
           <span class = "fontline"> Already have your Card activated?</span>
           <span class="intheline" id="LogIn">Log in here</span>
         </div>
-
-    <script>
+      
+      <script type="text/javascript" src="/assets/home.js"></script>
+    <!-- <script>
       var beverages24 = document.getElementById("beverages24");
       if (beverages24) {
         beverages24.addEventListener("click", function (e) {
@@ -85,6 +88,6 @@
           window.location.href = "./ACTIVATE.ejs";
         });
       }
-      </script>
+      </script> -->
   </body>
 </html>

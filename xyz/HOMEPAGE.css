@@ -1,0 +1,84 @@
+.homepage-child {
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 471px);
+    border-radius: var(--br-xl);
+    /* background-color: rgba(194, 170, 147, 0.2); */
+    width: 942px;
+    height: 492px;
+  }
+  .beverages-2-5,
+  .beverages-5-1 {
+    position: absolute;
+    top: calc(50% - 276.36px);
+    left: calc(50% - 330.52px);
+    width: 609.66px;
+    height: 594.38px;
+    object-fit: cover;
+  }
+  .beverages-5-1 {
+    top: calc(50% - 177.36px);
+    left: calc(50% - 411px);
+    width: 823px;
+    height: 315px;
+  }
+  .copyright2023all-rights-rese {
+    position: absolute;
+    top: 95%;
+    left: 1%;
+  
+  }
+  .card-query {
+    position: relative;
+    font-size: 23.61px;
+    font-family: var(--font-raleway);
+    color: var(--color-dimgray-200);
+    text-align: center;
+    cursor: pointer;
+  }
+  .add-order-wrapper,
+  .card-query-wrapper {
+    cursor: pointer;
+    border: 1.2px dashed var(--color-dimgray-200);
+    padding: 0;
+    background-color: var(--color-tan-100);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-3xs);
+    box-sizing: border-box;
+    width: 205px;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .add-order-wrapper:hover,
+  .card-query-wrapper:hover {
+    background-color: var(--color-tan-800);
+  }
+  .add-order-wrapper {
+    left: 258.17px;
+    width: 205.53px;
+    height: 45.83px;
+  }
+  .frame-parent {
+    position: absolute;
+    top: calc(50% + 158.64px);
+    left: calc(50% - 232px);
+    width: 463.7px;
+    height: 46px;
+  }
+  .homepage {
+    position: relative;
+    background-color: var(--color-dimgray-200);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    font-size: 13.89px;
+    color: var(--color-white);
+    font-family: var(--font-catamaran);
+  }
+  

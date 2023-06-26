@@ -71,17 +71,18 @@
 .fontline{
   position: absolute;
   font-family: var(--font-catamaran);
-  width: 20vw;
-  left: 35vw;
+  width: 18vw;
+  left: 33vw;
 }
 .intheline{
   position: absolute;
   font-family: var(--font-catamaran);
   width: 20vw;
-  left: 52.5vw;
+  left: 50.4vw;
   text-decoration: underline;
   color: #004AAD;
   font-weight: bold;
+  cursor: pointer;
 }
 
 input[type ="text"], [type = "password"] {
@@ -92,7 +93,8 @@ input[type ="text"], [type = "password"] {
   border: 0.2vw solid #603a22;
   border-radius: var(--br-11xl);
   text-align: center;
-  margin-left: 15%;
+  margin-left: 12.5%;
+  margin-bottom: 1vh;
 }
 
 form {
@@ -106,7 +108,7 @@ button[type="submit"] {
   width: 10vw;
   border-radius: var(--br-3xs);
   color: #428041;
-  margin-left: 37.5%;
+  margin-left: 35%;
   margin-top: 1vh;
   
 }
