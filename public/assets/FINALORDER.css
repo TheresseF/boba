@@ -4,6 +4,7 @@
 top: 2.5vh;
 left: 10vw;
 color: peachpuff;
+font-family: var(--font-catamaran);
 }
 .size{
 top: 2.5vh;
@@ -25,7 +26,7 @@ position: absolute;
 }
 .drinks,.size, .food{
 font-size: x-large;
-font-family: var(---font-titillium-web);
+font-family: var(--font-catamaran);
 position: absolute;
 }
 

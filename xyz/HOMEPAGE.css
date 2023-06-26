@@ -56,7 +56,7 @@
   }
   .add-order-wrapper:hover,
   .card-query-wrapper:hover {
-    background-color: var(--color-tan-800);
+    background-color: #CAAC82;
   }
   .add-order-wrapper {
     left: 258.17px;
