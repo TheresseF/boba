@@ -43,14 +43,7 @@
   top: 10h;
   width: 10vw;
 }
-.Num, .passw{
-  position: absolute;
-  background-color: #AD845B;
-  border: 0.2vw solid #603A22 ;
-  height: 7vh;
-  width: 25vw;
-  border-radius: var(--br-11xl);
-}
+
 .form{
   position: absolute;
   margin: 0;
@@ -58,39 +51,7 @@
   top: 1vh;
   left: 30%;
 }
-.Num{
-  top: 40vh;
-  left: 36.5%;
-}
-.passw{
-  top: 49vh;
-  left: 36.5%;
-}
-.passwo{
-  position: absolute;
-  margin: 0;
-  color: #EED2AC;
-  top: 1vh;
-  left: 37%;
-}
-.Activatebutton{
-  position: absolute;
-  background-color: #AFC172;
-  border: 0.2vw solid #808465;
-  top: 60vh;
-  left: 40vw;
-  height: 7vh;
-  width: 10vw;
-  border-radius: var(--br-3xs);
-}
-.activ{
-  position: absolute;
-  color: #428041;
-  font-family: var(--font-titillium-web);
-  left: 3.3vw;
-  width: 4vw;
-  top: 1vh;
-}
+
 .font{
   position: absolute;
   color: black;

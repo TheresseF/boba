@@ -22,4 +22,7 @@ module.exports = function(app){
     app.delete('/homepage', function(req, res){
 
     });
+    app.get('/LogIn', function(req, res){
+        res.render('cardquery1')
+    })
 };

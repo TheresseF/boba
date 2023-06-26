@@ -62,38 +62,7 @@
   top: 1vh;
   left: 30%;
 }
-.Num{
-  top: 42vh;
-  left: 39%;
-}
-.passw{
-  top: 49vh;
-  left: 39%;
-}
-.passwo{
-  position: absolute;
-  margin: 0;
-  color: #EED2AC;
-  top: 1vh;
-  left: 37%;
-}
-.Activatebutton{
-  position: absolute;
-  background-color: #AFC172;
-  border: 0.2vw solid #808465;
-  top: 60vh;
-  left: 40vw;
-  height: 7vh;
-  width: 10vw;
-  border-radius: var(--br-3xs);
-}
-.activ{
-  position: absolute;
-  color: #428041;
-  font-family: var(--font-titillium-web);
-  left: 2.9vw;
-  top: 1vh;
-}
+
 .font{
   position: absolute;
   color: black;
@@ -113,4 +82,45 @@
   text-decoration: underline;
   color: #004AAD;
   font-weight: bold;
+}
+
+input[type ="text"], [type = "password"] {
+  height: 7vh;
+  width: 30vw;
+  display: inline-block;
+  background-color: #ad845b;
+  border: 0.2vw solid #603a22;
+  border-radius: var(--br-11xl);
+  text-align: center;
+  margin-left: 15%;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+button[type="submit"] {
+  background-color: #afc172;
+  border: 0.2vw solid #808465;
+  height: 7vh;
+  width: 10vw;
+  border-radius: var(--br-3xs);
+  color: #428041;
+  margin-left: 37.5%;
+  margin-top: 1vh;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  position: absolute;
+  top: 32vh;
+  left: 23vw;
+  padding: 16px;
+  height: 56vh;
+  width: 45vw;
+  /* background-color: #004AAD; */
 }

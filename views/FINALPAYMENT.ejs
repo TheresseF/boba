@@ -44,6 +44,8 @@
     <!-- order area sa left side -->
     <div class ="orderBg">
       <div class = "orderList" id="TableContainer">
+        <div class="boderOrder">
+            
         <table>
           <tr>
             <th class="b">Product</th>
@@ -54,20 +56,37 @@
           </tr>
           <!-- sample -->
           <tr>
-            <td><b>Choclate</b></td>
-            <td><b>B</b></td>
-            <td><b>S</b></td>
-            <td><b>1</b></td>
+            <td class="c"><b>Choclate</b></td>
+            <td class="c"><b>B</b></td>
+            <td class="c"><b>S</b></td>
+            <td>
+              <div>
+                <img
+                  class ="plus" 
+                  src="/plus.png" 
+                  alt="" 
+                  id ="plus"
+                />
+                <span class = "unit" id="unit">1</span>
+                <img
+                  class ="minus" 
+                  src="..//minus.png" 
+                  alt="" 
+                  id ="minus"
+                />
+              </div>
+            </td>
             <td>
               <img
                 class ="delete"
-                src="../public/x.png"
+                src="/x.png"
                 alt=""
                 id="deletebutton"
               />
             </td>
           </tr>
         </table>
+      </div>
       </div>
       
        <!-- order box area -->
@@ -101,15 +120,19 @@
           <div class="Bobacardbox">
             <b class="asking">Do you have a BobaCard?</b>
             <p class="for">If you have a BobaCard, you can earn points from your purchase.</p>
-            <b class="your">BobaCard</b>
-            <div class="Boba" id="EnterInput"><p class="Bob">Type in your BobaCard / Contact Number</p></div>
-            <div class="Card" id="PasswordInput"><p class="pass">Password</p></div>
-            <img class="logo3" alt="" src="../public/beverages-2-31@2x.png" />
-            <img class="ang-caption2" alt="" src="../public/ang-caption@2x.png" />
           </div>
+          <form action ="#">
+            <div class="BobaContainer">
+              <img class="logo3" alt="" src="../public/beverages-2-31@2x.png" />
+              <img class="ang-caption2" alt="" src="../public/ang-caption@2x.png" />
 
+              <label for="Bcard"><b class="your">BobaCard</b></label>
+              <input type="text" placeholder="Type in your BobaCard / Contact Number" required>
+              <input type="password" placeholder="Password" required>
+
+            </div>
+          </form>    
         </div>
-      </div>
       
     </div>
 
