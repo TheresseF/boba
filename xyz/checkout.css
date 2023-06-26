@@ -46,7 +46,6 @@
     position: fixed;
     color: black;
     font-weight: bold;
-    font-size: 2em;
     font-family: var(--font-league-spartan);
     /* background-color: aqua;  */
     width: 12vw;
@@ -54,8 +53,10 @@
 .Name{
     left: 47vw;
     top: 59vh; 
+    font-size: 2.5em;
 }
 .Phone{
     left: 45vw;
-    top: 67vh; 
+    top: 69vh; 
+    font-size: 1.5em;
 }

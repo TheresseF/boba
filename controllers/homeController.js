@@ -31,5 +31,7 @@ module.exports = function(app){
     app.get('/CheckOut', function(req, res){
         res.render('finalcheckout')
     })
-
+    app.get('/ActivateCard', function(req, res){
+        res.render('activatecard')
+    })
 };

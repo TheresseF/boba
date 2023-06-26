@@ -40,4 +40,10 @@ $(document).ready(function() {
   $('#arrowIcon2').click(function(){
     window.location.href ='/cardquery';
   })
+  $('#Activate').click(function(){
+    window.location.href ='/ActivateCard';
+  })
+  $('#LogIn').click(function(){
+    window.location.href ='/LogIn';
+  })
 });

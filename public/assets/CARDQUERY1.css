@@ -71,6 +71,7 @@
   text-decoration: underline;
   color: #004AAD;
   font-weight: bold;
+  cursor: pointer;
 }
 input[type ="text"], [type = "password"] {
   height: 7vh;
@@ -81,6 +82,7 @@ input[type ="text"], [type = "password"] {
   border-radius: var(--br-11xl);
   text-align: center;
   margin-left: 15%;
+  margin-bottom: 1vh;
 } 
 
 form {
@@ -97,16 +99,7 @@ button[type="submit"] {
   margin-left: 37.5%;
   margin-top: 1vh;
 }
-button[type="submit"] {
-  background-color: #afc172;
-  border: 0.2vw solid #808465;
-  height: 7vh;
-  width: 10vw;
-  border-radius: var(--br-3xs);
-  color: #428041;
-  margin-left: 37.5%;
-  margin-top: 1vh;
-}
+
 button:hover {
   opacity: 0.8;
 }

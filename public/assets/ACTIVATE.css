@@ -82,6 +82,7 @@
   text-decoration: underline;
   color: #004AAD;
   font-weight: bold;
+  cursor: pointer;
 }
 
 input[type ="text"], [type = "password"] {
@@ -93,6 +94,7 @@ input[type ="text"], [type = "password"] {
   border-radius: var(--br-11xl);
   text-align: center;
   margin-left: 15%;
+  margin-bottom: 1vh;
 }
 
 form {
