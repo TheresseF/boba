@@ -28,6 +28,7 @@ function addRow(product, type) {
 
   if (type === "drink") {
     drinkRows.unshift(row);
+    
   }
   if (type === "food") {
     drinkRows = [];
