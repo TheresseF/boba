@@ -168,8 +168,8 @@ table {
     border-collapse: collapse;
 }
 th {
-    color: var(--color-tan-100);
-    background-color: transparent;
+    padding: 1%;
+    font-size: 1em;
 }
 td {
     padding: 8px;
@@ -177,11 +177,11 @@ td {
 }
 .b{
     width: 2%;
-    color: #eed2ac;
+    color: cornsilk;
 }
 .a{
     width: 1%;
-    color: #eed2ac; 
+    color: cornsilk; 
 } 
 .c{
     text-align: center;
@@ -208,3 +208,12 @@ td {
 .unit{
     margin-left: 1.1vw;
 }
+.boderOrder {
+    position: fixed;
+    top: 14vh;
+    left: 2%;
+    border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+    background-color: var(--color-dimgray-200);
+    width: 30.3vw;
+    height: 4vh;
+  }
