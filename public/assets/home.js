@@ -1,10 +1,10 @@
 $(document).ready(function() {
   $('#cardQueryButton').click(function() {
-    window.location.href = '/cardquery-button-click';
+    window.location.href = '/cardquery';
   });
 
   $('#addOrderButton').click(function() {
-    window.location.href = '/order-button-click';
+    window.location.href = '/order';
   });
 
   $('#arrowIcon').click(function() {
