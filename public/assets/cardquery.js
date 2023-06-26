@@ -13,8 +13,8 @@ $(document).ready(function () {
     });
 
     $('#arrow-icon2').click(function () {
-        window.location.href = '/cardquery';
-      });
+        window.location.href = '/card_query';
+    });
     
     $('.ViewButton').click(function () {
       window.location.href = '/LogIn';
