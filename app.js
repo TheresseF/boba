@@ -33,7 +33,7 @@ connection.connect((err) => {
 
 //Define a route to retrieve and render the data
 app.get('/cardquery', (req, res) => {
-    const query = 'SELECT * FROM customer_list';
+    const query = 'SELECT * FROM customer_list ORDER BY `Customer_Suki_ID`';
 
     connection.query(query, (err, rows) => {
         if(err){

@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS `bobastic`;
 USE `bobastic`;
 
 CREATE TABLE IF NOT EXISTS `Customer_List` (
-  `Customer_Suki_ID` char(100),
+  `Customer_Suki_ID` char(100) PRIMARY KEY,
   `First_Name` char(50),
   `Last_Name` char(50),
   `Email` char(50),
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `Customer_List` (
 );
 
 CREATE TABLE IF NOT EXISTS `Order_List` (
-  `Order_Number` char(50),
+  `Order_Number` char(50) PRIMARY KEY,
   `Product_Code` char(15),
   `Quantity` int,
   `Total_Cost` float,
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `Customer_Order` (
 );
 
 CREATE TABLE IF NOT EXISTS `Product_List` (
-  `Product_Code` char(50),
+  `Product_Code` char(50) PRIMARY KEY,
   `Product_Name` char(100),
   `Size` char(10),
   `Cost` float,
