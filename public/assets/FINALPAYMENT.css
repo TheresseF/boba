@@ -91,58 +91,56 @@
 }
 .your{
   position: absolute;
-  top: 11vh;
+  top: 0vh;
   left: 3vw;
   color: var(--color-dimgray-200);
   font-family:var(--font-raleway);
   font-size: large;
 }
-.Boba{
-  top: 15vh;
-  left: 5vw;
-  position: absolute;
-  height: 5vh;
-  width: 30vw;
-  background-color: cornsilk;
-  border: 0.2vw solid var(--color-tan-300);
-  border-radius: var(--br-3xs);
-}
-.Bob{
-  position: absolute;
-  margin: 0;
-  top: 1vh;
-  left: 2vh;
-  color: var(--color-tan-400);
-}
-.pass{
-  position: absolute;
-  margin: 0;
-  top: 1vh;
-  left: 2vh;
-  color: var(--color-tan-400);
-}
-.Card{
-  top: 21vh;
-  left: 5vw;
-  position: absolute;
-  height: 5vh;
-  width: 30vw;
-  background-color: cornsilk;
-  border: 0.2vw solid var(--color-tan-300);
-  border-radius: var(--br-3xs);
-}
+
 /* logo ug caption */
 .logo3{
-  left: 45vw;
-  width: 24.5vh;
+  top: 60vh;
+  left: 80vw;
+  width: 26vh;
   }
   .ang-caption2{
-  top: 16vh;
-  left: 45vw;
+  top: 74vh;
+  left: 76vw;
   width: 20%;
   }
   .logo3, .ang-caption2{
-    position: absolute;
+    position: fixed;
   }
 
+
+input[type="text"]{
+  position: absolute;
+  height: 5vh;
+  width: 30vw;
+  background-color: cornsilk;
+  border: 0.2vw solid var(--color-tan-300);
+  border-radius: var(--br-3xs);
+  margin-left: 12%;
+  margin-top: 4%;
+}
+input[type="password"]{
+  position: absolute;
+  height: 5vh;
+  width: 30vw;
+  background-color: cornsilk;
+  border: 0.2vw solid var(--color-tan-300);
+  border-radius: var(--br-3xs);
+  margin-left: 12%;
+  margin-top: 9%;
+}
+.BobaContainer{
+  position: absolute;
+  top: 60vh;
+  background-color: var(--color-tan-100);
+  /* background-color: black; */
+  border-radius:0 0 var(--br-3xs) var(--br-3xs);
+  width: 100%;
+  height: 20vh;
+}
 /* ------------------------------------- */
