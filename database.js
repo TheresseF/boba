@@ -7,6 +7,14 @@ const pool = mysql.createPool({
     database: 'bobastic',
 }).promise()
 
+connection.connect((err) => {
+  if (err) {
+    console.error('Error connecting to MySQL database:', err);
+    return;
+  }
+  console.log('Connected to MySQL database');
+});
+
 pool.query('SELECT * FROM bobastic.customer_list', (error, results, fields) => {
     if (error) {
       console.error(error);
@@ -14,13 +22,5 @@ pool.query('SELECT * FROM bobastic.customer_list', (error, results, fields) => {
     }
     console.log(results);
 });
-
-connection.connect((err) => {
-    if (err) {
-      console.error('Error connecting to MySQL database:', err);
-      return;
-    }
-    console.log('Connected to MySQL database');
-  });
   
-  module.exports = connection;
+module.exports = connection;
