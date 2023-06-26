@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="../CSS/global.css" />
-    <link rel="stylesheet" href="../CSS/CARDQUERY1.css" />
+    <link rel="stylesheet" href="../public/assets/global.css" />
+    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
+    <link rel="stylesheet" href="../public/assets/orderarea.css" />
+    <link rel="stylesheet" href="../public/assets/CARDQUERY1.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -23,46 +25,48 @@
     />
   </head>
   <body>
-    <div class="card-query1">
-      <div class="card-query-child15"></div>
-      <b class="b62">145.0</b>
-      <b class="b63">145.0</b>
-      <div class="beverages-2-4-parent3">
-        <img
-          class="beverages-2-45"
-          alt=""
-          src="../public/beverages-2-4@2x.png"
-          id="beverages24"
-        />
-
-        <div class="bobastic5" id="bOBASTICText">
-          <b>BOBASTIC</b>
-          <b class="b64"> </b>
-        </div>
-      </div>
-      <div class="card-query-child16"></div>
-      <div class="card-query-child17"></div>
-      <img class="beverages-2-53" alt="" src="../public/beverages-2-51@2x.png" />
-
-      <div class="card-query-child18"></div>
-      <img class="beverages-2-61" alt="" src="../public/beverages-2-6@2x.png" />
-
-      <b class="bobacard2">
-        <p class="bobacard3">BOBACARD</p>
-      </b>
-      <b class="b65">. . .</b>
-      <div class="rectangle-138-input1"></div>
-      <b class="dont-have-your-container" id="dontHaveYour">
-        <span>Don't have your card activated? </span>
-        <span class="activate-here">Activate here</span>
-      </b>
-      <b class="contactbobacard-number">Contact/Bobacard Number</b>
-      <div class="rectangle-141-input1"></div>
-      <b class="password3">Password</b>
-      <div class="log-in-wrapper">
-        <b class="log-in">Log In</b>
-      </div>
+    <div class="Background"><p>.</p></div>
+    <div class="Bgupper">
+      <img
+        class="beverageslogo"
+        alt=""
+        src="../public/beverages-2-4@2x.png"
+        id="beverages24"
+      />
+    <div class="bobasticlink" id="bOBASTICText">
+      <b>BOBASTIC</b>
     </div>
+
+    <img
+            class="arrow-icon"
+            alt=""
+            src="../public/arrow-21.svg"
+            id="arrowIcon"
+    />
+    <!-- login Area -->
+    <div class="loginArea">
+      <img class="logobg" alt="" src="../public/beverages-2-31@2x.png" />
+      <img class="logobg2" alt="" src="../public/beverages-2-31@2x.png" />
+      <div class="Header">
+        <b class="Bb">BOBACARD</b>
+        <p class="dots">. . .</p>
+      </div>
+        <div class="Num" id="NumberButton">
+          <p class="form">Contact Number</p>
+        </div>
+        <div class="passw" id="PasswordButton">
+          <p class="passwo">Password</p>
+        </div>
+        <div class="Activatebutton" id="ActiveButton">
+          <div class="activ">Log In</div>
+        </div>
+        <div class="font">
+          <p class = "fontline"> Don't have your card activated?</p>
+          <p class="intheline" id="LogIn">Activate here</p>
+        </div>
+    </div>
+    
+  </div>
 
     <script>
       var beverages24 = document.getElementById("beverages24");
