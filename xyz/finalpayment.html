@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../public/assets/global.css" />
+    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
+    <link rel="stylesheet" href="../public/assets/orderarea.css" />
+    <link rel="stylesheet" href="../xyz/finalpayment1.css"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=League Spartan:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@700&display=swap"
+    />
+  </head>
+  <body>
+  <div class="container">
+    <div class="Bgupper">
+      <img
+        class="beverageslogo"
+        alt=""
+        src="/beverages-2-4@2x.png"
+        id="beverages24"
+      />
+      <div class="bobasticlink" id="bOBASTICText">
+        <b>BOBASTIC</b>
+      </div>
+      <b class="order">Order</b>
+      <div class="tab1">
+        <b class="payment">Payment</b>
+      </div>
+      <b class="check-out1">Check-out</b>
+    </div>
+    <!-- order area sa left side -->
+    <div class ="orderBg">
+      <div class = "orderList" id="TableContainer">
+        <div class="boderOrder">
+            
+        <table>
+          <tr>
+            <th class="b">Product</th>
+            <th class ="a">Extra</th>
+            <th class="a">Size</th>
+            <th class="a">Quantity</th>
+            <th class="a">Delete</th>
+          </tr>
+          <!-- sample -->
+          <tr>
+            <td class="c"><b>Choclate</b></td>
+            <td class="c"><b>B</b></td>
+            <td class="c"><b>S</b></td>
+            <td>
+              <div>
+                <img
+                  class ="plus" 
+                  src="/plus.png" 
+                  alt="" 
+                  id ="plus"
+                />
+                <span class = "unit" id="unit">1</span>
+                <img
+                  class ="minus" 
+                  src="/minus.png" 
+                  alt="" 
+                  id ="minus"
+                />
+              </div>
+            </td>
+            <td>
+              <img
+                class ="delete"
+                src="/x.png"
+                alt=""
+                id="deletebutton"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+      
+       <!-- order box area -->
+      <div class="orderbox"> 
+        <!-- Pay box -->
+        <button class="paybox" id="ConButton">
+          <p class="continue" id="ConText">Continue</p>
+        </button>
+
+        <div class="totalbox" id="TotalInput"></div>
+        <b class="b39" >1,073.0 </b>
+        <p class="total1">Total</p>
+
+        <!-- Back box -->
+        <button class="clearbox" id ="Backbutton">
+          <p class="back" id="Back">Back</p>
+        </button>
+
+      </div> 
+      <div class="menuBg">
+        <div class="menuborder"></div>
+        //CASH 
+          <div class="cash-container">
+            <button class="cashbox" autofocus id="cashboxpop" onclick="openPopup()"> 
+              <b class="cash"> Cash </b> </button>
+              <div id= overlay class="overlay"></div>
+              <div class="cash-popup" autofocus id="cashpopup"> 
+                <div class="order-rectangle-114"></div>
+                  <button class="cancel-frame" autofocus onclick="closePopup()">
+                    <b class="cancel2">Cancel</b>
+                  </button>
+                  <a href="finalcheckout.html">
+                  <button class="proceed-frame" autofocus id="ProceedButton">
+                    <b class="cancel2">Proceed</b>
+                  </button>
+                  </a>
+                  <div class="order-rectangle-114"></div>
+                  <b class="please-input-cash">Please input cash amount</b>
+                  <input
+                    class="order-rectangle-132"
+                    type="number"
+                    placeholder="Input Cash Amount"
+                    min="{1}"
+                    maxlength
+                    minlength
+                  />
+              </div>
+            </div>
+
+            //GCASH
+            <div class="Gcash-container">
+              <button class="Gcashbox" autofocus id="gcashboxpop" onclick="GcashopenPopup()"> 
+                <b class="Gcash"> GCash </b> </button>
+                <div id= overlay class="overlay"></div>
+                <div class="cash-popup" autofocus id="gcashpopup"> 
+                  <div class="order-rectangle-114"></div>
+                    <button class="cancel-frame" autofocus onclick="GcashclosePopup()">
+                      <b class="cancel2">Cancel</b>
+                    </button>
+                    <a href="finalcheckout.html">
+                    <button class="proceed-frame" autofocus id="ProceedButton">
+                      <b class="cancel2">Proceed</b>
+                    </button>
+                    </a>
+                    <div class="order-rectangle-114"></div>
+                    <b id="gcash-text" class="please-input-cash"> Please input Gcash amount</b>
+                    <input
+                      class="order-rectangle-132"
+                      type="number"
+                      placeholder="Input Cash Amount"
+                      min="{1}"
+                      maxlength
+                      minlength
+                    />
+                </div>
+              </div>
+            
+           
+          
+
+          <div class="Bobacardbox">
+            <b class="asking">Do you have a BobaCard?</b>
+            <p class="for">If you have a BobaCard, you can earn points from your purchase.</p>
+          </div>
+          <form action ="#">
+            <div class="BobaContainer">
+              <img class="logo3" alt="" src="/beverages-2-31@2x.png" />
+              <img class="ang-caption2" alt="" src="/ang-caption@2x.png" />
+
+              <label for="Bcard"><b class="your">BobaCard</b></label>
+              <input type="text" placeholder="Type in your BobaCard / Contact Number" required>
+              <input type="password" placeholder="Password" required>
+
+            </div>
+          </form> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>   
+    
+
+    <script>
+      //CASH
+      let popup = document.getElementById("cashpopup"); 
+      let ppopup = document.getElementById("gcashpopup"); 
+      let overlay = document.getElementById("overlay");
+
+      function openPopup(){
+        popup.classList.add("open-popup"); //display popup diba
+        overlay.style.display = "block";
+      }
+      function closePopup(){
+        popup.classList.remove("open-popup");
+        overlay.style.display = "none"; // Hide the overlay
+      }
+
+      function GcashopenPopup(){
+        ppopup.classList.add("open-popup"); //display popup diba
+        overlay.style.display = "block";
+      }
+
+      function GcashclosePopup(){
+        ppopup.classList.remove("open-popup");
+        overlay.style.display = "none"; // Hide the overlay
+      }
+
+      </script>
+  </body>
+</html>
