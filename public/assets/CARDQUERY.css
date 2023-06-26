@@ -40,6 +40,7 @@ td {
   background-color: cornsilk;
   border: 0.2vw solid var(--color-saddlebrown-100);
   font-family: var(--font-catamaran);
+  cursor: pointer;
 }
 
 
