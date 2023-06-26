@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="../public/assets/global.css" />
+    <link rel="stylesheet" href="../xyz/cash.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=League Spartan:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="cash-payment">
+      <div class="order-rectangle-11"></div>
+      <div class="order-rectangle-111"></div>
+      <b class="please-enter-your">Please enter your Paymaya Number </b>
+      <div class="cash-payment-child"></div>
+      <b class="proceed">Proceed</b>
+      <div class="cash-payment-item"></div>
+      <button class="cancel" autofocus id="popupcancel">Cancel</button>
+      <div class="order-rectangle-11"></div>
+      <div class="order-rectangle-111"></div>
+      <b class="please-input-cash">Please input cash amount</b>
+      <div class="cash-payment-child"></div>
+      <button class="proceed1" autofocus>Proceed</button>
+      <div class="cash-payment-item"></div>
+      <b class="cancel1" id="popupcancelText">Cancel</b>
+    </div>
+
+    <script>
+      var popupcancel = document.getElementById("popupcancel");
+      if (popupcancel) {
+        popupcancel.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      
+      var popupcancelText = document.getElementById("popupcancelText");
+      if (popupcancelText) {
+        popupcancelText.addEventListener("click", function (e) {
+          window.location.href = "./FINALPAYMENT1.ejs";
+        });
+      }
+      </script>
+  </body>
+</html>

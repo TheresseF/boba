@@ -1,0 +1,152 @@
+/* background */
+.bg{
+    background-color: var(--color-lightcoral-100);
+  }
+  
+  /* right side na area */
+  .cashbox{
+    position: absolute;
+    top: 10vh;
+    left: 2vw;
+    background-color: var(--color-tan-400);
+    border: 0.1vw dashed var(--color-dimgray-200);
+    border-radius: var(--br-11xl);
+    width: 14vw;
+    height: 16vh;
+  }
+  .cash{
+    position: absolute;
+    top: 5.5vh;
+    left: 3.5vw;
+    font-family: var(--font-league-spartan);
+    font-size: var(--font-size-base);
+    color: var(--color-saddlebrown-100);
+    font-size: 6vh;
+  }
+  .Gcashbox{
+    position: absolute;
+    top: 10vh;
+    left: 17vw;
+    background-color: var(--color-tan-400);
+    border: 0.1vw dashed var(--color-dimgray-200);
+    border-radius: var(--br-11xl);
+    width: 14vw;
+    height: 16vh;
+  }
+  .Gcash{
+    position: absolute;
+    top: 5.5vh;
+    left: 1vw;
+    font-family: var(--font-league-spartan);
+    font-size: var(--font-size-base);
+    color: var(--color-saddlebrown-100);
+    font-size: 5vh;
+  }
+  .Paymayabox{
+    position: absolute;
+    top: 10vh;
+    left: 32vw;
+    background-color: var(--color-tan-400);
+    border: 0.1vw dashed var(--color-dimgray-200);
+    border-radius: var(--br-11xl);
+    width: 14vw;
+    height: 16vh;
+  }
+  .Paymaya{
+    position: absolute;
+    top: 5.5vh;
+    left: 2vw;
+    font-family: var(--font-league-spartan);
+    font-size: var(--font-size-base);
+    color: var(--color-saddlebrown-100);
+    font-size: 5vh;
+  }
+  
+  /* Asking for your Bobocard */
+  .Bobacardbox{
+    position: absolute;
+    top: 49vh;
+    background-color: var(--color-tan-100);
+    /* background-color: black; */
+    border-top: 0.5vw dashed var(--color-tan-300);
+    border-radius:0 0 var(--br-3xs) var(--br-3xs);
+    width: 100%;
+    height: 30vh;
+  }
+  .asking{
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+    color: var(--color-dimgray-200);
+    font-family:var(--font-raleway);
+    font-size: large;
+  }
+  .for{
+    position: absolute;
+    top: 3vh;
+    left: 5vw;
+    color: var(--color-dimgray-200);
+    font-family:var(--font-catamaran);
+    font-size: 1em;
+  }
+  .your{
+    position: absolute;
+    top: 11vh;
+    left: 3vw;
+    color: var(--color-dimgray-200);
+    font-family:var(--font-raleway);
+    font-size: large;
+  }
+  .Boba{
+    top: 15vh;
+    left: 5vw;
+    position: absolute;
+    height: 5vh;
+    width: 30vw;
+    background-color: cornsilk;
+    border: 0.2vw solid var(--color-tan-300);
+    border-radius: var(--br-3xs);
+  }
+  .Bob{
+    position: absolute;
+    margin: 0;
+    top: 1vh;
+    left: 2vh;
+    color: var(--color-tan-400);
+  }
+  .pass{
+    position: absolute;
+    margin: 0;
+    top: 1vh;
+    left: 2vh;
+    color: var(--color-tan-400);
+  }
+  .Card{
+    top: 21vh;
+    left: 5vw;
+    position: absolute;
+    height: 5vh;
+    width: 30vw;
+    background-color: cornsilk;
+    border: 0.2vw solid var(--color-tan-300);
+    border-radius: var(--br-3xs);
+  }
+  /* logo ug caption */
+  .logo3{
+    left: 45vw;
+    width: 24.5vh;
+    }
+    .ang-caption2{
+    top: 16vh;
+    left: 45vw;
+    width: 20%;
+    }
+    .logo3, .ang-caption2{
+      position: absolute;
+    }
+
+
+  
+  /* ------------------------------------- */
+
+ 
