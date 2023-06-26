@@ -1,11 +1,23 @@
 $(document).ready(function () {
     // card-query-page
+    $('#arrow-icon').click(function () {
+        window.location.href = '/';
+      });
+
+    $('#beverages24').click(function() {
+        window.location.href = '/';
+    });
+    
+    $('#bOBASTICText').click(function() {
+        window.location.href = '/';
+    });
+
+    $('#arrow-icon2').click(function () {
+        window.location.href = '/cardquery';
+      });
+    
     $('.ViewButton').click(function () {
       window.location.href = '/LogIn';
-    });
-  
-    $('#arrowIcon2').click(function () {
-      window.location.href = '/cardquery';
     });
   
     $('#Activate').click(function () {

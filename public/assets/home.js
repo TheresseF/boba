@@ -58,12 +58,4 @@ $(document).ready(function() {
     window.location.href ='/';
   })
 
-  $('#Backbutton').click(function(){
-    window.location.href ='/order';
-  })
-  $('#Back').click(function(){
-    window.location.href ='/order';
-  })
-
-
 });
