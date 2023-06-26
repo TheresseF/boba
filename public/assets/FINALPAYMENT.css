@@ -1,6 +1,6 @@
-/* background ??*/
+/* background */
 .bg{
-  background-color: #E2C7A1;
+  background-color: var(--color-lightcoral-100);
 }
 
 /* right side na area */
@@ -8,19 +8,16 @@
   position: absolute;
   top: 10vh;
   left: 2vw;
-  background-color: #FFE3BC;
+  background-color: var(--color-tan-400);
   border: 0.1vw dashed var(--color-dimgray-200);
   border-radius: var(--br-11xl);
   width: 14vw;
   height: 16vh;
 }
-.cashbox:hover, .Gcashbox:hover{
-background-color: #E1BE8D;
-}
 .cash{
   position: absolute;
   top: 5.5vh;
-  left: 4.0vw;
+  left: 3.5vw;
   font-family: var(--font-league-spartan);
   font-size: var(--font-size-base);
   color: var(--color-saddlebrown-100);
@@ -30,7 +27,7 @@ background-color: #E1BE8D;
   position: absolute;
   top: 10vh;
   left: 17vw;
-  background-color: #FFE3BC;
+  background-color: var(--color-tan-400);
   border: 0.1vw dashed var(--color-dimgray-200);
   border-radius: var(--br-11xl);
   width: 14vw;
@@ -39,11 +36,11 @@ background-color: #E1BE8D;
 .Gcash{
   position: absolute;
   top: 5.5vh;
-  left: 3.2vw;
+  left: 1vw;
   font-family: var(--font-league-spartan);
   font-size: var(--font-size-base);
   color: var(--color-saddlebrown-100);
-  font-size: 6vh;
+  font-size: 5vh;
 }
 .Paymayabox{
   position: absolute;
@@ -146,151 +143,4 @@ input[type="password"]{
   width: 100%;
   height: 20vh;
 }
-/* ---------------buttons area--------------- */
-
-.order-rectangle-114,
-.order-rectangle-115 {
-  position: absolute;
-  top: 8.5px;
-  left: 5.5px;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-tan-100);
-  border: 1px solid var(--color-tan-300);
-  box-sizing: border-box;
-  width: 277px;
-  height: 55px;
-}
-.order-rectangle-115 {
-  top: 66.5px;
-  background-color: var(--color-bisque-100);
-  height: 27px;
-}
-.please-enter-your3 {
-  position: absolute;
-  top: 23px;
-  left: calc(50% - 111.5px);
-}
-.cancel2 {
-  position: relative;
-  font-size: var(--font-size-xs);
-  font-family: var(--font-catamaran);
-  color: var(--color-white);
-  text-align: center;
-}
-.cancel-frame,
-.proceed-frame {
-  cursor: pointer;
-  border: 2px solid var(--color-sienna-300);
-  padding: 0;
-  background-color: var(--color-sienna-100);
-  position: absolute;
-  top: 100px;
-  left: 16px;
-  border-radius: var(--br-8xs);
-  box-sizing: border-box;
-  width: 79px;
-  height: 25px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-}
-.cancel-frame:hover {
-  background-color: #865C35;
-}
-.proceed-frame {
-  border: 2px solid var(--color-seagreen-100);
-  background-color: var(--color-darkseagreen);
-  left: 197px;
-}
-.proceed-frame:hover {
-  background-color: #5D8D55;
-}
-.please-input-cash {
-  position: absolute;
-  top: 23px;
-  left: calc(50% - 80.5px);
-}
-
-.order-rectangle-132 {
-  border: 1px solid var(--color-tan-300);
-  background-color: var(--color-bisque-100);
-  position: absolute;
-  top: 66.5px;
-  left: 5.5px;
-  border-radius: var(--br-3xs);
-  box-sizing: border-box;
-  width: 277px;
-  height: 27px;
-}
-.cash-popup {
-  position: fixed;
-  top: 50%; 
-  left: 0%;
-  border-radius: var(--br-3xs);
-  width: 289px;
-  height: 133px;
-  overflow: hidden;
-  max-width: 90%;
-  max-height: 90%;
-  text-align: center;
-  font-size: var(--font-size-sm);
-  color: var(--color-dimgray-200);
-  font-family: var(--font-catamaran);
-  visibility: hidden;
-  transform: translate(-50%,-50%) scale(0.1);
-  transition: transform 0.4s, top 0.4s; 
-  z-index: 9999;
-}
-.cash-popup,
-.cash-popup:hover {
-  background-color: var(--color-cornsilk);
-}
-
-.gcash-popup {
-  position: fixed;
-  top: 50%; 
-  left: 0%;
-  border-radius: var(--br-3xs);
-  width: 289px;
-  height: 133px;
-  overflow: hidden;
-  max-width: 90%;
-  max-height: 90%;
-  text-align: center;
-  font-size: var(--font-size-sm);
-  color: var(--color-dimgray-200);
-  font-family: var(--font-catamaran);
-  visibility: hidden;
-  transform: translate(-50%,-50%) scale(0.1);
-  transition: transform 0.4s, top 0.4s; 
-  z-index: 9999;
-}
-
-.open-popup{
-top: 50%;
-left: 50%; 
-visibility: visible; 
-transform: translate(-50%,-50%) scale(1);
-}
-
-.container{
-  width: 100%;
-  height: 100vh;
-  background: #FCF4D7;
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Darkened background */
-  z-index: 9998; /* Ensure overlay is behind popup but above other elements */
-}
+/* ------------------------------------- */
