@@ -52,5 +52,8 @@ $(document).ready(function() {
   $('#Backbutton').click(function(){
     window.location.href ='/order';
   })
+  $('#Back').click(function(){
+    window.location.href ='/order';
+  })
 
 });
