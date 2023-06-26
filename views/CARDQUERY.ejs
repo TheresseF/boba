@@ -43,28 +43,41 @@
           </div>
     
           <!-- content -->
-          <div class="Tstyle">
+          <div class="Tstyle" >
             <table>
-              <tr>
-                <tr>
-                  <th class="CN">BobaCard Number</th> 
-                  <th class="CN">First Name</th>
-                  <th class="CN">Last Name</th>
-                  <th class="CN">Phonenumber</th>
-                  <th class="CN">Points</th>
-                  <th class="trans"></th>
-                  <th class="trans"></th>
+              <thead>
+                <tr class = "CN">
+                  <th>Customer Number</th> 
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Address</th>
+                  <th>Phone number</th>
+                  <th>Points</th>
+                  <th></th>
+                  <th></th>
                 </tr>
-                <tr>
-                  <td class="acc">0987</td> 
-                  <td class="CN">April</td>
-                  <td class="CN">Rosal</td>
-                  <td class="acc">098765433456</td>
-                  <td class="CN">0.0</td>
-                  <td class="Boxbutton" id="ViewButton">View</td>
-                  <td class="Boxbutton" id="DeleteInfo">Delete</td>
-  
-                </tr>
+              </thead>
+
+              <tbody>
+                <% customers.forEach(function(data) { %>
+                  <tr>
+                    <td><%= data.Customer_Suki_ID %></td>
+                    <td><%= data.First_Name %></td>
+                    <td><%= data.Last_Name %></td>
+                    <td><%= data.Email %></td>
+                    <td><%= data.Address %></td>
+                    <td><%= data.Phone_Number %></td>
+                    <td><%= data.Points %></td>
+                    <td>
+                      <button class="Boxbutton ViewButton" data-id="${data.Customer_Suki_ID}">View</button>
+                      <button class="Boxbutton EditButton" data-id="${data.Customer_Suki_ID}">Edit</button>
+                      <button class="Boxbutton cq-delete-btn" data-id="<%= data.Customer_Suki_ID %>">Delete</button>
+                    </td>
+                  </tr>
+                <% }); %>
+              </tbody>
+                  
             </table>
           </div>
           <div class="search">
@@ -77,8 +90,28 @@
             class="arrow-icon"
             alt=""
             src="/arrow-21.svg"
-            id="arrowIcon"
+            id = "arrow-icon"
           />
-      <script type="text/javascript" src="/assets/home.js"></script>
+      <script type="text/javascript" src="/assets/cardquery.js"></script>
+      <!-- <script>
+        // Function to handle delete button click event
+    $("#cq-delete-btn").on("click", function () {
+        const customerId = $(this).data("id");
+        const deleteUrl = `/data/${customerId}`;
+
+    // Send DELETE request to the server
+    $.ajax({
+      url: deleteUrl,
+      type: "DELETE",
+      success: function (response) {
+        // Reload the page after successful deletion
+        location.reload();
+      },
+      error: function (xhr, status, error) {
+        console.error(error);
+      },
+    });
+  });
+      </script> -->
   </body>
 </html>

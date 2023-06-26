@@ -1,17 +1,6 @@
 $(document).ready(function() {
   
-  $('#cardQueryButton').click(function() {
-    window.location.href = '/card_query';
-  });
-
-  $('#addOrderButton').click(function() {
-    window.location.href = '/order';
-  });
-
-  $('#arrowIcon').click(function() {
-    window.location.href = '/';
-  });
-
+  //navigation
   $('#beverages24').click(function() {
     window.location.href = '/';
   });
@@ -20,12 +9,43 @@ $(document).ready(function() {
     window.location.href = '/';
   });
 
-  $('#popuporderText').click(function() {
-    window.location.href = '/popuporder-button-click';
+  $('#arrowIcon').click(function() {
+    window.location.href = '/';
   });
+
+  //homepage-buttons
+  $('#cardQueryButton').click(function() {
+    window.location.href = '/cardquery';
+  });
+
+  $('#addOrderButton').click(function() {
+    window.location.href = '/order';
+  });
+
+  //card-query-page
   $('#ViewButton').click(function(){
     window.location.href ='/LogIn';
   })
+
+  $('#arrowIcon2').click(function(){
+    window.location.href ='/cardquery';
+  })
+
+  $('#Activate').click(function(){
+    window.location.href ='/ActivateCard';
+  })
+  $('#LogIn').click(function(){
+    window.location.href ='/LogIn';
+  })
+  $('#ActiveSub').click(function(){
+    window.location.href ='/cardquery';
+  })
+  
+  //order-page
+  $('#popuporderText').click(function() {
+    window.location.href = '/popuporder-button-click';
+  });
+
   $('#PayButton').click(function(){
     window.location.href ='/Payment';
   })
@@ -36,25 +56,6 @@ $(document).ready(function() {
 
   $('#Exitbutton').click(function(){
     window.location.href ='/';
-  })
-
-  $('#arrowIcon2').click(function(){
-    window.location.href ='/card_query';
-  })
-  $('#Activate').click(function(){
-    window.location.href ='/ActivateCard';
-  })
-  $('#LogIn').click(function(){
-    window.location.href ='/LogIn';
-  })
-  $('#ActiveSub').click(function(){
-    window.location.href ='/card_query';
-  })
-  $('#Backbutton').click(function(){
-    window.location.href ='/order';
-  })
-  $('#Back').click(function(){
-    window.location.href ='/order';
   })
 
 });

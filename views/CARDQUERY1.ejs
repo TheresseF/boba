@@ -41,7 +41,7 @@
             class="arrow-icon"
             alt=""
             src="/arrow-21.svg"
-            id="arrowIcon2"
+            id = "arrow-icon2"
     />
     <!-- login Area -->
     <div class="loginArea">
@@ -53,41 +53,19 @@
       </div>
       <form action = "#">
         <div class="container">
-          <input type ="text" placeholder="BobabCard/Contact Number"  required>
+          <input type ="text" placeholder="Boba Card"  required>
           <input type ="password" placeholder="Password"  required>
           <button type ="submit">Log In</button>
         </div>
       </form>
         <div class="font">
           <span class = "fontline"> Don't have your card activated?</span>
-          <span class="intheline" id="Activate">Activate here</span>
+          <a href="/ActivateCard" class="intheline" id="Activate"> <span>Activate here</span></a>
         </div>
     </div>
     
   </div>
-  <script type="text/javascript" src="/assets/home.js"></script>
-  
-  <!-- <script>
-    var beverages24 = document.getElementById("beverages24");
-    if (beverages24) {
-      beverages24.addEventListener("click", function (e) {
-        window.location.href = "./HOMEPAGE.ejs";
-      });
-    }
-    
-    var bOBASTICText = document.getElementById("bOBASTICText");
-    if (bOBASTICText) {
-      bOBASTICText.addEventListener("click", function (e) {
-        window.location.href = "./HOMEPAGE.ejs";
-      });
-    }
-    
-    var dontHaveYour = document.getElementById("dontHaveYour");
-    if (dontHaveYour) {
-      dontHaveYour.addEventListener("click", function (e) {
-        window.location.href = "./ACTIVATE.ejs";
-      });
-    }
-    </script> -->
+
+    <script type="text/javascript" src="/assets/home.js"></script>
   </body>
 </html>
