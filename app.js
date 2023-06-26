@@ -1,9 +1,8 @@
-var express = require('express');
-var database = require('mysql');
+const express = require('express');
+const mysql = require('mysql');
 
-var homeController = require('./controllers/homeController');
-//var cardQueryController = require('./controllers/cardQueryController');
 var app = express();
+var homeController = require('./controllers/homeController');
 
 //set up template engine
 app.set('view engine', 'ejs');
@@ -13,28 +12,22 @@ app.use(express.static('./public'));
 
 //fire controllers
 homeController(app);
-//cardQueryController(app);
 
-//database stuff
-//var router = express.Router();
+const pool = mysql.createPool({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'bobastic',
+    port: 3306
+});
 
-// var connection = mysql.createConnection({
-//     host:'localhost',
-//     port:3306,
-//     database: 'bobastic',
-//     user:'root',
-//     password:''
-// });
-
-// var database_connection_status = "";
-
-// connection.connect(function(error){
-//     if(error){
-//        console.log('MySQL database Connection Error');
-//     } else{
-//        console.log('Node JS Application Successfully connected to MySQL Database');
-//     }
-// })
+pool.query('SELECT * FROM bobastic.customer_list', (error, results, fields) => {
+    if (error) {
+      console.error(error);
+      return;
+    }
+    console.log(results);
+});
 
 //listen to port
 app.listen(3000);
