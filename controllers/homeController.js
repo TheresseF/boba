@@ -28,6 +28,9 @@ module.exports = function(app){
     app.get('/Payment', function(req, res){
         res.render('finalpayment')
     })
-
+    app.get('/CheckOut', function(req, res){
+        res.render('finalcheckout')
+    })
     
+
 };

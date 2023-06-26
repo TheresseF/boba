@@ -30,6 +30,6 @@ $(document).ready(function() {
   })
 
   $('#ConButton').click(function(){
-    
+    window.location.href ='/CheckOut';
   })
 });
