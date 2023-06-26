@@ -6,15 +6,19 @@ function addRow(product, type) {
 
   var row = tbody.insertRow();
   var cellProd = row.insertCell();
-  var cellExtra = row.insertCell();
   var cellSize = row.insertCell();
+  var cellExtra = row.insertCell();
   var cellQty = row.insertCell();
+  var cellUnitP = row.insertCell();
+  var cellTotalP = row.insertCell();
   var cellDel = row.insertCell();
 
   cellProd.innerHTML = product;
   cellExtra.innerHTML = " ";
   cellSize.innerHTML = " ";
   cellQty.innerHTML = createQuantitySlider();
+  cellUnitP.innerHTML = " ";
+  cellTotalP.innerHTML = " ";
   cellDel.innerHTML = "<img class='deleteButton' src='x.png' alt='Delete' style='width:1.5vw;cursor:pointer;'>";
 
   var deleteButton = cellDel.getElementsByClassName("deleteButton")[0];
@@ -30,19 +34,7 @@ function addRow(product, type) {
   }
 }
 
-function addBoba() {
-  for (var i = 0; i < drinkRows.length; i++) {
-    var row = drinkRows[i];
-    var cells = row.getElementsByTagName("td");
 
-    if (cells.length > 1) {
-      var cellExtra = cells[1];
-      cellExtra.innerHTML = "B";
-    }
-
-    break;
-  }
-}
 
 function addSize(size) {
   for (var i = 0; i < drinkRows.length; i++) {
@@ -50,8 +42,22 @@ function addSize(size) {
     var cells = row.getElementsByTagName("td");
 
     if (cells.length > 1) {
-      var cellSize = cells[2];
+      var cellSize = cells[1];
       cellSize.innerHTML = size;
+    }
+
+    break;
+  }
+}
+
+function addBoba() {
+  for (var i = 0; i < drinkRows.length; i++) {
+    var row = drinkRows[i];
+    var cells = row.getElementsByTagName("td");
+
+    if (cells.length > 1) {
+      var cellExtra = cells[2];
+      cellExtra.innerHTML = "B";
     }
 
     break;
