@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <link href = "/assets/FINALORDER.css" rel="stylesheet" type="text/css"/>
-    <link href = "/assets/global.css" rel="stylesheet" type="text/css"/>
-    <link href = "/assets/orderarea.css" rel="stylesheet" type="text/css"/>
-    <link href = "/assets/upperdesign.css" rel="stylesheet" type="text/css"/>
-    <link href = "orderlist.css" rel="stylesheet" type="text/css"/>
+    <link href = "../public/assets/FINALORDER.css" rel="stylesheet" type="text/css"/>
+    <link href = "../public/assets/global.css" rel="stylesheet" type="text/css"/>
+    <link href = "../public/assets/orderarea.css" rel="stylesheet" type="text/css"/>
+    <link href = "../public/assets/upperdesign.css" rel="stylesheet" type="text/css"/>
+    <link href = "./orderlist.css" rel="stylesheet" type="text/css"/>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -26,7 +26,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
     />
-    <script src="orderlist.js"></script>
+    <script src="./orderlist.js"></script>
   </head>
   <body>
       <!-- upper design to homepage -->
@@ -35,7 +35,7 @@
           <img
             class="beverageslogo"
             alt=""
-            src="/beverages-2-4@2x.png"
+            src="../public/beverages-2-4@2x.png"
             id="beverages24"
           />
         <div class="bobasticlink" id="bOBASTICText">
@@ -77,7 +77,7 @@
           </button>
 
           <div class="totalbox"></div>
-          <b class="b39">1,073.0 </b>
+          <b class="b39" id="totalprice">1,073.0 </b>
           <p class="total1" id="TotalInput">Total</p>
           <!-- Clear box -->
           <button class="clearbox" id ="Clearbutton">
@@ -154,8 +154,8 @@
           <b class="esizes">Boba</b>
         </button>
 
-        <img class="logo2" alt="" src="/assets/beverages-2-31@2x.png" />
-        <img class="ang-caption" alt="" src="/assets/ang-caption@2x.png" />
+        <img class="logo2" alt="" src="../public/assets/beverages-2-31@2x.png" />
+        <img class="ang-caption" alt="" src="../public/assets/ang-caption@2x.png" />
 
         <!-- food -->
         <button class="box13" id="CinnD" onclick="addRow('Cinn Danish', 'food')">
