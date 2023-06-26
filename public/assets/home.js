@@ -25,7 +25,7 @@ $(document).ready(function() {
   $('#ViewButton').click(function(){
     window.location.href ='/LogIn';
   })
-  $('#paybox').click(function(){
+  $('#PayButton').click(function(){
     window.location.href ='/Payment';
   })
 
@@ -49,8 +49,8 @@ $(document).ready(function() {
   $('#ActiveSub').click(function(){
     window.location.href ='/card_query';
   })
-  $('#ActiveSub').click(function(){
-    window.location.href ='/Points';
+  $('#Backbutton').click(function(){
+    window.location.href ='/order';
   })
 
 });
