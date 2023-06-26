@@ -1,0 +1,302 @@
+
+/* menu area */
+.drinks{
+    top: 2.5vh;
+    left: 10vw;
+    color: peachpuff;
+    }
+    .size{
+    top: 2.5vh;
+    left: 28.5vw;
+    color: peachpuff;
+    }
+    .food{
+    top: 2.5vh;
+    left: 46vw;
+    color: peachpuff;
+    }
+    .extra{
+    top: 43vh;
+    left: 27.5vw;
+    color: rgb(204, 135, 74);
+    font-size: x-large;
+    font-family: var(--font-catamaran);
+    position: absolute;
+    }
+    .drinks,.size, .food{
+    font-size: x-large;
+    font-family: var(---font-titillium-web);
+    position: absolute;
+    }
+    
+    /* logo ug caption */
+    .logo2{
+    top: 71%;
+    left: 27vw;
+    width: 9%;
+    height: 18%;
+    }
+    .ang-caption{
+    top: 78%;
+    left: 24vw;
+    width: 20%;
+    }
+    .logo2, .ang-caption{
+    position: absolute;
+    }
+    
+    /* drinks box*/
+    .box1{
+    position: absolute;
+    left: 1vw;
+    height: 14vh;
+    }
+    .box2{
+    left: 13vw;
+    height: 14vh;
+    }
+    .box3{
+    top: 25vh;
+    left: 1vw;
+    }
+    .box4{
+    top: 25vh;
+    left: 13vw;
+    }
+    .box5{
+    top: 41vh;
+    left: 1vw;
+    }
+    .box6{
+    top: 41vh;
+    left: 13vw;
+    }
+    .box7{
+    top: 57vh;
+    left: 1vw;
+    }
+    .box8{
+    top: 57vh;
+    left: 13vw;
+    }
+    
+    .box3, .box4,
+    .box5, .box6,
+    .box7, .box8{
+    height: 14vh;
+    }
+    /* size box */
+    .box10{
+    top: 19vh;
+    }
+    .box11{
+    top: 29vh;
+    }
+    .box12{
+    top: 50vh;
+    }
+    .sizes{
+    top: 20%;
+    left: 27%;
+    position: absolute;
+    font-family: var(--font-catamaran);
+    color: var(--color-dimgray-200);
+    font-size: x-large;
+    }
+    .medium{
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    font-family: var(--font-catamaran);
+    color: var(--color-dimgray-200);
+    font-size: x-large;
+    }
+    .esizes{  
+    top: 20%;
+    left: 30%;
+    position: absolute;
+    font-family: var(--font-catamaran);
+    color: cornsilk;
+    font-size: x-large;
+    }
+    /* foods box */
+    .box13{
+    left: 37vw;
+    height: 14vh;
+    }
+    .box14{
+    height: 14vh;
+    left: 49vw;
+    }
+    .box15{
+    top: 25vh;
+    left: 37vw;
+    height: 14vh;
+    }
+    .box16{
+    top: 25vh;
+    left: 49vw;
+    height: 14vh;
+    }
+    .box17{
+    top: 41vh;
+    left: 37vw;
+    height: 14vh;
+    }
+    .box18{
+    top: 41vh;
+    left: 49vw;
+    height: 14vh;
+    }
+    .box19{
+    top: 57vh;
+    left: 37vw;
+    height: 14vh;
+    }
+    .box20{
+    top: 57vh;
+    left: 49vw;
+    height: 14vh;
+    }
+    .box9,.box10, .box11, .box12{
+    height:9vh;
+    left: 25vw;
+    }
+    
+    .box1, .box2,.box9, .box13,.box14{
+    position: absolute;
+    top: 9vh;
+    width: 11vw;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-wheat-100);
+    border: 0.1vw dashed var(--color-sienna-100);
+    cursor: pointer;
+    }
+    .box3, .box4,.box10, .box15,.box16{
+    position: absolute;
+    width: 11vw;
+    background-color: var(--color-navajowhite-100);
+    border: 0.1vw dashed var(--color-sienna-100);
+    border-radius: var(--br-3xs);
+    cursor: pointer;
+    }
+    .box5, .box6,.box11, .box17,.box18{
+    position: absolute;
+    width: 11vw;
+    background-color: var(--color-navajowhite-200);
+    border-radius: var(--br-3xs);
+    border: 0.1vw dashed var(--color-sienna-100);
+    cursor: pointer;
+    }
+    .box7, .box8,.box12, .box19,.box20{
+    position: absolute;
+    width: 11vw;
+    background-color: var(--color-burlywood-100);
+    border-radius: var(--br-3xs);
+    border: 0.1vw dashed var(--color-sienna-100);
+    cursor: pointer;
+    }
+    /* drink text*/
+    
+    .chocolate, .matcha, .blueberry, .flatbread,
+    .strawberry, .hokkaido, .cinn-danish, .cinn-bun{
+    position: absolute;
+    top: 4vh;
+    text-align: center;
+    left: 4%;
+    width: 127.82px;
+    height: 20px;
+    font-family: var(--font-catamaran);
+    color: var(--color-dimgray-200);
+    font-size:x-large;
+    }
+    .first{
+    top: 2.5vh;
+    left: 4.5%;
+    width: 9vw;
+    height: 2vh;
+    }
+    .second{
+    top: 6vh;
+    left: 4%;
+    width: 127.82px;
+    height: 20px;
+    }
+    .first,.second{
+    position: absolute;
+    text-align: center;
+    font-family: var(--font-catamaran);
+    color: var(--color-dimgray-200);
+    font-size:x-large;
+    }
+    .first1{
+    top: 2.5vh;
+    left: 5%;
+    width: 9vw;
+    height: 2vh;
+    position: absolute;
+    text-align: center;
+    font-family: var(--font-catamaran);
+    color: var(--color-dimgray-200);
+    font-size:large;
+    }
+    
+    .brown{
+    top: 2.5vh;
+    left: 6%;
+    width: 9vw;
+    height: 2vh;
+    }
+    .sugar{
+    top: 6vh;
+    left: 4%;
+    width: 127.82px;
+    height: 20px;
+    }
+    .brown,.sugar{
+    position: absolute;
+    text-align: center;
+    font-family: var(--font-catamaran);
+    color: cornsilk;
+    font-size:x-large;
+    }
+    .red-velvet{
+    position: absolute;
+    top: 4vh;
+    text-align: center;
+    left: 4.5%;
+    width: 127.82px;
+    height: 20px;
+    font-family: var(--font-catamaran);
+    color: cornsilk;
+    font-size:x-large;
+    }
+    .chocolate1,
+    .hokkaido2,
+    .hokkaido3,
+    .matcha1 {
+    position: absolute;
+    top: 0;
+    left: 1vw;
+    display: inline-block;
+    width: 127.82px;
+    height: 20px;
+    }
+    .chocolate1,
+    .hokkaido2,
+    .hokkaido3 {
+    top: 25px;
+    left: 7.81px;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100vh;
+        background: #FCF4D7;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+      }
+    
+    /* ------------------------------- */
+    
