@@ -38,7 +38,7 @@ $(document).ready(function() {
   })
 
   $('#arrowIcon2').click(function(){
-    window.location.href ='/cardquery';
+    window.location.href ='/card_query';
   })
   $('#Activate').click(function(){
     window.location.href ='/ActivateCard';
@@ -46,4 +46,11 @@ $(document).ready(function() {
   $('#LogIn').click(function(){
     window.location.href ='/LogIn';
   })
+  $('#ActiveSub').click(function(){
+    window.location.href ='/card_query';
+  })
+  $('#ActiveSub').click(function(){
+    window.location.href ='/Points';
+  })
+
 });

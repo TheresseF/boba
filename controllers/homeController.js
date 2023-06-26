@@ -34,4 +34,7 @@ module.exports = function(app){
     app.get('/ActivateCard', function(req, res){
         res.render('activatecard')
     })
+    app.get('/Points', function(req, res){
+        res.render('reveal')
+    })
 };
