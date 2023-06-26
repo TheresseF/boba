@@ -36,4 +36,8 @@ $(document).ready(function() {
   $('#Exitbutton').click(function(){
     window.location.href ='/';
   })
+
+  $('#arrowIcon2').click(function(){
+    window.location.href ='/cardquery';
+  })
 });

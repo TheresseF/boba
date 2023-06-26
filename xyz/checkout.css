@@ -1,116 +1,61 @@
-.Background{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+ .vackgrawnd{
     background-color: #FCF4D7;
-}
-.loginArea{
+    height: 80%;
+    width: 100%;
+ }
+ .pointbox{
     position: absolute;
-    background-color: #EED2AC;
-    width: 90vw;
-    height: 80vh;
-    top: 17vh;
-    left: 5vw;
-    border-radius: var(--br-11xl);
-}
-.logobg{
+    background-color: #F3DAB7;
+    top:15%;
+    left: 15%;
+    width: 70%;
+    height: 79%;
+    border-radius: var(  --br-31xl);
+ }
+ .points{
     position: absolute;
-    margin: 0;
-    left: 5vw;
-    transform: scaleX(-1);
-    width: 40vw;
+    background-color: #D2B995;
+    margin-top: 6%;
+    margin-left: 9%;
+    width: 80%;
+    height: 50%;
+    border-radius: var(--br-31xl);
 }
-.logobg2{
+.poin{
     position: absolute;
-    margin: 0;
-    left: 45vw;
-    width: 40vw;
-}
-.Header{
-    position: absolute;
-    font-family: var(--font-catamaran);
-    color: #9D6532;
+    color: #603A22;
+    font-weight: bold;
     font-size: 5em;
+    font-family: var(--font-league-spartan);
+    left: 17.5vw;
+    top: 5vh;    
 }
-.Bb{
-    position: absolute;
-    left: 30vw;
-    top: 5vh;
-}
-.dots{
-    position: absolute;
-    left: 42vw;
-    top: 10h;
-    width: 10vw;
-}
-.login,.Num, .passw{
-    position: absolute;
-    background-color: #AD845B;
-    border: 0.2vw solid #603A22 ;
-    height: 5vh;
-    width: 20vw;
-    border-radius: var(--br-11xl);
-}
-.login{
-    top: 35vh;
-    left: 39%;
-}
-.form{
-    position: absolute;
-    margin: 0;
-    color: #EED2AC;
-    top: 1vh;
-    left: 30%;
-}
-.Num{
-    top: 42vh;
-    left: 39%;
-}
-.passw{
-    top: 49vh;
-    left: 39%;
-}
-.passwo{
-    position: absolute;
-    margin: 0;
-    color: #EED2AC;
-    top: 1vh;
-    left: 37%;
-}
-.Activatebutton{
-    position: absolute;
-    background-color: #AFC172;
-    border: 0.2vw solid #808465;
-    top: 60vh;
-    left: 40vw;
-    height: 7vh;
-    width: 10vw;
-    border-radius: var(--br-3xs);
-}
-.activ{
-    position: absolute;
-    color: #428041;
-    font-family: var(--font-titillium-web);
-    left: 2.9vw;
-    top: 1vh;
-}
-.font{
+.pointcontainer{
     position: absolute;
     color: black;
-    bottom: 10vh;
-}
-.fontline{
-    position: absolute;
-    font-family: var(--font-catamaran);
-    width: 20vw;
-    left: 35vw;
-}
-.intheline{
-    position: absolute;
-    font-family: var(--font-catamaran);
-    width: 20vw;
-    left: 52.5vw;
-    text-decoration: underline;
-    color: #004AAD;
     font-weight: bold;
+    font-size: 5em;
+    font-family: var(--font-league-spartan);
+    left: 21.5vw;
+    top: 20vh; 
+    /* background-color: aqua;  */
+    width: 12vw;
+    text-align: center;
+}
+.Name, .Phone{
+    position: fixed;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: var(--font-league-spartan);
+    /* background-color: aqua;  */
+    width: 12vw;
+}
+.Name{
+    left: 47vw;
+    top: 59vh; 
+}
+.Phone{
+    left: 45vw;
+    top: 67vh; 
 }

@@ -81,7 +81,7 @@ input[type ="text"], [type = "password"] {
   border-radius: var(--br-11xl);
   text-align: center;
   margin-left: 15%;
-}
+} 
 
 form {
   border: 3px solid #f1f1f1;
