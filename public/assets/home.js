@@ -22,4 +22,7 @@ $(document).ready(function() {
   $('#popuporderText').click(function() {
     window.location.href = '/popuporder-button-click';
   });
+  $('#ViewButton').click(function(){
+    window.location.href ='/LogIn';
+  })
 });
