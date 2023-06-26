@@ -15,21 +15,28 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
-.short, .CN {
+.CN, .acc {
   width: 4%;
   background-color: burlywood;
   text-align: center;
   border: 0.1vw solid var(--color-tan-200);
   color: rgb(112, 60, 36);
   font-family: var(--font-catamaran);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.acc{
+  -webkit-text-security: disc; 
+  font-size: 1.7em;
 }
 td {
-  padding: 8px;
+  padding: 0.2%;
   text-align: center;
   border: 1px solid var(--color-tan-200);
   color: rgb(53, 27, 15);
   font-family: var(--font-catamaran);
-  font-size: large;
+  font-size: 1em;
 }
 .trans{
   width: 2%;
