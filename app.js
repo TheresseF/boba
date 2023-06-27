@@ -68,7 +68,7 @@ app.get('/edit/:customerId', (req, res) => {
       }
   
       // Render the edit page and pass the customer data
-      res.render('cardquery1', { customer: rows[0] });
+      res.render('activatecard', { customer: rows[0] });
     });
   });
 
