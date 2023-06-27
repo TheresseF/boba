@@ -1,0 +1,62 @@
+.vackgrawnd{
+    background-color: #FCF4D7;
+    height: 80%;
+    width: 100%;
+ }
+ .pointbox{
+    position: fixed;
+    background-color: #F3DAB7;
+    top:15%;
+    left: 15%;
+    width: 70%;
+    height: 79%;
+    border-radius: var(  --br-31xl);
+ }
+ .points{
+    position: absolute;
+    background-color: #D2B995;
+    margin-top: 6%;
+    margin-left: 9%;
+    width: 80%;
+    height: 50%;
+    border-radius: var(--br-31xl);
+}
+.poin{
+    position: absolute;
+    color: #603A22;
+    font-weight: bold;
+    font-size: 5em;
+    font-family: var(--font-league-spartan);
+    left: 17.5vw;
+    top: 5vh;    
+}
+.pointcontainer{
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-size: 5em;
+    font-family: var(--font-league-spartan);
+    left: 21.5vw;
+    top: 20vh; 
+    /* background-color: aqua;  */
+    width: 12vw;
+    text-align: center;
+}
+.Name, .Phone{
+    position: fixed;
+    color: black;
+    font-weight: bold;
+    font-family: var(--font-league-spartan);
+    /* background-color: aqua;  */
+    width: 12vw;
+}
+.Name{
+    left: 47vw;
+    top: 59vh; 
+    font-size: 2.5em;
+}
+.Phone{
+    left: 45vw;
+    top: 69vh; 
+    font-size: 1.5em;
+}
