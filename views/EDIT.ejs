@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Activate Card</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="../public/assets/global.css" />
-    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
-    <link rel="stylesheet" href="../public/assets/orderarea.css" />
-    <link rel="stylesheet" href="../xyz/register.css" />
+    <link rel="stylesheet" href="/assets/global.css" />
+    <link rel="stylesheet" href="/assets/upperdesign.css" />
+    <link rel="stylesheet" href="/assets/orderarea.css" />
+    <link rel="stylesheet" href="/assets/EDIT.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -31,7 +30,7 @@
       <img
         class="beverageslogo"
         alt=""
-        src="../public/beverages-2-4@2x.png"
+        src="/beverages-2-4@2x.png"
         id="beverages24"
       />
     <div class="bobasticlink" id="bOBASTICText">
@@ -41,14 +40,15 @@
     <img
             class="arrow-icon"
             alt=""
-            src="../public/arrow-21.svg"
+            src="/arrow-21.svg"
             id="arrowIcon"
     />
     <!-- login Area -->
+    <div class="Employee"> --- Edit Customer --- </div>
     <div class="loginArea">
-      <img class="logobg" alt="" src="../public/beverages-2-31@2x.png" />
-      <img class="logobg2" alt="" src="../public/beverages-2-31@2x.png" />
-      <form action="#">
+      <img class="logobg" alt="" src="/beverages-2-31@2x.png" />
+      <img class="logobg2" alt="" src="/beverages-2-31@2x.png" />
+    <form action="/update/<%= customer.Customer_Suki_ID %>" method="POST">
         <div class="container">
           <label for="bobacard-number">Bobacard Number:</label>
           <input type="text" id="bobacard-number" placeholder="Bobacard Number" required>
@@ -64,18 +64,8 @@
           <input type="password" id="phone-number" placeholder="Phone Number" required>
           <label for="points">Points:</label>
           <input type="password" id="points" placeholder="Points" required>
-          <button type="submit" id="ActiveSub">Activate</button>
+          <button type="submit" id="ActiveSub">Submit</button>
         </div>
       </form>
-
-        <div class="font">
-          <span class = "fontline"> Already have your Card activated? </span>
-        <a href="finalcheckout.html"> 
-          <span class="intheline" id="LogIn">  Log in here</span>
-        </a>
-        </div>
-      
-      <script type="text/javascript" src="/assets/home.js"></script>
-
   </body>
 </html>

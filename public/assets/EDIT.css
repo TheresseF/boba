@@ -1,0 +1,152 @@
+.Background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FCF4D7;
+  }
+  .loginArea{
+    position: absolute;
+    background-color: #EED2AC;
+    width: 90vw;
+    height: 80vh;
+    top: 17vh;
+    left: 5vw;
+    border-radius: var(--br-11xl);
+  }
+  .logobg{
+    position: absolute;
+    margin: 0;
+    left: 5vw;
+    transform: scaleX(-1);
+    width: 40vw;
+    top: -6vh;
+  }
+  .logobg2{
+    position: absolute;
+    margin: 0;
+    left: 45vw;
+    width: 40vw;
+    top: -6vh;
+  }
+  .Header{
+    position: absolute;
+    font-family: var(--font-catamaran);
+    color: #9D6532;
+    font-size: 5em;
+  }
+  .Bb{
+    position: absolute;
+    left: 30vw;
+    top: 5vh;
+  }
+  .dots{
+    position: absolute;
+    left: 42.3vw;
+    top: 10h;
+    width: 10vw;
+  }
+  .login,.Num, .passw{
+    position: absolute;
+    background-color: #AD845B;
+    border: 0.2vw solid #603A22 ;
+    height: 5vh;
+    width: 20vw;
+    border-radius: var(--br-11xl);
+  }
+  .login{
+    top: 35vh;
+    left: 39%;
+  }
+  .form{
+    position: absolute;
+    margin: 0;
+    color: #EED2AC;
+    top: 1vh;
+    left: 30%;
+  }
+  
+  .font{
+    position: absolute;
+    color: black;
+    bottom: 5vh;
+  }
+  .fontline{
+    position: absolute;
+    font-family: var(--font-catamaran);
+    width: 18vw;
+    left: 33vw;
+  }
+  .intheline{
+    position: absolute;
+    font-family: var(--font-catamaran);
+    width: 20vw;
+    left: 50.4vw;
+    text-decoration: underline;
+    color: #004AAD;
+    font-weight: bold;
+    cursor: pointer;
+  }
+ 
+  form {
+    border: none;
+  } 
+  
+  button[type="submit"] {
+    background-color: #afc172;
+    border: 0.2vw solid #808465;
+    height: 7vh;
+    width: 12vw;
+    border-radius: var(--br-3xs);
+    color: #428041;
+    margin-left: 130%;
+    margin-top: 1vh; 
+  }
+  
+  button:hover {
+    color: #264925;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Updated to two columns */
+    grid-gap: 10px;
+    margin-top: 20px;
+    width: 600px; /* Updated width to accommodate two columns */
+    z-index: 9998;
+    font-family: var(--font-catamaran);
+    color: #8a5c48; 
+  }
+  
+  label {
+    font-weight: bold;
+    font-family: var(--font-catamaran);
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .Employee{
+    top:9vh; 
+    left: 36vw;
+    font-family: var(--font-titillium-web);
+    position: absolute;
+    font-weight: bold;
+    font-size: 2em;
+    color:#432818;
+
+  }
+
+
+  
