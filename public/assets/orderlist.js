@@ -4,10 +4,7 @@ function addRow(product, type) {
   var table = document.getElementById("orderTable");
   var tbody = document.getElementById("otBody");
 
-  if (drinkRows.length > 0 && (
-    drinkRows[0].getElementsByTagName("td")[1].innerHTML.trim() === "" ||
-    (drinkRows[0].getElementsByTagName("td")[2].innerHTML.trim() === "" && drinkRows[0].getElementsByTagName("td")[2].innerHTML.trim() !== "")
-  ) && type !== "drink") {
+  if (drinkRows.length > 0 && type !== "drink" && drinkRows[0].getElementsByTagName("td")[2].innerHTML.trim() === "") {
     alert("Please select a size for the previous drink before adding a new row.");
     return;
   }
@@ -109,50 +106,4 @@ function deleteRow(button) {
 function clearTable() {
   var tbody = document.getElementById("otBody");
   tbody.innerHTML = "";
-}
-
-function addOrders() { // New function to add all orders
-  var table = document.getElementById("orderTable");
-  var rows = table.getElementsByTagName("tr");
-
-  var orders = [];
-
-  for (var i = 1; i < rows.length; i++) {
-    var row = rows[i];
-    var cells = row.getElementsByTagName("td");
-
-    var product = cells[0].innerHTML.trim();
-    var size = cells[2].innerHTML.trim();
-    var quantity = parseInt(cells[3].querySelector("input[type='number']").value);
-
-    var order = {
-      product: product,
-      size: size,
-      quantity: quantity
-    };
-
-    orders.push(order);
-  }
-
-  // Send the orders data to your Node.js server for processing
-  // You can use AJAX or fetch API to send a POST request to your server endpoint
-
-  var requestOptions = {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(orders)
-  };
-
-  fetch("/addOrders", requestOptions)
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(data) {
-      console.log("Orders added successfully:", data);
-      // Handle any UI updates or notifications
-    })
-    .catch(function(error) {
-      console.error("Error adding orders:", error);
-      // Handle error cases
-    });
 }

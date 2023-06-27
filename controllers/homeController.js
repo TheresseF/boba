@@ -39,6 +39,8 @@ module.exports = function(app){
         res.render('finalcheckout')
     })
 
+    
+
     app.get('/popuporder-button-click', function(req, res){
         res.render('finalorder1');
     });
@@ -50,4 +52,6 @@ module.exports = function(app){
     app.delete('/homepage', function(req, res){
 
     });
+
+    
 };
