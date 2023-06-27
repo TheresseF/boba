@@ -125,7 +125,7 @@
   
   label {
     font-weight: bold;
-    font-family: --font-catamaran: Catamaran;
+    font-family: var(--font-catamaran);
   }
   
   input[type="text"],
