@@ -82,6 +82,6 @@ app.delete('/data/:Customer_Suki_ID', (req, res) => {
 });
 
 // Listen to port
-app.listen(4000, () => {
+app.listen(3000, () => {
   console.log('app is now listening on port 3000');
 });
