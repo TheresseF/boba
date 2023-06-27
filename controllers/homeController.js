@@ -19,9 +19,9 @@ module.exports = function(app){
         res.render('reveal')
     });
 
-    // Activate Card
-    app.get('/ActivateCard', function(req, res){
-        res.render('activatecard')
+    // Register
+    app.get('/Register', function(req, res){
+        res.render('Register')
     });
 
     // Order Page

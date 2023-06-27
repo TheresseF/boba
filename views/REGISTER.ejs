@@ -4,10 +4,10 @@
     <title>Activate Card</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="../public/assets/global.css" />
-    <link rel="stylesheet" href="../public/assets/upperdesign.css" />
-    <link rel="stylesheet" href="../public/assets/orderarea.css" />
-    <link rel="stylesheet" href="../public/assets/REGISTER.css />
+    <link rel="stylesheet" href="/assets/global.css" />
+    <link rel="stylesheet" href="/assets/upperdesign.css" />
+    <link rel="stylesheet" href="/assets/orderarea.css" />
+    <link rel="stylesheet" href="/assets/REGISTER.css "/>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap"
@@ -31,7 +31,7 @@
       <img
         class="beverageslogo"
         alt=""
-        src="../public/beverages-2-4@2x.png"
+        src="/beverages-2-4@2x.png"
         id="beverages24"
       />
     <div class="bobasticlink" id="bOBASTICText">
@@ -41,33 +41,36 @@
     <img
             class="arrow-icon"
             alt=""
-            src="../public/arrow-21.svg"
+            src="/arrow-21.svg"
             id="arrowIcon"
     />
     <!-- login Area -->
     <div class="loginArea">
-      <img class="logobg" alt="" src="../public/beverages-2-31@2x.png" />
-      <img class="logobg2" alt="" src="../public/beverages-2-31@2x.png" />
-      <!-- <div class="Header">
-        <b class="Bb">BOBACARD</b>
-        <p class="dots">. . .</p>
-      </div> -->
-      <form action="#">
+      <img class="logobg" alt="" src="/beverages-2-31@2x.png" />
+      <img class="logobg2" alt="" src="/beverages-2-31@2x.png" />
+
+      <form action="/Register" method="POST">
         <div class="container">
-          <label for="bobacard-number">Bobacard Number:</label>
-          <input type="text" id="bobacard-number" placeholder="Bobacard Number" required>
+          <label for="customer_suki_id">Bobacard Number:</label>
+          <input type="text" id="customer_suki_id" name="Customer_Suki_ID" placeholder="Bobacard Number" required>
+         
           <label for="first-name">First Name:</label>
-          <input type="text" id="first-name" placeholder="First Name" required>
+          <input type="text" id="first-name" name="First_Name" placeholder="First Name" required>
+          
           <label for="last-name">Last Name:</label>
-          <input type="text" id="last-name" placeholder="Last Name" required>
+          <input type="text" id="last-name" name="Last_Name" placeholder="Last Name" required>
+         
           <label for="email">Email:</label>
-          <input type="text" id="email" placeholder="Email" required>
+          <input type="text" id="email" name="Email" placeholder="Email" required>
+         
           <label for="address">Address:</label>
-          <input type="password" id="address" placeholder="Address" required>
+          <input type="text" id="address" name="Address" placeholder="Address" required>
+         
           <label for="phone-number">Phone Number:</label>
-          <input type="password" id="phone-number" placeholder="Phone Number" required>
+          <input type="text" id="phone-number" name="Phone_Number" placeholder="Phone Number" required>
+        
           <label for="points">Points:</label>
-          <input type="password" id="points" placeholder="Points" required>
+          <input type="text" id="points" name="Points" placeholder="Points" required>
           <button type="submit" id="ActiveSub">Activate</button>
         </div>
       </form>
@@ -78,6 +81,8 @@
         </div>
       
       <script type="text/javascript" src="/assets/home.js"></script>
+
+
 
   </body>
 </html>

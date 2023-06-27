@@ -1,9 +1,15 @@
 const express = require('express');
 const mysql = require('mysql2');
+const bodyParser = require('body-parser');
 require('dotenv').config();
 
 const app = express();
 const homeController = require('./controllers/homeController.js');
+
+// Parse JSON bodies
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 // Set up template engine
 app.set('view engine', 'ejs');
@@ -66,7 +72,7 @@ app.get('/edit/:customerId', (req, res) => {
     });
   });
 
-//Delete Page
+//Delete Customer
 app.delete('/data/:Customer_Suki_ID', (req, res) => {
     const Customer_Suki_ID = req.params.Customer_Suki_ID;
 
@@ -80,6 +86,25 @@ app.delete('/data/:Customer_Suki_ID', (req, res) => {
         res.json({ message: 'Data deleted successfully' });
     });
 });
+
+//Register
+app.post('/register', (req, res) => {
+    const { Customer_Suki_ID, First_Name, Last_Name, Email, Address, Phone_Number, Points } = req.body;
+  
+    // Insert the form data into the database
+    const query = 'INSERT INTO Customer_list (Customer_Suki_ID, First_Name, Last_Name, Email, Address, Phone_Number, Points) VALUES (?, ?, ?, ?, ?, ?, ?)';
+    connection.query(query, [Customer_Suki_ID, First_Name, Last_Name, Email, Address, Phone_Number, Points], (err, result) => {
+      if (err) {
+        console.error('Error executing query:', err);
+        // Handle the error and return an appropriate response
+        return;
+      }
+  
+      // Data successfully inserted into the database
+      // Redirect the user or send a response indicating success
+      res.redirect('/cardquery');
+    });
+  });
 
 // Listen to port
 app.listen(3000, () => {
