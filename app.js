@@ -15,7 +15,7 @@ app.use(express.static('./public'));
 homeController(app);
 
 //Database Setup
-GRANT ALL PRIVILEGES ON bobastic.* TO 'root'@'127.0.0.1' IDENTIFIED BY ' ';
+//GRANT ALL PRIVILEGES ON bobastic.* TO 'root'@'127.0.0.1' IDENTIFIED BY ' ';
 
 const connection = mysql.createConnection({
     host: '127.0.0.1',
