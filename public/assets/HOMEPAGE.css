@@ -33,7 +33,6 @@
   font-size: 23.61px;
   font-family: var(--font-raleway);
   color: var(--color-dimgray-200);
-  text-align: center;
   cursor: pointer;
 }
 .add-order-wrapper,
@@ -44,16 +43,14 @@
   background-color: var(--color-tan-100);
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10vw;
   border-radius: var(--br-3xs);
   box-sizing: border-box;
   width: 205px;
   height: 46px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
+
 .add-order-wrapper:hover,
 .card-query-wrapper:hover {
   background-color: #CAAC82;

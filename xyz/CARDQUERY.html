@@ -6,7 +6,7 @@
 
     <title>Card Query</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <link href = "../xyz/CARDQUERY.css" rel="stylesheet" type="text/css"/>
+    <link href = "../public/assets/CARDQUERY.css" rel="stylesheet" type="text/css"/>
     <link href = "../public/assets/global.css" rel="stylesheet" type="text/css"/>
     <link href = "../public/assets/upperdesign.css" rel="stylesheet" type="text/css"/>
 
@@ -60,22 +60,22 @@
               </thead>
 
               <tbody>
-                <% customers.forEach(function(data) { %>
+                <!-- <% customers.forEach(function(data) { %> -->
                   <tr>
-                    <td><%= data.Customer_Suki_ID %></td>
-                    <td><%= data.First_Name %></td>
-                    <td><%= data.Last_Name %></td>
-                    <td><%= data.Email %></td>
-                    <td><%= data.Address %></td>
-                    <td><%= data.Phone_Number %></td>
-                    <td><%= data.Points %></td>
+                    <td>BobaCard123</td>
+                    <td>Leanne</td>
+                    <td>Igot</td>
+                    <td>ligot@up.edu.ph</td>
+                    <td>Lapu-Lapu</td>
+                    <td>09876543257</td>
+                    <td>-0</td>
                     <td>
                       <button class="Boxbutton ViewButton" data-id="${data.Customer_Suki_ID}">View</button>
                       <button class="Boxbutton EditButton" data-id="${data.Customer_Suki_ID}">Edit</button>
                       <button class="Boxbutton cq-delete-btn" data-id="<%= data.Customer_Suki_ID %>">Delete</button>
                     </td>
                   </tr>
-                <% }); %>
+                <!-- <% }); %> -->
               </tbody>
                   
             </table>
@@ -83,11 +83,11 @@
           <div class="search">
             <form action="#">
                 <!-- <input type="text" placeholder="Type in your Name or Number"> -->
-                <a href="REGISTER.html">
-                    <button class="Register">
-                      <b class="cancel2">Register Here!</b>
-                    </button>
-                    </a>         
+                <a href="REGISTER.ejs">
+                  <button class="Register">
+                    <b class="cancel2">Register Here!</b>
+                  </button>
+                  </a>          
               </form>
           </div>
           <img
@@ -96,7 +96,7 @@
             src="../public/arrow-21.svg"
             id = "arrow-icon"
           />
-      <script type="text/javascript" src="../public/assets/cardquery.js"></script>
+      <script type="text/javascript" src="/assets/cardquery.js"></script>
       <!-- <script>
         // Function to handle delete button click event
     $("#cq-delete-btn").on("click", function () {
