@@ -15,6 +15,8 @@ app.use(express.static('./public'));
 homeController(app);
 
 //Database Setup
+GRANT ALL PRIVILEGES ON bobastic.* TO 'root'@'127.0.0.1' IDENTIFIED BY ' ';
+
 const connection = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
@@ -78,21 +80,6 @@ app.delete('/data/:Customer_Suki_ID', (req, res) => {
         res.json({ message: 'Data deleted successfully' });
     });
 });
-
-//ORDER
-app.post('/orders', (req, res) => {
-    const order = req.body; // Assuming the order data is sent in the request body
-  
-    connection.query('INSERT INTO order_list SET ?', order, (err, result) => {
-      if (err) {
-        console.error('Error executing query:', err);
-        res.status(500).json({ error: 'Internal Server Error' });
-        return;
-      }
-  
-      res.json({ message: 'Order stored successfully' });
-    });
-  });
 
 // Listen to port
 app.listen(3000, () => {
