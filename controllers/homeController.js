@@ -1,3 +1,4 @@
+
 module.exports = function(app){
     // Homepage
     app.get('/', function(req, res){
@@ -52,6 +53,4 @@ module.exports = function(app){
     app.delete('/homepage', function(req, res){
 
     });
-
-    
 };

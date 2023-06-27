@@ -37,7 +37,7 @@ $(document).ready(function() {
   $('#LogIn').click(function(){
     window.location.href ='/LogIn';
   })
-  $('#ActiveSub').click(function(){
+  $('#Register').click(function(){
     window.location.href ='/cardquery';
   })
   
