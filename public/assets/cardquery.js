@@ -20,8 +20,8 @@ $(document).ready(function () {
       window.location.href = '/LogIn';
     });
   
-    $('#Activate').click(function () {
-      window.location.href = '/ActivateCard';
+    $('.EditButton').click(function () {
+      window.location.href = '/LogIn';
     });
   
     $('#LogIn').click(function () {
